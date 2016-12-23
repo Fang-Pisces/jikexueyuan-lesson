@@ -1,0 +1,33 @@
+        *{
+            margin:0;
+            padding:0;
+        }
+        .xiehe{
+            margin:100px;
+            padding:10px;
+            width:100px;
+            height:100px;
+            background-color: aqua;
+            border:5px solid red;
+        }
+        .xiezi{
+            width:100px;
+            height:100px;
+            background-color:yellow;
+            overflow:scroll;
+        }
+        .xiehe1{
+            margin:100px;
+            padding:10px;
+            width:130px;
+            height:130px;
+            background-color: aqua;
+            border:5px solid red;
+            box-sizing: border-box;
+        }
+        .xiezi1{
+            width:100px;
+            height:100px;
+            background-color:yellow;
+
+        }

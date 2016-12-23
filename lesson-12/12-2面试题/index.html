@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web高级前端工程师面试题汇总</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Web高级前端工程师面试题汇总</h1>
+        </div>
+        <div class="artical">
+            <h2>一、HTML 部分</h2>
+            <dl>
+                <dt>
+                    <h3>1.HTML5 为什么只需要写 "!DOCTYPE HTML"？</h3>
+                    <p>答案解析： HTML5不基于SGML，因此不需要对DTD进行引用，但是需要DOCTYPE来规范浏览器的行为（让浏览器按照他们应该的方式来运行）而HTML4.01基于SGML，所以需要对DTD进行引用，才能告知浏览器文档所使用的文档类型。
+                    </p>
+                </dt>
+                <dt>
+                    <h3>2、行内元素有哪些？块级元素有哪些？ 空元素有那些？</h3>
+                    <p>答案解析： 行内元素：a b span img input select strong 块级元素：div ul ol li dl dt dd h1 h2 h3 h4 p 等 空元素：'br' 'hr' 'img' 'link' 'meta'
+                    </p>
+                </dt>
+                <dt>
+                    <h3>3、页面导入样式时，使用link和@import有什么区别？</h3>
+                    <p>答案解析：
+                        <i>1）link属于XHTML标签，而@import是css提供的；</i>
+                        <i>2）页面被加载时，link会同时被加载，而@import引用的css会等到页面被加载完再加载；</i>
+                        <i>3）@import只在IE5以上才能识别，而link是XHTML标签，无兼容问题；</i>
+                        <i>4）link方式的样式的权重高于@import的权重。</i>
+                    </p>
+                </dt>
+                <dt>
+                    <h3>4、html5有哪些新特性、移除了那些元素？如何处理HTML5新标签的浏览器兼容问题？</h3>
+                    <p>答案解析：
+                        <p>新特性，新增元素：</p>
+                        <i>1）内容元素：article、footer、header、nav、section</i>
+                        <i>2）表单控件：calendar、date、time、email、url、search</i>
+                        <i>3）控件元素：webworker，websockt，Geolocation</i>
+                        <p>移除元素：</p>
+                        <i>1）显现层元素：basefont，big，center，font，s，strike，tt，u</i>
+                        <i>2）性能较差元素：frame，frameset，noframes</i>
+                        <p>处理兼容问题有两种方式：</p>
+                        <i>1）IE6/IE7/IE8支持通过document方法产生的标签，利用这一特性让这些浏览器支持HTML5新标签。</i>
+                        <i>2）使用是html5shim框架</i>
+                    </p>
+                </dt>
+                <dt>
+                    <h3>5、如何区分 HTML 和 HTML5？</h3>
+                    <p>答案解析：<i> 1）在文档类型声明上不同：
+				HTML是很长的一段代码，很难记住，而HTML5却只有简简单单的声明，方便记忆。</i>
+                        <i>2）在结构语义上不同：
+				HTML：没有体现结构语义化的标签
+				HTML5：在语义上却有很大的优势。提供了一些新的标签，比如：'header' 'footer' 'nav'...</i>
+                    </p>
+                </dt>
+                <dt>
+                    <h3>6、简述一下你对HTML语义化的理解？</h3>
+                    <p>答案解析：</p>
+                    <i>  1）用正确的标签做正确的事情；</i>
+                    <i>2）html语义化让页面的内容结构化，结构更清晰，便于对浏览器、搜索引擎解析；</i>
+                    <i>3）即使在没有样式css情况下也以一种文档格式显示，并且是容易阅读的；</i>
+                    <i>4）搜索引擎的爬虫也依赖于HTML标记来确定上下文和各个关键字的权重，利于SEO；</i>
+                    <i>5）使于都源代码的人对网站更容易将网站分块，便于阅读维护理解。</i>
+                </dt>
+                <dt>
+                    <h3>7、HTML5的离线储存怎么使用，工作原理能不能解释一下？</h3>
+                    <p>答案解析：</p>
+                    <i>localStorage 长期存储数据，浏览器关闭后数据不丢失；</i>
+                    <i>sessionStorage 数据在浏览器关闭后自动删除。
+</i>
+                </dt>
+                <dt>
+                    <h3>8、iframe有那些缺点？</h3>
+                    <p> 答案解析：</p>
+                    <i>
+1）在网页中使用框架结构最大的弊病是搜索引擎的“蜘蛛”程序无法解读这种页面；
+</i>
+                    <i>  2）框架结构有时会让人感到迷惑，页面很混乱；</i>
+                </dt>
+                <dt>
+                    <h3>9、Doctype作用? 严格模式与混杂模式如何区分？它们有何意义?</h3>
+                    <p> 答案解析：</p>
+                    <i>1）'!Doctype'声明位于文档中的最前面，处于'html'标签之前。告知浏览器的解析器，用什么文档类型规范来解析这个文档。
+</i>
+                    <i>2）严格模式的排版和JS运作模式是以该浏览器支持的最高标准运行。</i>
+                    <i>3）在混杂模式中，页面以宽松的向后兼容的方式显示。模拟老式浏览器的行为以防止站点无法工作。</i>
+                    <i>4）DOCTYPE不存在或格式不正确会导致文档以混杂模式呈现。</i>
+                </dt>
+                <dt>
+                    <h3> 10、常见兼容性问题？</h3>
+                    <p>1）png24位的图片在IE6浏览器上出现背景；</p>
+                    <i>解决方案是：做成PNG8；</i>
+                    <p>2）浏览器默认的 margin 和 padding 不同。
+                    </p>
+                    <i>解决方案是：加一个全局的*{margin:0;padding:0;}来统一。
+</i>
+                    <p>3）IE6双边距bug：块属性标签float后，又有横行的 margin 情况下，在 IE6 显示 margin 比设置的大。浮动IE产生的双倍距离 #box{float:left;width:10px;margin:0 0 0 100px;} 这种情况下IE6会产生200px的距离。</p>
+                    <i>解决方法：加上_display：inline，使浮动忽略
+</i>
+                    <p>4）IE下，可以使用获取常规属性的方法来获取自定义属性，也可以使用getAttribute()获取自定义属性； Firefox下，只能使用getAttribute()获取自定义属性。</p>
+                    <i>解决方法：统一通过getAttribute()获取自定义属性。</i>
+                    <p>5）IE下，even对象有x，y属性，但是没有pageX，pageY属性，但是没有x，y属性；</p>
+                    <i>解决方法：（条件注释）缺点是在IE浏览器下可能会增加额外的HTTP请求数。</i>
+                    <p>6）Chrome中文界面下默认会将小于 12px 的文本强制按照 12px 显示</p>
+                    <i>解决方法：可通过加入 CSS 属性 -webkt-text-size-adjust:none;解决</i>
+                    <p>7）超链接访问过后 hover 样式就不出现了，被点击访问过的超链接样式不在具有 hover 和 active ；</p>
+                    <i>解决方法：改变CSS属性的排列顺序：L-V-H-A: a:link{ }  a:visited{ } a:hover{ } a:active{ } </i>
+                    <p>8)min-height最小高度的实现 兼容IE6/IE7/FF</p>
+                    <i>实现当容器的内容较少时，能保持一个最小的高度，以免破坏了布局或UI设计效果。而当容器内的内容增加的时候，容器能够自动的伸展以适应内容的变化。</i>
+                    <p>
+                        container{ background:#ccc; min-height:100px; height:auto !important; height:100px; overflow:visible; }
+                    </p>
+                </dt>
+                <dt>
+                    <h3>11、如何实现浏览器内多个标签页之间的通信？</h3>
+                    <p>答案解析：</p>
+                    <i>调用localstorge、cookies等本地存储方式</i>
+                </dt>
+                <dt>
+                    <h3> 13、支持HTML5新标签</h3>
+                    <p>答案解析：</p>
+                    <i>1）IE8/IE7/IE6支持通过 document.createElement 方法产生的标签，可以利用这一特性让这些浏览器支持 HTML5 新标签，浏览器支持新标签后，还需要添加标签默认的样式；</i>
+                    <i>2）当然最好的方式是直接使用成熟的框架、使用最多的是 html5shim 框架
+					</i>
+                </dt>
+            </dl>
+            <h2>二、CSS部分</h2>
+            <dl>
+                <dt>
+                    <h3>1、介绍一下 CSS 的盒子模型？</h3>
+                    <p>答案解析：</p>
+                    <i>1）有两种，IE 盒子模型、标准 W3C 盒子模型； IE 的 content 部分包含了 border 和 padding；</i>
+                    <i>2）盒模型：内容（content）、填充（padding）、边界（margin）、边框（border）。
+</i>
+                </dt>
+                <dt>
+                    <h3>2、CSS 选择符有哪些？哪些属性可以继承？优先级算法如何计算？ CSS3 新增伪类有哪些？</h3>
+                    <p>答案解析：</p>
+                    <i>1）id 选择器（#myid）2）类选择器（.myclassname）
+3）标签选择器（div，h1，p）
+4）相邻选择器（h1 + p）
+5）子选择器（ul > li）
+6）后代选择器（li a）
+7）通配符选择器（* ）
+8）属性选择器（ a[rel = "external"]）
+9）伪类选择器（a: hover, li: nth - child）</i>
+                    <p>优先级为:impretant>内联>id>类>标签、伪类、属性选择器>伪对象>继承>通配符</p>
+                    <i>注：同权重情况下样式定义最近者为准</p>
+				    </dt>
+				    <dt>
+				    <h3>3、CSS3新增伪类举例：</h3>
+				    <p>答案解析：</p>
+				    <i>p:first-of-type ;p:last-of-type;p:only-child;p:nth-child(2);:enabled——控制表单控件的金庸状态;:checked——单选框或复选框被选中。</i>
+                    <i></i>
+                </dt>
+                <dt>
+                    <h3>4、如何居中div？ 如何居中一个浮动元素？</h3>
+                    <p>答案解析：</p>
+                    <i>div{width:200px; margin:0 auto; }</i>
+                </dt>
+                <dt>
+                    <h3>5、如何居中一个浮动元素</h3>
+                    <p>答案解析：</p>
+                    <i>确定容器的宽高  宽500 高300的层，设置层的外边距</i>
+                    <i>div{width:500px;height:300px;margin:-150px 0 0 -250px;position:relative;background:green；left：50%；top：50%}
+</i>
+                </dt>
+                <dt>
+                    <h3>6、css3有哪些新特性？</h3>
+                    <p>答案解析：</p>
+                    <i>CSS3 实现圆角（border-radius:8px;），阴影（box-shadow:10px）,对文字加特效（text-shadow）,线性渐变（gradient），旋转（transform）
+transform:rotate(9deg) scale(0.85,0.90) translate(0px,-30px) skew(-9deg,0deg);//旋转，缩放，定位，倾斜
+</i>
+                    <i>增加了更多的 css 选择器</i>
+                </dt>
+                <dt>
+                    <h3>7、为什么要初始化 CSS 样式</h3>
+                    <p>答案解析：</p>
+                    <i>因为浏览器的兼容问题，不同浏览器对有些标签的默认值是不同的，如果没对 CSS 初始化往往会出现浏览器之间的页面显示差异。</i>
+                    <i>resat.css;normalize.css;neat.css;</i>
+                </dt>
+                <dt>
+                    <h3>8、display:inline-block 什么时候会显示间隙？</h3>
+                    <p>答案解析：</p>
+                    <i>移除空格，使用margin 负值、使用 font-size:0、letter-spacing 、word-spacing</i>
+                </dt>
+                <dt>
+                    <h3>9、有哪些 CSS 预处理器？</h3>
+                    <p>答案解析：SASS,LESS
+                    </p>
+                </dt>
+                <dt>
+                    <h3>10、什么是CSS Hack?</h3>
+                    <p>答案解析：</p>
+                    <i>针对不同的浏览器写不同的CSS,就是 CSS Hack。IE浏览器Hack一般又分为三种，条件Hack、属性级Hack、选择符Hack</i>
+                    <img src="1.png" style="margin-left: 10px;">
+                </dt>
+                <dt>
+                    <h3>
+							11、怎样去掉选中时的虚线框？
+						</h3>
+                    <p>利用onfocus="this.blur();"</p>
+                </dt>
+                <dt>
+                    <h3>12、px和em的区别</h3>
+                    <p>px和em都是长度单位，区别是，px的值是固定的，指定是多少就是多少，计算比较容易。em得值不是固定的，并且em会继承父级元素的字体大小。</p>
+                    <p>浏览器的默认字体高都是16px。所以未经调整的浏览器都符合: 1em=16px。那么12px=0.75em, 10px=0.625em.</p>
+                </dt>
+            </dl>
+            <h2>三、JavaScript部分</h2>
+            <dl>
+                <dt>
+                    <h3>1、怎样添加、移除、移动、复制、创建和查找节点？</h3>
+                    <p>1)创建新节点</p>
+                    <dd>createDocument//创建一个Dom节点</dd>
+                    <dd>createElement()//创建一个元素</dd>
+                    <dd>createTextNode//创建一个文本节点</dd>
+                    <p>2)添加、移除、替换、插入</p>
+                    <dd>appendChild()</dd>
+                    <dd>removeChild()</dd>
+                    <dd>replaceChild()</dd>
+                    <dd>insertBefore()</dd>
+                    <p>3)查找</p>
+                    <dd>getElementById()</dd>
+                    <dd>getElementByName()</dd>
+                    <dd>getElementByTagName()</dd>
+                </dt>
+                <dt>
+                    <h3>2、实现一个函数clone，可以对JavaScript中的5种主要的数据类型（包括Number、String、Object、Array、Boolean）进行值复制。</h3>
+                    <img src="2.png" alt="">
+                    <img src="3.png" alt="">
+                </dt>
+                <dt>
+                    <p>3、如何消除一个数组里面重复的元素？</p>
+                    <img src="4.png" alt="">
+                </dt>
+                <dt>
+                    <h3>4、请描述一下cookies，sessionStorage和localStorage的区别</h3>
+                    <dd>sessionStorage用于本地存储一个会话（session）中的数据，这些数据只有在同一个会话中的页面才能访问并且当会话结束后数据也随之销毁。因此sessionStorage不是一种持久化的本地存储，仅仅是会话级别的存储。而localStorage用于持久化的本地存储，除非主动删除数据，否则数据是永远不会过期的。</dd>
+                    <dd>
+                        <p>web storage和cookie的区别:</p>
+                        Web Storage的概念和cookie相似，区别是它是为了更大容量存储设计的。Cookie的大小是受限的，并且每次你请求一个新的页面的时候Cookie都会被发送过去，这样无形中浪费了带宽，另外cookie还需要指定作用域，不可以跨域调用。 除此之外，Web Storage拥有setItem,getItem,removeItem,clear等方法，不像cookie需要前端开发者自己封装setCookie，getCookie。但是Cookie也是不可以或缺的：Cookie的作用是与服务器进行交互，作为HTTP规范的一部分而存在 ，而Web Storage仅仅是为了在本地“存储”数据而生。</dd>
+                </dt>
+                <dt>
+                    <h3>5、写一个function,清除字符串前后的空格。（兼容所有浏览器）</h3>
+                    <img src="5.png" alt="">
+                </dt>
+                <dt>
+                    <h3>6.javascript的typeof返回哪些数据类型</h3
+                	>
+                	<p>Object number function boolean underfind</p>
+                </dt>
+                <dt>
+                	<h3>7.例举3种强制类型转换和2种隐式类型转换?</h3>
+                    <dd>
+                        强制（parseInt,parseFloat,number）;隐式（== , ===）
+                    </dd>
+                </dt>
+                <dt>
+                    <h3>8、split() ,join() 的区别</h3>
+                    <p>前者是切割成数组的形式，后者是将数组转换成字符串。</p>
+                </dt>
+                <dt>
+                    <h3>9.数组方法pop() push() unshift() shift()</h3>
+                    <p>Push()尾部添加 pop()尾部删除Unshift()头部添加 shift()头部删除</p>
+                </dt>
+                <dt>
+                    <h3>10、IE和DOM事件流的区别</h3>
+                    <p>1.执行顺序不一样、2.参数不一样3.事件加不加on4.this指向问题</p>
+                </dt>
+                <dt>
+                    <h3>11、IE和标准下有哪些兼容性的写法</h3>
+                    <p>Var ev = ev || window.event</p>
+                    <p>document.documentElement.clientWidth || document.body.clientWidth</p>
+                    <p>Var target = ev.srcElement||ev.target</p>
+                </dt>
+                <dt>
+                    <h3>12、ajax请求的时候get 和post方式的区别？</h3>
+                    <p>1.使用Get请求时,参数在URL中显示,而使用Post方式,则不会显示出来</p>
+                    <p>2.使用Get请求发送数据量小,Post请求发送数据量大</p>
+                    <p>3.get请求需注意缓存问题,post请求不需担心这个问题</p>
+                    <p>4.post请求必须设置Content-Type值;发送请求时,因为get请求的参数都在url里,所以send函数发送的参数为null,而post请求在使用send方法时,需要data参数</p>
+                    <p>服务器端的区别：</p>
+                    <p>5.从cache可以看出,get请求在发送后,即被缓存,而post请求时 never cached.</p>
+                    <p>6.因为get请求的参数是在url中的,所以Query String中是有值的.而post请求则没有.</p>
+                    <p>7.在Post Data里,因为get请求的字符串是在url中附带的,所以Post Data中无数据.</p>
+                    <p>8.应用不同 get是论坛等只需要请求的，post是类似修改密码的</p>
+                </dt>
+                <dt>
+                    <h3>13.call和apply的区别</h3>
+                    <p>Object.call(this,obj1,obj2,obj3)</p>
+                    <p>Object.apply(this,arguments)</p>
+                </dt>
+                <dt>
+                    <h3>14.事件委托是什么?</h3>
+                    <p>让利用事件冒泡的原理，让自己的所触发的事件，让他的父元素代替执行！</p>
+                </dt>
+                <dt>
+                    <h3>15.什么是闭包？</h3>
+                    <p>所谓“闭包”，指的是一个拥有许多变量和绑定了这些变量的环境的表达式。通俗的讲：就是函数a的内部函数b，被函数a外部的一个变量引用的时候，就创建了一个闭包</p>
+                    <p>闭包的特性：</p>
+                    <p>①.封闭性：外界无法访问闭包内部的数据，如果在闭包内声明变量，外界是无法访问的，除非闭包主动向外界提供访问接口；</p>
+                    <p>②.持久性：一般的函数，调用完毕之后，系统自动注销函数，而对于闭包来说，在外部函数被调用之后，闭包结构依然保存在 系统中，从而实现对数据的持久使用。
+                    </p>
+                    <p>优点：</p>
+                    <p>① 减少全局变量。 ② 减少传递函数的参数量 ③ 封装；</p>
+                    <p>缺点：</p>
+                    <p>使用闭包会占有内存资源，过多的使用闭包会导致内存溢出等.</p>
+                </dt>
+                <dt>
+                    <h3>16.如何阻止事件冒泡和默认事件</h3>
+                    <p>canceBubble return false</p>
+                </dt>
+                <dt>
+                    <h3>17.javascript的本地对象，内置对象和宿主对象</h3>
+                    <p>本地对象为array obj regexp等可以new实例化
+                    </p>
+                    <p>内置对象为gload Math 等不可以实例化的</p>
+                    <p>宿主为浏览器自带的document,window 等</p>
+                </dt>
+                <dt>
+                    <h3>18.简述同步和异步的区别</h3>
+                    <p>同步是阻塞模式，异步是非阻塞模式。 同步就是指一个进程在执行某个请求的时候，若该请求需要一段时间才能返回信息，那么这个进程将会一直等待下去，直到收到返回信息才继续执行下去； 异步是指进程不需要一直等下去，而是继续执行下面的操作，不管其他进程的状态。当有消息返回时系统会通知进程进行处理，这样可以提高执行的效率。</p>
+                </dt>
+                <dt>
+                    <h3>19.列举几个前端工业化框架。</h3>
+                    <p>Grunt,Gulp,Bower,Yeoman,Fis3</p>
+                </dt>
+                <dt>
+                    <h3>20.简述JavaScript设计模式的设计原则？</h3>
+                    <p>1)开闭原则2）里氏转换原则3）依赖倒转原则4）接口隔离原则5）合成复用原则6）迪米特原则</p>
+                </dt>
+                <dt>
+                    <h3>21.js简单原则和工厂原则的作用和注意事项。</h3>
+                    <p>简单模式：</p>
+                    <p>作用：实现模块之间的通信；系统中某个类的对象只能存在一个；保护自己的属性和方法</p>
+                    <p>注意事项：注意this的使用；闭包容易造成内存泄漏；注意new的成本</p>
+                    <p>工厂模式：</p>
+                    <p>作用：用于对象的构建十分复杂；需要依赖具体的环境创建不同的实例；处理大量具有相同户型的小对象。</p>
+                    <p>注意事项：不能滥用，注释作用。</p>
+                </dt>
+                <dt>
+                    <h3>22.列举几条你知道的雅虎军规。</h3>
+                    <p>1、尽量减少HTTP请求个数——须权衡</p>
+                    <p>2、使用CDN（内容分发网络）</p>
+                    <p>3、为文件头指定Expires或Cache-Control，使内容具有缓存性。</p>
+                    <p>4、避免空的src和href</p>
+                    <p>5、使用gzip压缩内容</p>
+                    <p>6、把CSS放到顶部</p>
+                    <p>7、把JS放到底部</p>
+                    <p>9、将CSS和JS放到外部文件中</p>
+                    <p>10、减少DNS查找次数</p>
+                    <p>12、避免跳转</p>
+                    <p>13、剔除重复的JS和CSS</p>
+                    <p>14、配置ETags</p>
+                    <p>15、使AJAX可缓存</p>
+                    <p>16、尽早刷新输出缓冲</p>
+                    <p>18、延迟加载</p>
+                    <p>20、减少DOM元素个数</p>
+                </dt>
+            </dl>
+            <h2>四、思维导图</h2>
+        	<h3>web前端思维导图</h3>
+        	<img src="6.png" width="1180">
+        	<h3>JavaScript思维导图</h3>
+        	<img src="7.png" width="1180">
+        </div>
+       
+        	
+        
+    </div>
+
+</body>
+
+</html>

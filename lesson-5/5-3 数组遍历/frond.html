@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>数组遍历</title>
+	<!--
+    <script type="text/javascript">
+    //当出现次数最多的不止一个时，有bug
+    var arr   = ["a","x","b","d","m","a","k","m","p","j","a","m"];//计数
+    var count = [];//生成新数组
+    var pos   = [];
+    //遍历arr，统计每个字母出现次数且记录位置
+    arr.forEach(function(value, index){
+        if(count[value]){
+            count[value] ++;
+            pos[value] += ","+index; 
+        } else {
+            count[value] = 1;
+            pos[value]   = index;
+        }
+    });
+    console.log(count);
+    console.log(pos);
+    //获取出现次数最多的数字
+    var max=0;
+    var letter;
+    for(i in count){
+        if(count[i]>max){
+            max=count[i];
+            letter=i;
+        }
+    }
+    document.write("出现次数最多的是："+letter+"<br/>");
+    document.write("出现次数是："+max+"<br/>");
+    document.write("所在位置是："+pos[letter]+"<br/>");
+
+</script>
+-->
+</head>
+<body>
+
+
+
+
+
+<script type="text/javascript">
+	var arr=["a","x","b","d","m","a","k","m","p","j","a","m"];//遍历数组
+    var count=[];
+    var pos=[];//生成新数组
+    //遍历arr，统计每个字母出现次数且记录位置
+    for(var i=0;i<arr.length;i++){
+        var value=arr[i];
+        if(count[value]){
+            count[value]++;
+            pos[value]+=","+i;
+        }else{
+            count[value]=1;
+            pos[value]=i;
+        }
+    }
+     //console.log(count);
+     //console.log(pos);
+     //返回出现次数最多的字母的次数
+     var max=count[Object.keys(count).sort(function(a,b){
+            return b-a;//降序排列后取第一个数字
+     })[0]];
+     //console.log(max);
+     //将出现次数最多的字母输出，如果有多个，全部写入arr_put数组中，并输出
+     var arr_put=[];
+     for(i in count){
+        if(count[i]>=max){
+            max=count[i];
+            arr_put.push(i);
+            //console.log(arr_put);
+        }
+     }
+        document.write("出现次数最多的字母是:"+ arr_put + '<br/>');
+     //将出现最多的字母的次数输出
+     for(var i=0;i<arr_put.length;i++){
+        key=arr_put[i];
+        //console.log(i);
+        document.write(key+"出现的次数是:" + count[key] + '<br/>');
+        document.write(key+"位置分别是: "+ pos[key] + '<br/>');
+     }
+     
+     
+
+</script>
+</body>
+</html>

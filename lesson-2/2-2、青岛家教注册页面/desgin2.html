@@ -1,0 +1,853 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<meta charset="utf-8"/>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="./stylesheet/desgin.css">
+	</head>
+	<body>
+		<div class="wrap">
+			<header>
+			<div class="top">
+			 	<img src="./images/qdjjlogo.gif">
+			 	<nav>
+				<a href="http://www.qdjj.net/member/register.asp">注册</a>
+				<a href="http://www.qdjj.net/login.asp">登录</a>
+				<a href="javascript:window.external.addFavorite('http://www.qdjj.net','%E9%9D%92%E5%B2%9B%E5%AE%B6%E6%95%99%E7%BD%91')">收藏本站</a>
+				</nav>
+			</div>
+				</header>
+
+
+				<!--表格部分-->
+				<div clas s="center">
+				<!--表格主体-->
+				<table  width="710" border="1">
+				  <thead>
+				  <caption>
+				    <p class="tou">新教员注册第二步</p>
+			  </caption> 
+			  </thead>   
+			  <tbody>
+			  <form action="action_page.php">
+			    <tr>
+			      <th colspan="2" >
+			      <font  class="y1">您的注册资料越详细就越有利于家长和学员检索，也就越容易获得家长的预约，所以请您务必如实详细地填写。 其中红色星号（</font>
+			      <font color="#FF0000" class="y1">*</font>
+			      <font class="y1">）为必填。我们已对您的个人信息做保密处理,您的信息是安全的。您选择的是</font><br>
+			      
+			      <font color="red" class="y1">大学生</font>
+			      <font class="y1">身份,若有误请</font>
+			      <a href="javascript:history.go(-1);"  class="y1">返回</a>
+			      <font class="y1">更改</font>
+			      </th>
+			     
+			    </tr>
+			    
+			    <tr>
+			      <th  colspan="2" align="left" style="background:rgba(96, 125, 139, 0.14);">
+			      <font  class="cc3" >基本资料</font>   
+			      </th>   
+			    </tr>
+			    <tr>
+			      <th  width="150px" heigh="500px">
+			      <label for="name"><font color="red" class="cc2">*</font>
+			      <font class="cc2" style="float:center;">真实姓名：</font></label>
+			      </th>
+			      <th>
+			        <input type="text" size="30" id="name" required placeholder="请在此输入姓名" style="float:left;" /><br>
+			        <font color="red" size="1px" class="y1" >注意：</font>
+			        <font class="y2"  >
+			        姓名应与身份证完全一致，本网站将对你的姓名严格保密，只显示您的姓，如“张教员”。此部分将在认证时严格审查，一经填写不得修改，与证件不符者将不能通过认证!
+			        </font>
+			      </th>
+			    </tr>
+			    <tr>
+			      <th>
+			      <label for="poss">
+			      <font class="cc2" align="right">身份证/护照：</font></label>
+			      </th>
+			      <th>
+			        <input type="text" size="30"  id="poss" required placeholder="请在此输入身份" style="float:left;">
+			        <font class="y2" style="float:left;">
+			        (此项将严格保密，不对外公开)</font>
+			      </th>
+			    </tr>
+			    <tr>
+			      <th>
+			      <font color="red" class="cc2">*</font>
+			      <font class="cc2" align="right">性别：</font>
+			      </th>
+			      <th>
+			        <select name="sex"  style="float:left;">
+			        <option value="select" selected >请选择</option>
+			        <option value="fale">男</option>
+			        <option value="female">女</option></select>
+			      </th>
+			    </tr>
+			    <tr>
+			      <th>
+			      <font color="red" class="cc2">*</font>
+			      <font class="cc2" >出生年份：</font>
+			      </th>
+			      <th>
+			        <input type="date"  style="float:left;">
+			      </th>
+			    </tr>
+			    <tr>
+			      <th>
+			      <font color="red" class="cc2" >*</font>
+			      <font class="cc2">专业：</font>
+			      </th>
+			      <th>
+			        <input type="text" size="30" id="zhuanye" required placeholder="请在此输入专业" style="float:left;">
+			        <font class="y2"  style="float:left;">请如实填写专业全名，以学生证为准。此部分将在认证时严格审查，与证件不符者将不能通过认证！</font>
+			      </th>
+			    </tr>
+			    <tr>
+			      <th>
+			      <font color="red" class="cc2">*</font>
+			      <font class="cc2">目前（最高）学历：  </font>
+			      </th>
+			      <th>
+			        <select name="xueli"  style="float:left;">
+			        <option value="select" selected>——请选择——</option>
+			        <option value="zhuan">大专以下</option>
+			        <option value="zhuanxia">大专</option>
+			        <option value="benke">本科</option>
+			        <option value="shuo">硕士</option>
+			        <option value="boshi">博士</option>
+			        </select>
+			      </th>
+			    </tr>
+			    <tr>
+			      <th>
+			      <font color="red" class="cc2">*</font>
+			      <font class="cc2">目前身份：</font>
+			      </th>
+			      <th>
+			      <select name="shenfen"  style="float:left;">
+			        <option value="select" selected>——请选择——</option>
+			        <option value="zhuan">大专在读</option>
+			        <option value="ben1">本科大一</option>
+			        <option value="ben2">本科大二</option>
+			        <option value="ben3">本科大三</option>
+			        <option value="ben4">本科大四</option>
+			        <option value="ben5">本科大五</option>
+			        <option value="shuo1">在读硕士</option>
+			        <option value="shuo2">硕士进修老师</option>
+			        <option value="others">其他学生</option>
+			        </select>
+			        <font class="y2" style="float:left;">
+			        请及时更新自己的身份，暑假期间注册，请选择下一学期的身份</font>
+			      </th>
+			    </tr>
+			    <tr>
+			      <th>
+			      <font color="red" class="cc2">*</font>
+			      <font class="cc2" >籍贯（生源地）：</font>
+			      </th>
+			      <th>
+			      <select name="dizhi"  style="float:left;">
+			        <option value="select" selected>——请选择——</option>
+			        <option value="n1">青岛市南</option>
+			        <option value="n2">青岛市北</option>
+			        <option value="n3">青岛四方</option>
+			        <option value="n4">青岛李沧</option>
+			        <option value="n5">青岛崂山</option>
+			        <option value="n6">青岛城阳</option>
+			        <option value="n7">青岛黄岛</option>
+			        <option value="n8">青岛即墨</option>
+			        <option value="n9">青岛胶州</option>
+			        <option value="n10">青岛胶南</option>
+			        <option value="n11">青岛平度</option>
+			        <option value="n12">青岛莱西</option>
+			        <option value="n13">------</option>
+			        <option value="n14">山东</option>
+			        <option value="n15">北京</option>
+			        <option value="n16">天津</option>
+			        <option value="n17">上海</option>
+			        <option value="n18">重庆</option>
+			        <option value="n19">安徽</option>
+			        <option value="n20">江苏</option>
+			        <option value="n21">浙江</option>
+			        <option value="n22">福建</option>
+			        <option value="n23">甘肃</option>
+			        <option value="n24">广东</option>
+			        <option value="n25">广西</option>
+			        <option value="n27">贵州</option>
+			        <option value="n28">海南</option>
+			        <option value="n29">河北</option>
+			        <option value="n30">河南</option>
+			        <option value="n31">黑龙江</option>
+			        <option value="n32">湖北</option>
+			        <option value="n33">湖南</option>
+			        <option value="n34">吉林</option>
+			        <option value="n35">江西</option>
+			        <option value="n36">辽宁</option>
+			        <option value="n37">宁夏</option>
+			        <option value="n38">青海</option>
+			        <option value="n39">山西</option>
+			        <option value="n40">陕西</option>
+			        <option value="n41">四川</option>
+			        <option value="n42">西藏</option>
+			        <option value="n43">香港</option>
+			        <option value="n44">新疆</option>
+			        <option value="n45">云南</option>
+			        </select>
+			        <font class="y2" style="float:left;">
+			        （并非指当前所在地）</font>
+			      </th>
+			    </tr>
+			    <tr>
+			    <th>
+			    <font color="red" class="cc2">*</font>
+			    <font class="cc2">毕业/就读高校：</font>
+			    </th>
+			      <th>
+			      <select name="school" style="float:left;">
+			        <option value="select" selected>——请选择——</option>
+			        <option value="n1">海大鱼山校区</option>
+			        <option value="n2">海大崂山校区</option>
+			        <option value="n3">海大浮山校区</option>
+			        <option value="n4">青大浮山校区</option>
+			        <option value="n5">青大东部校区</option>
+			        <option value="n6">青大四方校区</option>
+			        <option value="n7">青大登州路校区</option>
+			        <option value="n8">青岛大学师范学院</option>
+			        <option value="n9">青理工四方校区</option>
+			        <option value="n10">青理工黄岛校区</option>
+			        <option value="n11">青科大崂山校区</option>
+			        <option value="n12">青科大四方校区</option>
+			        <option value="n13">中国石油大学</option>
+			        <option value="n14">山东科技大学</option>
+			        <option value="n15">青岛农业大学</option>
+			        <option value="n16">求实学院</option>
+			        <option value="n17">恒星学院</option>
+			        <option value="n19">远洋船员学院</option>
+			        <option value="n20">青岛飞扬学院</option>
+			        <option value="n21">其他</option>
+			        </select>
+			        <input type="text" id="school" required placeholder="请在此输入就读院校" style="float:right;margin:0px 50px 0px 0px">
+			        <font  class="y2" color="blue">
+			        若列表中无选项，请在文本框中填写</font><br>
+			        
+			        
+			        
+			        
+			      </th>
+			    </tr>
+			    <tr>
+			      <th>
+			      <label for="muxiao"><font color="red" class="cc2">*</font>
+			      <font class="cc2" >高中母校：</font></label>
+			      </th>
+			      <th>
+			        <input type="text" size="30" id="muxiao" required placeholder="请输入高中母校" style="float:left;">
+			        <font class="y2" color="blue" style="float:left;">
+			        请填全称（省份、市、中学名称，如果是省市重点中学请注明）</font>
+			      </th>
+			    </tr>
+
+			    <tr>
+			      <th  colspan="2" align="left" style="background:rgba(96, 125, 139, 0.14);">
+			      <font  class="cc3" >联系方式</font>   
+			      </th>   
+			    </tr>
+			    <tr>
+			      <th>
+			      <label for="photo"><font color="red" class="cc2">*</font>
+			      <font class="cc2">手机/小灵通：</font></label>
+			      </th>
+			      <th>
+			        <input type="text" size="30" id="photo" required placeholder="请输入手机号码" style="float:left;">
+			        <font class="y2" color="blue" >
+			        最好留下多个联系方式，换号时请及时更新联系方式</font>
+			      </th>
+			    </tr>
+			    <tr>
+			      <th>
+			      <font color="red" class="cc2">*</font>
+			      <font class="cc2">目前住所：</font>
+			      </th>
+			      <th>
+			        <select   class="y1" style="float:left;">
+			        <option value="select" selected>——请选择——</option>
+			        <option value="n1">非青岛地区</option>
+			        <option value="n2">市南--团岛</option>
+			        <option value="n3">市南--火车站（栈桥）</option>
+			        <option value="n4">市南--海大鱼山校区（大学路）</option>
+			        <option value="n5">市南--汇泉广场</option>
+			        <option value="n6">市南--八大关</option>
+			        <option value="n7">市南--市政府</option>
+			        <option value="n8">市南--书城</option>
+			        <option value="n9">市南--广电大厦（大福源）</option>
+			        <option value="n10">市南--澳柯玛立交桥（百安居）</option>
+			        <option value="n11">市南--青岛大学（麦岛）</option>
+			        <option value="n12">市南--东部市立医院</option>
+			        <option value="n13">市南--湛山</option>
+			        <option value="n14">市北--小港</option>
+			        <option value="n15">市北--市立医院（西部）</option>
+			        <option value="n16">市北--电子信息城</option>
+			        <option value="n17">市北--台东</option>
+			        <option value="n19">市北--内蒙古路长途汽车站</option>
+			        <option value="n20">市北--错岭小区</option>
+			        <option value="n21">市北--浮山后</option>
+			        <option value="n22">市北--山东路家乐福</option>
+			        <option value="n23">市北--敦化路</option>
+			        <option value="n24">市北--青岛图书馆</option>
+			        <option value="n25">四方--瑞昌路</option>
+			        <option value="n27">四方--青岛理工大学（抚顺路）</option>
+			        <option value="n28">四方--四方利群</option>
+			        <option value="n29">四方--兴隆路</option>
+			        <option value="n30">四方--杭州路</option>
+			        <option value="n31">四方--宜昌路</option>
+			        <option value="n32">四方--孤山路</option>
+			        <option value="n33">四方--东方家园（公交四公司）</option>
+			        <option value="n34">四方--水清沟（市肿瘤医院）</option>
+			        <option value="n35">四方--青岛科技大学（胜利路）</option>
+			        <option value="n36">四方--海琴广场</option>
+			        <option value="n37">四方--北岭</option>
+			        <option value="n38">四方--杨家群</option>
+			        <option value="n39">李沧--太原路</option>
+			        <option value="n40">李沧--沧口</option>
+			        <option value="n41">李沧--振华路立交桥</option>
+			        <option value="n42">李沧--李沧区政府</option>
+			        <option value="n43">李沧--李沧广场</option>
+			        <option value="n44">李沧--李村公园</option>
+			        <option value="n45">李沧--九水路立交桥</option>
+			        <option value="n5">李沧--侯家庄</option>
+			        <option value="n6">李沧--永安路</option>
+			        <option value="n7">李沧--百通花园</option>
+			        <option value="n8">李沧--百通馨园</option>
+			        <option value="n9">崂山--颐中体育场</option>
+			        <option value="n10">崂山--辽阳路立交桥</option>
+			        <option value="n11">崂山--青岛国际啤酒城</option>
+			        <option value="n12">崂山--青岛科技大学东部校区</option>
+			        <option value="n13">崂山--石老人</option>
+			        <option value="n14">崂山--青岛市博物馆</option>
+			        <option value="n15">崂山--海大崂山校区</option>
+			        <option value="n16">崂山--中韩</option>
+			        <option value="n17">崂山--沙子口</option>
+			        <option value="n19">崂山--北村</option>
+			        <option value="n6">城阳</option>
+			        <option value="n7">黄岛</option>
+			        <option value="n8">即墨</option>
+			        <option value="n9">胶州</option>
+			        <option value="n10">胶南</option>
+			        <option value="n11">平度</option>
+			        <option value="n12">莱西</option>
+			        </select>
+			        <font class="y2"  style="float:left;">
+			        选择离您的住所最近的地点</font>
+			        
+			      </th>
+			    </tr>
+			    <tr>
+			      <th>
+			      <font class="cc2">家庭或校外住所：</font>
+			      </th>
+			      <th>
+			        <select class="y1" style="float:left;">
+			        <option value="select" selected>——请选择——</option>
+			        <option value="n1">非青岛地区</option>
+			        <option value="n2">市南--团岛</option>
+			        <option value="n3">市南--火车站（栈桥）</option>
+			        <option value="n4">市南--海大鱼山校区（大学路）</option>
+			        <option value="n5">市南--汇泉广场</option>
+			        <option value="n6">市南--八大关</option>
+			        <option value="n7">市南--市政府</option>
+			        <option value="n8">市南--书城</option>
+			        <option value="n9">市南--广电大厦（大福源）</option>
+			        <option value="n10">市南--澳柯玛立交桥（百安居）</option>
+			        <option value="n11">市南--青岛大学（麦岛）</option>
+			        <option value="n12">市南--东部市立医院</option>
+			        <option value="n13">市南--湛山</option>
+			        <option value="n14">市北--小港</option>
+			        <option value="n15">市北--市立医院（西部）</option>
+			        <option value="n16">市北--电子信息城</option>
+			        <option value="n17">市北--台东</option>
+			        <option value="n19">市北--内蒙古路长途汽车站</option>
+			        <option value="n20">市北--错岭小区</option>
+			        <option value="n21">市北--浮山后</option>
+			        <option value="n22">市北--山东路家乐福</option>
+			        <option value="n23">市北--敦化路</option>
+			        <option value="n24">市北--青岛图书馆</option>
+			        <option value="n25">四方--瑞昌路</option>
+			        <option value="n27">四方--青岛理工大学（抚顺路）</option>
+			        <option value="n28">四方--四方利群</option>
+			        <option value="n29">四方--兴隆路</option>
+			        <option value="n30">四方--杭州路</option>
+			        <option value="n31">四方--宜昌路</option>
+			        <option value="n32">四方--孤山路</option>
+			        <option value="n33">四方--东方家园（公交四公司）</option>
+			        <option value="n34">四方--水清沟（市肿瘤医院）</option>
+			        <option value="n35">四方--青岛科技大学（胜利路）</option>
+			        <option value="n36">四方--海琴广场</option>
+			        <option value="n37">四方--北岭</option>
+			        <option value="n38">四方--杨家群</option>
+			        <option value="n39">李沧--太原路</option>
+			        <option value="n40">李沧--沧口</option>
+			        <option value="n41">李沧--振华路立交桥</option>
+			        <option value="n42">李沧--李沧区政府</option>
+			        <option value="n43">李沧--李沧广场</option>
+			        <option value="n44">李沧--李村公园</option>
+			        <option value="n45">李沧--九水路立交桥</option>
+			        <option value="n5">李沧--侯家庄</option>
+			        <option value="n6">李沧--永安路</option>
+			        <option value="n7">李沧--百通花园</option>
+			        <option value="n8">李沧--百通馨园</option>
+			        <option value="n9">崂山--颐中体育场</option>
+			        <option value="n10">崂山--辽阳路立交桥</option>
+			        <option value="n11">崂山--青岛国际啤酒城</option>
+			        <option value="n12">崂山--青岛科技大学东部校区</option>
+			        <option value="n13">崂山--石老人</option>
+			        <option value="n14">崂山--青岛市博物馆</option>
+			        <option value="n15">崂山--海大崂山校区</option>
+			        <option value="n16">崂山--中韩</option>
+			        <option value="n17">崂山--沙子口</option>
+			        <option value="n19">崂山--北村</option>
+			        <option value="n6">城阳</option>
+			        <option value="n7">黄岛</option>
+			        <option value="n8">即墨</option>
+			        <option value="n9">胶州</option>
+			        <option value="n10">胶南</option>
+			        <option value="n11">平度</option>
+			        <option value="n12">莱西</option>
+			        </select>
+			      <font class="y2"  style="float:left;">
+			        请家在青岛市区或住在校外的教员填写</font>
+			      </th>
+			    </tr>
+			    <tr>
+			      <th>
+			      <label for="email"><font color="red" class="cc2">*</font>
+			      <font class="cc2">Email：</font></label>
+			      </th>
+			      <th>
+			        <input type="email" size="30" id="email" required placeholder="请输入邮箱地址" style="float:left;">
+			        <font class="y2" color="blue" style="float:left;">
+			        (为通知合适您的家教及找回密码，请认真填写)</font>
+			      </th>
+			    </tr>
+			    <tr>
+			      <th>
+			      <label for="qq"><font class="cc2">QQ：</font></label>
+			      </th>
+			      <th>
+			        <input type="text" size="30"  id="qq" required placeholder="请输入QQ" style="float:left;">
+			      </th>
+			    </tr>
+			    <tr>
+			      <th>
+			      <label for="address"><font class="cc2">详细地址：</font></label>
+			      </th>
+			      <th>
+			        <input type="text" size="30" id="address" required placeholder="请输入地址" style="float:left;">
+			        <font class="y2" color="blue" style="float:left;">
+			        (以方便我们给您寄送家教相关资料及协议等。)</font>
+			      </th>
+			    </tr>
+			    <tr>
+			      <th  colspan="2" align="left" style="background:rgba(96, 125, 139, 0.14);">
+			      <font  class="cc3" >家教信息</font>   
+			      </th>   
+			    </tr>
+			    <tr>
+			      <th>
+			      <font color="red" class="cc2">*</font>
+			      <font class="cc2">普通话：</font>
+			      </th>
+			      <th>
+			        <select name="relev"  style="float:left;">
+			        <option value="r1" selected>一般</option>
+			        <option value="r2">标准</option>
+			        <option value="r3">较差</option>
+			        </select>
+			      </th>
+			    </tr>
+			    <tr>
+			      <th>
+			      <font color="red" class="cc2">*</font>
+			      <font class="cc2">第一外语：</font>
+			      </th>
+			      <th>
+			        <select name="say1" style="float:left;margin: 3px 0px 0px 0px;" >
+			        <option value="s1" selected>英语</option>
+			        <option value="s1">日语</option>
+			        <option value="s1">德语</option>
+			        <option value="s1">韩语</option>
+			        <option value="s1">西班牙语</option>
+			        <option value="s1">葡萄牙语</option>
+			        <option value="s1">法语</option>
+			        <option value="s1">俄语</option>
+			        <option value="s1">阿拉伯语</option>
+			        <option value="s1">其他</option>
+			        </select>
+			        <select name="" style="float:center;margin: 0px 400px 0px 0px;">
+			        <option value="r1" selected >一般</option>
+			        <option value="r2">标准</option>
+			        <option value="r3">较差</option>
+			        </select>
+			        
+			      </th>
+			    </tr>
+			    <tr>
+			      <th>
+			      <font class="cc2">第二外语：</font>
+			      </th>
+			      <th>
+			        <select name="say2" style="float:left;margin: 3px 0px 0px 0px;" >
+			        <option value="s0" selected>无</option>
+			        <option value="s1">英语</option>
+			        <option value="s1">日语</option>
+			        <option value="s1">德语</option>
+			        <option value="s1">韩语</option>
+			        <option value="s1">西班牙语</option>
+			        <option value="s1">葡萄牙语</option>
+			        <option value="s1">法语</option>
+			        <option value="s1">俄语</option>
+			        <option value="s1">阿拉伯语</option>
+			        <option value="s1">其他</option>
+			        </select>
+			        <select name="relev" style="float:left;margin:3px 300px 0px 11px;">
+			        <option value="r1" selected >一般</option>
+			        <option value="r2">标准</option>
+			        <option value="r3">较差</option>
+			        </select>
+			        
+			      </th>
+			    </tr>
+			    <tr>
+			      <th>
+			      <font color="red" class="cc2">*</font>
+			      <label for="te" ><font class="cc2">自我描述与特长展示：</font></label>
+			      </th>
+			      <th>
+			        <textarea name="zhanshi" rows="7" cols="60" style="float:left;" id="te" required placeholder="请描述您的特长"></textarea>
+			        <font class="y2" color="blue" style="float:left;text-align:left;">
+			        全面展示你的实力和优势特长，增加你简历的含金量！例如：在比赛中得过什么重要奖项，获得过什么奖学金，取得什么样的高考成绩，有哪些能证明你能力的资格证书之类。 不得少于50字，不得超过500字。家长选择你的重要依据，请认真填写！</font>
+			      </th>
+			    </tr>
+			    <tr>
+			      <th>
+			      <label for="family" ><font class="cc2">家教经历（教学成果）：</font></label>
+			      </th>
+			      <th>
+			        <textarea name="zhanshi" rows="7" cols="60" style="float:left;" id="family" required placeholder="请描述家庭经历"></textarea>
+			        <font class="y2" color="blue" style="float:left;text-align:left;">
+			        这些内容是对您教学水平最有力和最直接的反映！是学员选择您的一项重要依据。字数500字以内。最好说明辅导时间、学生年级、辅导效果。可参考以下形式：2008年10月-12月，市南区初三学生英语，期终考试从全班第30名上升至第10名，英语从60分提升到80分。</font>
+			      </th>
+			    </tr>
+			    <tr>
+			      <th>
+			      <font color="red" class="cc2">*</font>
+			      <font class="cc2">可辅导的科目（不超过10项）：</font>
+			      </th>
+			      <th>
+			      <font class="y1" color="red" style="float:left;">
+			      教员在选择中考、高考、雅思、新概念等有难度的科目时应量力而行，最好有实际辅导经验。</font>
+			      <!--问题五、这部分多选框字体样式该如何调试？我在使用float时总是一行排好了，其他就都乱了，怎么都弄不好？-->
+			      <div style="float:left;">
+			        <p align="left" class="y3">---小学---</p>
+			        <label><input type="checkbox" /><font class="cc2">小学语文</font></label>
+			        <label><input type="checkbox" /><font class="cc2">小学数学</font></label>
+			        <label><input type="checkbox" /><font class="cc2">小学英语</font></label>
+			        <label><input type="checkbox" /><font class="cc2">小学奥数</font></label>
+			        <label><input type="checkbox" /><font class="cc2">小学全科</font></label>
+			        </div>
+			      <div style="float:left;text-align: left;">
+			      <p align="left" class="y3">---初中---</p>
+     <label><input type="checkbox" /><font class="cc2">初中语文</font></label>
+     <label><input type="checkbox" /><font class="cc2">初中英语</font></label>
+     <label><input type="checkbox" /><font class="cc2">初中数学</font></label>
+     <label><input type="checkbox" /><font class="cc2">初中物理</font></label>
+     <label><input type="checkbox" /><font class="cc2">初中化学</font></label>
+     <label><input type="checkbox" /><font class="cc2">初中地理</font></label>
+     <label><input type="checkbox" /><font class="cc2">初中生物</font></label>
+    <label><input type="checkbox" /><font class="cc2">初中数理化</font></label>
+     <label><input type="checkbox" /><font class="cc2">初中全科</font></label>
+     <label><input type="checkbox" /><font class="cc2">初中奥数</font></label>
+     <label><input type="checkbox" /><font class="cc2">中学语文</font></label>
+     <label><input type="checkbox" /><font class="cc2">中学数学</font></label>
+     <label><input type="checkbox" /><font class="cc2">中学英语</font></label>
+     <label><input type="checkbox" /><font class="cc2">中学物理</font></label>
+     <label><input type="checkbox" /><font class="cc2">中学化学</font></label>
+     <label><input type="checkbox" /><font class="cc2">中考数理化</font></label>
+     <label><input type="checkbox" /><font class="cc2">中考全科</font></label>
+     <label><input type="checkbox" /><font class="cc2">小学语文</font></label>
+     <label><input type="checkbox" /><font class="cc2">中考心理辅导</font></label>
+
+			    </div>
+			      <div style="float:left;text-align: left;">
+			        <p align="left" class="y3">---高中---</p>
+	<label><input type="checkbox" /><font class="cc2">高一高二语文</font></label>
+     <label><input type="checkbox" /><font class="cc2">高一高二英语</font></label>
+     <label><input type="checkbox" /><font class="cc2">高一高二数学</font></label>
+     <label><input type="checkbox" /><font class="cc2">高一高二物理</font></label>
+     <label><input type="checkbox" /><font class="cc2">高一高二化学</font></label>
+     <label><input type="checkbox" /><font class="cc2">高一高二地理</font></label>
+     <label><input type="checkbox" /><font class="cc2">高一高二生物</font></label>
+    <label><input type="checkbox" /><font class="cc2">高考语文</font></label>
+     <label><input type="checkbox" /><font class="cc2">高考英语</font></label>
+     <label><input type="checkbox" /><font class="cc2">高考数学</font></label>
+     <label><input type="checkbox" /><font class="cc2">高考物理</font></label>
+     <label><input type="checkbox" /><font class="cc2">高考化学</font></label>
+     <label><input type="checkbox" /><font class="cc2">高考数理化</font></label>
+     <label><input type="checkbox" /><font class="cc2">高考美术</font></label>
+     <label><input type="checkbox" /><font class="cc2">高考理综</font></label>
+     <label><input type="checkbox" /><font class="cc2">高考心理辅导</font></label>
+         </div>
+          <div style="float:left;text-align: left;">
+			        <p align="left" class="y3">---大学---</p>
+	<label><input type="checkbox" /><font class="cc2">高等数学</font></label>
+     <label><input type="checkbox" /><font class="cc2">考研数学</font></label>		       			        
+			        </div>
+         <div style="float:left;text-align: left;">
+			        <p align="left" class="y3">---英语---</p>
+	<label><input type="checkbox" /><font class="cc2">英语口语</font></label>
+     <label><input type="checkbox" /><font class="cc2">新概念英语</font></label>
+     <label><input type="checkbox" /><font class="cc2">牛津英语</font></label>
+     <label><input type="checkbox" /><font class="cc2">英语四级</font></label>
+     <label><input type="checkbox" /><font class="cc2">英语六级</font></label>
+     <label><input type="checkbox" /><font class="cc2">GRE</font></label>
+     <label><input type="checkbox" /><font class="cc2">TOEFL</font></label>
+     <label><input type="checkbox" /><font class="cc2">雅思</font></label>
+     <label><input type="checkbox" /><font class="cc2">初级商务英语</font></label>
+     <label><input type="checkbox" /><font class="cc2">高级商务英语</font></label>
+     <label><input type="checkbox" /><font class="cc2">剑桥英语</font></label>
+   <div style="float:left;text-align: left;">
+			        <p align="left" class="y3">---小语种---</p>
+		<label><input type="checkbox" /><font class="cc2">牛津英语</font></label>
+     <label><input type="checkbox" /><font class="cc2">日语</font></label>
+     <label><input type="checkbox" /><font class="cc2">法语</font></label>
+     <label><input type="checkbox" /><font class="cc2">德语</font></label>
+     <label><input type="checkbox" /><font class="cc2">韩语</font></label>
+     <label><input type="checkbox" /><font class="cc2">俄语</font></label>	 
+     <label><input type="checkbox" /><font class="cc2">西班牙语</font></label>
+     <label><input type="checkbox" /><font class="cc2">葡萄牙语</font></label>
+     <label><input type="checkbox" /><font class="cc2">阿拉伯语</font></label>
+     
+			        </div>
+	 <div style="float:left;text-align: left;">		        
+			        <p align="left" class="y3">---艺术---</p>
+	<label><input type="checkbox" /><font class="cc2">摄影</font></label>
+     <label><input type="checkbox" /><font class="cc2">书法</font></label>
+     <label><input type="checkbox" /><font class="cc2">美术</font></label>
+     <label><input type="checkbox" /><font class="cc2">漫画</font></label>
+     <label><input type="checkbox" /><font class="cc2">中国话</font></label>
+     <label><input type="checkbox" /><font class="cc2">西洋画</font></label>
+     <label><input type="checkbox" /><font class="cc2">交谊舞</font></label>
+     <label><input type="checkbox" /><font class="cc2">芭蕾舞</font></label>
+     <label><input type="checkbox" /><font class="cc2">声乐（美声）</font></label>
+     <label><input type="checkbox" /><font class="cc2">声乐（民族）</font></label>
+     
+    </div>
+	 <div style="float:left;text-align: left;">		        
+			        <p align="left" class="y3">---计算机---</p>
+<label><input type="checkbox" /><font class="cc2">计算机操作基础</font></label>
+     <label><input type="checkbox" /><font class="cc2">数据库</font></label>
+     <label><input type="checkbox" /><font class="cc2">网页设计与制作</font></label>
+     <label><input type="checkbox" /><font class="cc2">计算机应用能力</font></label>
+     <label><input type="checkbox" /><font class="cc2">Linux或Unix</font></label>
+     <label><input type="checkbox" /><font class="cc2">网站开发</font></label>
+     <label><input type="checkbox" /><font class="cc2">图像处理软件</font></label>
+     <label><input type="checkbox" /><font class="cc2">动画制作</font></label>
+     <label><input type="checkbox" /><font class="cc2">程序设计</font></label>
+     <label><input type="checkbox" /><font class="cc2">程序设计高级</font></label>
+     <label><input type="checkbox" /><font class="cc2">微软证书</font></label>			    
+			        </div>
+	 <div style="float:left;text-align: left;">		        
+					<p align="left" class="y3">---棋类/体育---</p>
+	<label><input type="checkbox" /><font class="cc2">围棋</font></label>
+     <label><input type="checkbox" /><font class="cc2">中国象棋</font></label>
+     <label><input type="checkbox" /><font class="cc2">国际象棋</font></label>
+     <label><input type="checkbox" /><font class="cc2">中国武术散打</font></label>
+     <label><input type="checkbox" /><font class="cc2">拳击</font></label>
+     <label><input type="checkbox" /><font class="cc2">截拳道</font></label>
+     <label><input type="checkbox" /><font class="cc2">跆拳道</font></label>
+     <label><input type="checkbox" /><font class="cc2">空手道</font></label>
+     <label><input type="checkbox" /><font class="cc2">瑜伽</font></label>
+     <label><input type="checkbox" /><font class="cc2">滑冰旱冰</font></label>
+     <label><input type="checkbox" /><font class="cc2">游泳</font></label>
+     <label><input type="checkbox" /><font class="cc2">乒乓球</font></label>
+     <label><input type="checkbox" /><font class="cc2">羽毛球</font></label>
+     <label><input type="checkbox" /><font class="cc2">网球</font></label>
+     
+			        </div>
+			      </div></th>
+			    </tr>
+
+
+			    <tr>
+			      <th>
+			   <label for="kemu"><font color="red" class="cc2">*</font>
+			      <font class="cc2">最擅长的科目:</font></label>
+			      </th>
+			      <th>
+			        <input type="text" name="" size="30" id="kemu" required placeholder="请输入最擅长的科目" style="float:left;" >
+			        <font class="y2" color="blue" style="float:left;" >
+			        请填写你最拿手、最有经验的科目，例如：“英语、初中数理化、高三数学”，越具体越好，不超过三项</font>
+			      </th>
+			    </tr>
+			    <tr>
+			      <th>
+			      <font color="red" class="cc2">*</font>
+			      <font class="cc2">方便授课区域：</font>
+			      </th>
+			      <th>
+			      <div style="float:left;text-align: left;">
+			      <p align="left" class="y3">---市南---
+     <label><input type="checkbox" /><font class="cc2">市南全区</font></label></p>
+     <label><input type="checkbox" /><font class="cc2">团岛</font></label>
+     <label><input type="checkbox" /><font class="cc2">火车站（栈桥）</font></label>
+     <label><input type="checkbox" /><font class="cc2">中山路</font></label>
+     <label><input type="checkbox" /><font class="cc2">海大鱼山校区（大学路）</font></label>
+     <label><input type="checkbox" /><font class="cc2">汇泉广场</font></label>
+     <label><input type="checkbox" /><font class="cc2">八大关</font></label>
+    <label><input type="checkbox" /><font class="cc2">市政府</font></label>
+     <label><input type="checkbox" /><font class="cc2">书城</font></label>
+     <label><input type="checkbox" /><font class="cc2">广大大厦（大福源）</font></label>
+     <label><input type="checkbox" /><font class="cc2">澳柯玛立交桥（百安居）</font></label>
+     <label><input type="checkbox" /><font class="cc2">青岛大学（麦岛）</font></label>
+     <label><input type="checkbox" /><font class="cc2">东部市立医院</font></label>
+     <label><input type="checkbox" /><font class="cc2">湛山</font></label>     
+			        </div>
+
+		<div style="float:left;text-align: left;">	
+		<p align="left" class="y3">---市北---
+     <label><input type="checkbox" /><font class="cc2">市北全区</font></label></p>
+     <label><input type="checkbox" /><font class="cc2">小港</font></label>
+     <label><input type="checkbox" /><font class="cc2">电子信息城</font></label>
+     <label><input type="checkbox" /><font class="cc2">台东</font></label>
+     <label><input type="checkbox" /><font class="cc2">内蒙古长途汽车站</font></label>
+     <label><input type="checkbox" /><font class="cc2">错埠岭小区</font></label>
+     <label><input type="checkbox" /><font class="cc2">浮山后</font></label>
+    <label><input type="checkbox" /><font class="cc2">山东路家乐福</font></label>
+     <label><input type="checkbox" /><font class="cc2">敦化路</font></label>
+     <label><input type="checkbox" /><font class="cc2">青岛图书馆</font></label>
+			        </div>
+		<div style="float:left;text-align: left;">	
+		<p align="left" class="y3">---四方---
+     <label><input type="checkbox" /><font class="cc2">四方全区</font></label></p>
+     <label><input type="checkbox" /><font class="cc2">四方利群</font></label>
+     <label><input type="checkbox" /><font class="cc2">青岛理工大学（抚顺路）</font></label>
+     <label><input type="checkbox" /><font class="cc2">兴隆路</font></label>
+     <label><input type="checkbox" /><font class="cc2">杭州路</font></label>
+     <label><input type="checkbox" /><font class="cc2">瑞昌路</font></label>
+     <label><input type="checkbox" /><font class="cc2">宜昌路</font></label>
+    <label><input type="checkbox" /><font class="cc2">孤山路</font></label>
+     <label><input type="checkbox" /><font class="cc2">东方家园（公交四公司）</font></label>
+     <label><input type="checkbox" /><font class="cc2">水清沟（市肿瘤医院）</font></label>
+     <label><input type="checkbox" /><font class="cc2">青岛科技大学（胜利桥）</font></label>
+     <label><input type="checkbox" /><font class="cc2">海琴广场</font></label>
+     <label><input type="checkbox" /><font class="cc2">北岭</font></label>
+     <label><input type="checkbox" /><font class="cc2">杨家群</font></label>
+			        </div>
+		<div style="float:left;text-align: left;">
+		<p align="left" class="y3">---李沧---
+     <label><input type="checkbox" /><font class="cc2">李沧全区</font></label></p>
+     <label><input type="checkbox" /><font class="cc2">太原路</font></label>
+     <label><input type="checkbox" /><font class="cc2">沧口</font></label>
+     <label><input type="checkbox" /><font class="cc2">振华路立交桥</font></label>
+     <label><input type="checkbox" /><font class="cc2">李沧区政府</font></label>
+     <label><input type="checkbox" /><font class="cc2">李沧广场</font></label>
+     <label><input type="checkbox" /><font class="cc2">李村公园</font></label>
+    <label><input type="checkbox" /><font class="cc2">九水路立交桥</font></label>
+     <label><input type="checkbox" /><font class="cc2">侯家庄</font></label>
+     <label><input type="checkbox" /><font class="cc2">永安路</font></label>
+     <label><input type="checkbox" /><font class="cc2">百通花园</font></label>
+     <label><input type="checkbox" /><font class="cc2">百馨花园</font></label>
+			        </div>
+		<div style="float:left;text-align: left;">
+		<p align="left" class="y3">---崂山---
+     <label><input type="checkbox" /><font class="cc2">崂山全区</font></label></p>
+     <label><input type="checkbox" /><font class="cc2">颐中体育场</font></label>
+     <label><input type="checkbox" /><font class="cc2">辽阳路立交桥</font></label>
+     <label><input type="checkbox" /><font class="cc2">青岛国际啤酒城</font></label>
+     <label><input type="checkbox" /><font class="cc2">青岛科技大学东部校区</font></label>
+     <label><input type="checkbox" /><font class="cc2">石老人</font></label>
+     <label><input type="checkbox" /><font class="cc2">青岛市博物馆</font></label>
+    <label><input type="checkbox" /><font class="cc2">海大崂山校区</font></label>
+     <label><input type="checkbox" /><font class="cc2">中韩</font></label>
+     <label><input type="checkbox" /><font class="cc2">永安路</font></label>
+     <label><input type="checkbox" /><font class="cc2">沙口子</font></label>
+     <label><input type="checkbox" /><font class="cc2">北村</font></label>
+			        </div>
+			        <div style="float:left;text-align: left;">
+			        <p align="left" class="y3">---城阳---
+			        <label><input type="checkbox" class="cc2"/>城阳</label></p>
+			        <p align="left" class="y3">---黄岛---
+			        <label><input type="checkbox" class="cc2"/>黄岛</label></p><p align="left" class="y3">---即墨---
+			        <label><input type="checkbox" class="cc2"/>即墨</label></p><p align="left" class="y3">---胶州---
+			        <label><input type="checkbox" class="cc2"/>胶州</label></p><p align="left" class="y3">---胶南---
+			        <label><input type="checkbox" class="cc2"/>胶南</label></p><p align="left" class="y3">---平度---
+			        <label><input type="checkbox" class="cc2"/>平度</label></p><p align="left" class="y3">---莱西---
+			        <label><input type="checkbox" class="cc2"/>莱西</label></p>
+			        </div>
+			      </th>
+			      
+			    </tr>
+			    <tr>
+			      <th>
+			      <label for="shijian"><font color="red" class="cc2">*</font>
+			      <font class="cc2">可授课时间:</font></label>
+			      </th>
+			      <th>       
+			        <input type="text"  style="float:left;" size="30" required id="shijian" placeholder="授课无时间限制">
+			        <font  class="y2" color="blue" style="float:left;">
+			        （请注意及时更新授课时间）</font>
+			      </th>
+			      
+			    </tr>
+			    <tr>
+			      <th>
+			      <font color="red" class="cc2">*</font>
+			      <font class="cc2">辅导方式：</font>
+			      </th>
+			      <th >
+			      <div style="float:left;">
+
+			        <label><input type="checkbox" /><font class="cc2">教院上门</font></label>
+			        <label><input type="checkbox" name=""/><font class="cc2">学院上门</font></label>
+			        <label><input type="checkbox" name=""/><font class="cc2">网上辅导</font></label>
+			        <label><input type="checkbox" name=""/><font class="cc2">可协商</font></label>
+			        </div>
+			      </th>
+			    </tr>
+			    <tr>
+			      <th>
+			      <label for="money1"><font color="red" class="cc2">*</font>
+			      <font class="cc2">薪酬要求：</font></label>
+			      </th>
+			      <th>
+			        <textarea name="money"  style="float:left;" rows="7" cols="60" id="money1" required placeholder="执行青岛家教网薪水标准"></textarea>
+			        <font class="y2" color="blue" style="float:left;text-align:left;">
+			        默认为接受青岛家教网的课时费标准（查看详细的报酬标准)，如果不同意，也可以在表中列出自己的薪酬要求，如：小学**元/时、小学奥数**元/时、初一**元/时、高三**元/时、钢琴**元/时、陪读**元/月。</font>
+			      </th>
+			    </tr>
+			    </form></tbody>
+			    <tfoot>
+			    <tr>
+			      <th colspan="2">
+			        <input type="submit" value="提交"  style="width:100px;">
+			      </th>  
+			    </tr>
+			    </tfoot>
+			
+
+			</table>
+			<!--表格底部-->
+				<font class="foot" weight="lighter" align="center">Copyright © 2003～2008 版权所有 青岛家教网</font>
+
+			</div>
+		</div>
+	</body>
+	</html>
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>简易计算器</title>
+	<style type="text/css">
+		.calcu{
+			border: 1px solid #999;
+		    border-radius: 2px;
+		    width: 80px;
+		    height: auto;
+		    cursor: pointer;
+		}
+		.chushu,.beichu{
+			border: 1px solid #999;
+		    border-radius: 2px;
+		    width: 150px;
+		    height: auto;
+		}
+		select{
+			border: 1px solid #999;
+		    border-radius: 2px;
+		    width: 50px;
+		    height: auto;
+		}
+	</style>
+	<script type="text/javascript">
+	
+	
+	</script>
+</head>
+<body>
+    X:
+    <input type="text" id="num1" class="chushu" name="num1" />
+    
+    <select id="op">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    Y:
+    <input type="text" id="num2" class="beichu" name="num2"/> 
+    = <span id="result"> </span>
+    <button onclick="cale()" class="calcu" id="butt">计算</button>
+    <script src="js/calculator.js"></script>
+</body>
+
+</html>

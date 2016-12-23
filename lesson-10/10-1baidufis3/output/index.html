@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+    <!--在手机浏览器上控制布局-->
+    <title>百度一下，你就知道</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="/font/iconfont_df7cad3.css"/>
+    <link rel="stylesheet" type="text/css" href="/stylesheet/baidu_348f211.css" />
+    <!--<link rel="stylesheet" type="text/css" href="./stylesheet/moblie.css" media="screen and (max-width:400px)"/>-->
+    <!--[if IE]>
+        <script src="http://cdn.bootcss.com/html5shiv/r29/html5.js"></script>
+        <style>
+            body {behavior:url("/csshover3.htc");}
+        </style>
+    <![endif]-->  
+    <script type="text/javascript" src="/js/jquery-3.1.1.min_251cfed.js"></script>
+     
+</head>
+<body>
+<!--容器-->
+
+<div class="container">      
+    <!--pc端样式-->
+    <div class="pc">
+        <div class="wrap">
+            <header>
+        <!-- 天气 -->
+       
+            <div class="weather-wrapper" id="weather">
+             	<iframe width="430" scrolling="no" height="18" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=1&icon=1&wind=0&num=1"></iframe>
+            </div>
+        <!-- 宝箱换肤消息 -->
+	<div class="icons">
+	    <ul>
+	        <li>
+	            <a href="https://www.baidu.com/?tn=90823477_hao_pg">宝箱</a>
+	        </li>
+	        <li>
+	            <a id="click-change" href="#">换肤</a>
+	        </li>
+	        <li id="news">
+	            <a href="#">消息</a>
+	            <div class="icons-news">
+	                <div class="nonews">
+	                    <p>您目前没有新消息</p>
+	                    <div class="news-img">
+	                        <img src="/images/20161204204526.png" alt="">
+	                        <a href="http://www.baidu.com/home/page/show/pagesetting#msg_setting">
+	                            <img src="/images/20161204204611.png" style="margin-left: 50px;">
+	                        </a>
+	                    </div>
+	                </div>
+	            </div>
+	        </li>
+	    </ul>
+	    <!-- 换肤 -->
+	    <div class="pos-max-box" style="height: 632px; display: block;"></div>
+	    <div class="pop-box">
+	        <div class="pos-header">
+	            <ul class="pos-nav">
+	                <li class="current">热门</li>
+	                <li>游戏</li>
+	                <li>女神降临</li>
+	                <li>明星</li>
+	                <li>风景</li>
+	                <li>简约</li>
+	                <li>小清新</li>
+	                <li class="left-bu">自定义</li>
+	                <li>最近使用</li>
+	            </ul>
+	            <p><a href="javascript:;" id="nouse"></a></p>
+	            <div class="hide-but"><span></span><a href="#">收起</a></div>
+	        </div>
+	        <div class="pos-content">
+	            <div class="bos-test-con">
+	                <div class="pos-hade">
+	                    <div class="poa-lisa">
+	                        <ul id="facefirst">
+	                            <li class="facein"><a href="#">Anglebaby</a></li>
+	                            <li><a href="#">高圆圆</a></li>
+	                            <li><a href="#">李冰冰</a></li>
+	                            <li><a href="#">林心如</a></li>
+	                        </ul>
+	                        <div class="poa-con poa-con-block" id="moshover">
+	                            <ul>
+	                                <li class="max-li pos-of0"><img src="/images/400_81b2654.jpg" alt=""></li>
+	                                <li class="min-li pos-of1"><img src="/images/401_4e80a98.jpg" alt=""></li>
+	                                <li class="min-li pos-of2"><img src="/images/402_868fc02.jpg" alt=""></li>
+	                                <li class="min-li pos-of3"><img src="/images/403_05a019a.jpg" alt=""></li>
+	                                <li class="min-li pos-of4"><img src="/images/404_a288c42.jpg" alt=""></li>
+	                                <li class="min-li pos-of5"><img src="/images/405_42ce31f.jpg" alt=""></li>
+	                                <li class="min-li pos-of6"><img src="/images/406_81b1be7.jpg" alt=""></li>
+	                                <li class="min-li pos-of7"><img src="/images/407_a2dcd10.jpg" alt=""></li>
+	                                <li class="max-li pos-of8"><img src="/images/408_c3d47d4.jpg" alt=""></li>
+	                                <li class="min-li pos-of9"><img src="/images/409_4580e71.jpg" alt=""></li>
+	                                <li class="min-li pos-of10"><img src="/images/410_ecf71ec.jpg" alt=""></li>
+	                                <li class="min-li pos-of11"><img src="/images/411_ded157d.jpg" alt=""></li>
+	                            </ul> 
+	                        </div>
+
+	                        <div class=" poa-con">
+	                            <ul>
+	                                <li class="max-li pos-of0"><img src="/images/412_030f24c.jpg" alt=""></li>
+	                                <li class="min-li pos-of1"><img src="/images/413_2b077f4.jpg" alt=""></li>
+	                                <li class="min-li pos-of2"><img src="/images/414_067b966.jpg" alt=""></li>
+	                                <li class="min-li pos-of3"><img src="/images/415_19d7919.jpg" alt=""></li>
+	                                <li class="min-li pos-of4"><img src="/images/416_01d31d5.jpg" alt=""></li>
+	                                <li class="min-li pos-of5"><img src="/images/417_8fe5d19.jpg" alt=""></li>
+	                                <li class="min-li pos-of6"><img src="/images/418_7c770db.jpg" alt=""></li>
+	                                <li class="min-li pos-of7"><img src="/images/419_1595ade.jpg" alt=""></li>
+	                                <li class="max-li pos-of8"><img src="/images/420_e466334.jpg" alt=""></li>
+	                                <li class="min-li pos-of9"><img src="/images/421_b399f23.jpg" alt=""></li>
+	                                <li class="min-li pos-of10"><img src="/images/422_801feca.jpg" alt=""></li>
+	                                <li class="min-li pos-of11"><img src="/images/423_6f426af.jpg" alt=""></li>
+	                            </ul>
+	                        </div>
+	                        <div class=" poa-con">
+	                            <ul>
+	                                <li class="max-li pos-of0"><img src="/images/424_08261ab.jpg" alt=""></li>
+	                                <li class="min-li pos-of1"><img src="/images/425_47b34de.jpg" alt=""></li>
+	                                <li class="min-li pos-of2"><img src="/images/426_9d2e280.jpg" alt=""></li>
+	                                <li class="min-li pos-of3"><img src="/images/427_e22d503.jpg" alt=""></li>
+	                                <li class="min-li pos-of4"><img src="/images/428_4d41ac2.jpg" alt=""></li>
+	                                <li class="min-li pos-of5"><img src="/images/429_11dcb95.jpg" alt=""></li>
+	                                <li class="min-li pos-of6"><img src="/images/430_62094a4.jpg" alt=""></li>
+	                                <li class="min-li pos-of7"><img src="/images/431_947a385.jpg" alt=""></li>
+	                                <li class="max-li pos-of8"><img src="/images/432_d7b756f.jpg" alt=""></li>
+	                                <li class="min-li pos-of9"><img src="/images/433_9ad440d.jpg" alt=""></li>
+	                                <li class="min-li pos-of10"><img src="/images/434_6eff89e.jpg" alt=""></li>
+	                                <li class="min-li pos-of11"><img src="/images/435_d910449.jpg" alt=""></li>
+	                            </ul>
+	                        </div>
+	                        <div class=" poa-con">
+	                             <ul>
+	                                <li class="max-li pos-of0"><img src="/images/437_f967378.jpg" alt=""></li>
+	                                <li class="min-li pos-of1"><img src="/images/438_b24856f.jpg" alt=""></li>
+	                                <li class="min-li pos-of2"><img src="/images/439_9b0985a.jpg" alt=""></li>
+	                                <li class="min-li pos-of3"><img src="/images/440_5c08fd0.jpg" alt=""></li>
+	                                <li class="min-li pos-of4"><img src="/images/441_d219ada.jpg" alt=""></li>
+	                                <li class="min-li pos-of5"><img src="/images/442_5dad9d1.jpg" alt=""></li>
+	                                <li class="min-li pos-of6"><img src="/images/443_a2d3fea.jpg" alt=""></li>
+	                                <li class="min-li pos-of7"><img src="/images/444_f9c78f4.jpg" alt=""></li>
+	                                <li class="max-li pos-of8"><img src="/images/445_fefb7e7.jpg" alt=""></li>
+	                                <li class="min-li pos-of9"><img src="/images/446_1cf3e01.jpg" alt=""></li>
+	                                <li class="min-li pos-of10"><img src="/images/447_7739e7c.jpg" alt=""></li>
+	                                <li class="min-li pos-of11"><img src="/images/448_cf0a9b9.jpg" alt=""></li>
+	                            </ul>
+	                        </div>
+	                    </div>
+	                    <div class="pos-in-this">
+	                        <img src="/images/400_81b2654.jpg" alt="">
+	                        <div class="pas1"></div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+
+
+        		
+        		
+        		
+        </div>
+            <p style="float: left;color:#999;margin-left: -114px;margin-top: 4px;">|</p>
+        <!-- 导航 -->
+            <nav style="text-align:right;font-size:15px;font-weight:bold;">
+                <div class="head-nav">
+                	<a href="http://www.nuomi.com/?cid=002540">糯米</a>
+                    <a href="http://news.baidu.com/">新闻</a>
+                    <a href="http://www.hao123.com/">hao123</a>
+                    <a href="http://map.baidu.com/">地图</a>
+                    <a href="http://v.baidu.com/?fr=bd">视频</a>
+                    <a href="http://tieba.baidu.com/">贴吧</a>
+                    <a id="desgin" href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F">登录</a>
+                    <a id="order" href="http://www.baidu.com/gaoji/preferences.html">设置</a>
+                    <div id="more" class="more" style="float:right;">
+                        <p class="morep">
+                        	<a href="http://www.baidu.com/gaoji/preferences.html" style="color: white;text-decoration: none;padding-right: 14px;font-weight: lighter;">更多產品</a>
+                        </p>
+                        <ul class="list">
+                            <li><a href="http://music.baidu.com/" style="color:black;font-weight: lighter;"><i class="i1" ></i>音乐</a></li>
+                            <li><a href="http://image.baidu.com/" style="color:black;font-weight: lighter;"><i class="i2"></i>图片</a></li>
+                            <li><a href="http://zhidao.baidu.com/" style="color:black;font-weight: lighter;"><i class="i3"></i>知道</a></li>
+                            <li><a href="http://wenku.baidu.com/" style="color:black;font-weight: lighter;"><i class="i4"></i>文库</a></li>
+                            <li><a href="http://top.baidu.com/" style="color:black;font-weight: lighter;"><i class="i5"></i>风云榜</a></li>
+                            <li><a href="https://www.baidu.com/more/" style="color:black;font-weight: lighter;">全部产品</a></li>
+                        </ul>
+                    </div>
+                </div>  
+                <!-- 下拉菜单 -->
+                <div id="list-desgin">
+                	<ul >
+                		<li>
+                			<a href="http://vip.baidu.com/pcui/show/ucenterindex?vip_frm=super_account">我的vip</a>
+                		</li>
+                		<li>
+                			<a href="http://passport.baidu.com/">账号处理</a>
+                		</li>
+                		<li>
+                			<a href="http://i.baidu.com/center">个人中心</a>
+                		</li>
+                		<li>
+                			<a href="https://www.baidu.com/?tn=57095150_8_oem_dg#">意见反馈</a>
+                		</li>
+                		<li>
+                			<a href="https://www.baidu.com/?tn=57095150_8_oem_dg#">退出</a>
+                		</li>
+                	</ul>    	
+                </div>
+                <div id="list-order" style="width: 80px;height: 100px;margin-left: 1200px;">
+                	<ul >
+                		<li><a href="javascript:;">搜索设置</a></li>
+                		<li><a href="https://www.baidu.com/gaoji/advanced.html">高级搜索</a></li>
+                		<li><a href="javascript:;">关闭预测</a></li>
+                		<li><a href="http://i.baidu.com/my/history?from=ps">搜索历史</a></li>
+                	</ul>
+                </div>
+            </nav>
+            </header>
+        <!-- 中间输入框  begin -->
+            <div class="main" style="text-align:center;font-size: 0;">
+                <img src="/images/baidu-logo_63a4e87.jpg" />
+                <form style="width:660px;margin: 10px auto;">
+                   <span style="float:left; display:inline-block;position: relative;width: 540px;height: 40px;">
+                <i style="position: absolute;right:10px;top:10px;background: #fff url(/images/xj.png) no-repeat;width:20px;height:20px; "></i>
+                <input style="width:538px;line-height:38px;height:38px;border:1px solid #ccc;"/>
+                    </span>
+                    <input type="submit" value="百度一下" style="float:left;">
+                </form>
+            </div>
+        <!-- 中间输入框  end -->
+
+
+        <!-- 标签切换   begin -->
+        <div class="Tag-wrapper">
+        <!-- 标签 -->
+        	<div class="tabwrap">
+        		<ul id="tabfirst">
+        			<span class="icon-yonghu iconfont" style="float: left;margin-top: 3px;width: 18px;"></span>
+	        		<li class="tabin">我的关注</li>
+	        		<li>推荐</li>
+	        		<li>导航</li>
+	        		<li>视频</li>
+	        		<li>购物</li>
+	        	</ul>
+	        	<i id="tab-btn"></i>
+	        	<div class="tab-btn" >
+	        		<div class="tab-btn1">
+	        			<p>已订阅频道</p>
+	        			<span>我的关注</span>
+	        			<span>推荐</span>
+	        			<span>导航</span>
+	        			<span>视频</span>
+	        			<span>购物</span>
+	        		</div>
+	        		<div class="tab-btn2">
+	        			<p>未订阅频道</p>
+	        			<span>体育</span>
+	        			<span>小说</span>
+	        			<span>音乐</span>
+	        			
+	        		</div>
+	        		<div class="tab-btn3">
+	        			<a href="https://www.baidu.com/?tn=90823477_hao_pg#">
+	        				<span>情景推荐</span>
+	        			</a>
+	        			<a href="https://www.baidu.com/?tn=90823477_hao_pg#">
+	        				<input type="checkbox">隐藏频道
+	        			</a>
+	        		</div>
+	        	</div>
+        	</div>
+        	
+				
+        <!-- 我的关注 -->
+        	<div class=" tabcontent tabcontent1 tabcontentfrist ">
+        		<ul>
+        			<i class="icon1"></i>
+        			<li style="font-weight: bold;border: 1px solid #e6e6e6;">我的导航</li>
+        			<div class="tabadd">
+        				<span>添加</span>
+        				<input type="checkbox" >返利模式
+        				<span class="tabaddtop">置顶</span>
+        			</div>
+        			<li>自定义</li>
+        		</ul>
+        	</div> 
+        <!-- 推荐 -->
+        	<div class=" tabcontent2 tabcontentfrist ">
+        		<div class="recommend-left" id="recommend-left">
+        			<div class="recommend-left-1" id="tabcont-left-one">
+        				<h3>
+        					<a href="http://news.sohu.com/20161203/n474802500.shtml">   人社部明确职工养老保险关系转移接续问题</a>
+        				</h3>
+	        			<div class="recommend-left-time">
+	        				<span>搜狐新闻 </span>
+	        				<span >12-03&nbsp;05:19</span>
+	        				<span class="left-hot" >热点</span>
+	        				<span class="dustbin dustbin-one" data-click="LOG_BTN_DUSTBIN"></span>
+	        			</div>
+        			</div>
+        			<div class="recommend-left-1" id="tabcont-left-two">
+        				<h3>
+        					<a href="http://www.cs.com.cn/xwzx/hwxx/201612/t20161203_5110183.html" style="margin-left: 30px;">   意大利：宪法公投背后潜伏“脱欧”阴影</a>
+        				</h3>
+	        			<div class="recommend-left-time">
+	        				<span>中证网 </span>
+	        				<span >2016-12-03 &nbsp;10:00</span>
+	        				<span class="left-hot" >热点</span>
+	        				<span class="dustbin dustbin-two" data-click="LOG_BTN_DUSTBIN"></span>
+	        			</div>
+        			</div>
+        			<div class="recommend-left-1" id="tabcont-left-three">
+        				<h3>
+        					<a href="http://news.sohu.com/20161203/n474802500.shtml" style="margin-left: 30px;">   特朗普拟建“史上最富”内阁 多名内阁部长身家上亿</a>
+        				</h3>
+	        			<div class="recommend-left-time">
+	        				<span>京华时报 </span>
+	        				<span >2016-12-03&nbsp;03:46</span>
+	        				<span class="left-hot" >热点</span>
+	        				<span class="dustbin dustbin-three" data-click="LOG_BTN_DUSTBIN"></span>
+	        			</div>
+        			</div>
+        			 
+        			<div class="recommend-left-2" id="tabcont-left-four">
+        				<h3>
+        					<a href="http://news.sohu.com/20161203/n474802500.shtml" style="margin-left: 30px;">   特朗普拟建“史上最富”内阁 多名内阁部长身家上亿</a>
+        				</h3>
+        				<img src="/images/u=3235135463,1483090954&fm=58_c3794bd.jpg" >
+        				<img src="/images/u=3087371527,1433847457&fm=58_73819eb.jpg" >
+        				<img src="/images/u=1251875351,3595392960&fm=58_46529b6.jpg" >
+	        			<div class="recommend-left-time" style="margin-top: 17px;">
+	        				<span>搜狐体育 </span>
+	        				<span >12-03 &nbsp;17:37</span>
+	        				<span class="left-hot" >热点</span>
+							<span class="dustbin dustbin-four" data-click="LOG_BTN_DUSTBIN"></span>
+	        			</div>
+
+        			</div>
+        		</div>
+        		<div class="recommend-right">
+        			<div class="reco-right-bank">
+        				<a href="http://top.baidu.com/?fr=mhd_card">实时热点</a>
+        				<i></i>
+        				<span>换一换</span>
+        			</div>
+        			<div class="reco-right-bank2">
+        				<ul>
+        					<li>
+        						<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E6%9E%97%E4%B8%B9%E7%A7%B0%E5%81%9A%E5%A5%BD%E8%87%AA%E5%B7%B1&rsv_idx=2">林丹称做好自己</a>
+        						<span class="new-identity"></span>
+        					</li>
+        					<li>
+        						<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E6%9E%97%E4%B8%B9%E7%A7%B0%E5%81%9A%E5%A5%BD%E8%87%AA%E5%B7%B1&rsv_idx=2">你的名字票房破亿</a>
+        						<span class="new-identity"></span>
+        					</li>
+        					<li>
+        						<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E6%9E%97%E4%B8%B9%E7%A7%B0%E5%81%9A%E5%A5%BD%E8%87%AA%E5%B7%B1&rsv_idx=2">成都失踪少女</a>
+        						<span class="new-identity"></span>
+        					</li>
+        					<li>
+        						<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E6%9E%97%E4%B8%B9%E7%A7%B0%E5%81%9A%E5%A5%BD%E8%87%AA%E5%B7%B1&rsv_idx=2">四岁女童被塞棉絮</a>
+        					</li>
+        					<li>
+        						<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E6%9E%97%E4%B8%B9%E7%A7%B0%E5%81%9A%E5%A5%BD%E8%87%AA%E5%B7%B1&rsv_idx=2">八旬老人被儿打死</a>
+        					</li>
+        					<li>
+        						<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E6%9E%97%E4%B8%B9%E7%A7%B0%E5%81%9A%E5%A5%BD%E8%87%AA%E5%B7%B1&rsv_idx=2">棽丽香公布婚讯</a>
+        					</li>
+        					<li>
+        						<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E6%9E%97%E4%B8%B9%E7%A7%B0%E5%81%9A%E5%A5%BD%E8%87%AA%E5%B7%B1&rsv_idx=2">中国海警救非渔民</a>
+        					</li>
+        					<li>
+        						<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E6%9E%97%E4%B8%B9%E7%A7%B0%E5%81%9A%E5%A5%BD%E8%87%AA%E5%B7%B1&rsv_idx=2">外卖员强奸案告破</a>
+        					</li>
+        				</ul>
+        			</div>
+        			<div class="reco-right-bank3">
+        				<ul>
+        					<li>
+        						<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E6%9E%97%E4%B8%B9%E7%A7%B0%E5%81%9A%E5%A5%BD%E8%87%AA%E5%B7%B1&rsv_idx=2">打上强暴犯获刑</a>
+        						<span class="new-identity"></span>
+        					</li>
+        					<li>
+        						<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E6%9E%97%E4%B8%B9%E7%A7%B0%E5%81%9A%E5%A5%BD%E8%87%AA%E5%B7%B1&rsv_idx=2">退休年龄或定65</a>
+        						
+        					</li>
+        					<li>
+        						<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E6%9E%97%E4%B8%B9%E7%A7%B0%E5%81%9A%E5%A5%BD%E8%87%AA%E5%B7%B1&rsv_idx=2">顺走包裹被刑拘</a>
+        						
+        					</li>
+        					<li>
+        						<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E6%9E%97%E4%B8%B9%E7%A7%B0%E5%81%9A%E5%A5%BD%E8%87%AA%E5%B7%B1&rsv_idx=2">天皇盼永久性退休</a>
+        					</li>
+        					<li>
+        						<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E6%9E%97%E4%B8%B9%E7%A7%B0%E5%81%9A%E5%A5%BD%E8%87%AA%E5%B7%B1&rsv_idx=2">高楼坠亡洒落现金</a>
+        					</li>
+        					<li>
+        						<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E6%9E%97%E4%B8%B9%E7%A7%B0%E5%81%9A%E5%A5%BD%E8%87%AA%E5%B7%B1&rsv_idx=2">小车超载被起诉</a>
+        					</li>
+        					<li>
+        						<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E6%9E%97%E4%B8%B9%E7%A7%B0%E5%81%9A%E5%A5%BD%E8%87%AA%E5%B7%B1&rsv_idx=2">沈梦晨回应p图</a>
+        					</li>
+        					<li>
+        						<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E6%9E%97%E4%B8%B9%E7%A7%B0%E5%81%9A%E5%A5%BD%E8%87%AA%E5%B7%B1&rsv_idx=2">600万存款万变690</a>
+        					</li>
+        				</ul>
+        			</div>
+        		</div>
+        	</div> 
+        <!-- 导航 -->
+        	 <div class=" tabcontent3 tabcontentfrist ">
+        		<div class="s-nav-area">
+        			<h4>猜你喜欢</h4>
+        			<div class="nav-item" id="nav-item1">
+        				<a class="nav-block" href="http://www.nuomi.com/?vip_frm=super_nav_vip">
+        					<img src="/images/9483.png" alt="">
+        					<span class="nav-txt">百度糯米</span>
+        				</a>
+        				<a href="http://vip.baidu.com/m_112?vip_frm=super_mynav_mall" class="fanli-tag">
+        					<img src="/images/fanli_40794035.png" alt="">
+        				</a>
+        				<div class="rebate">
+        					<a href="http://vip.baidu.com/m_112?vip_frm=super_mynav_mall">最高返利50.25%</a>
+        				</div>
+        			</div>
+        			<div class="nav-item" id="nav-item2">
+        				<a class="nav-block" href="http://www.jd.com/?vip_frm=super_nav_vip">
+        					<img src="/images/95541.png" alt="">
+        					<span class="nav-txt">京东商城</span>
+        				</a>
+        				<a href="http://vip.baidu.com/m_112?vip_frm=super_mynav_mall" class="fanli-tag">
+        					<img src="/images/fanli_40794035.png" alt="">
+        				</a>
+        				<div class="rebate">
+        					<a href="http://vip.baidu.com/m_112?vip_frm=super_mynav_mall">最高返利80.00%</a>
+        				</div>
+        			</div>
+        			<div class="nav-item" id="nav-item3">
+        				<a class="nav-block" href="http://www.yhd.com/?vip_frm=super_nav_vip">
+        					<img src="/images/95780.png" alt="">
+        					<span class="nav-txt">1号店</span>
+        				</a>
+        				<a href="http://vip.baidu.com/m_102?vip_frm=super_mynav_mall" class="fanli-tag">
+        					<img src="/images/fanli_40794035.png" alt="">
+        				</a>
+        				<div class="rebate">
+        					<a href="http://vip.baidu.com/m_112?vip_frm=super_mynav_mall">最高返利75.60%</a>
+        				</div>
+        			</div>
+        			<div class="nav-item" id="nav-item4">
+        				<a class="nav-block" href="http://www.suning.com/?vip_frm=super_nav_vip">
+        					<img src="/images/95537.png" alt="">
+        					<span class="nav-txt">苏宁易购</span>
+        				</a>
+        				<a href="http://vip.baidu.com/m_102?vip_frm=super_mynav_mall" class="fanli-tag">
+        					<img src="/images/fanli_40794035.png" alt="">
+        				</a>
+        				<div class="rebate">
+        					<a href="http://vip.baidu.com/m_112?vip_frm=super_mynav_mall">最高返利22.68%</a>
+        				</div>
+        			</div>
+        			<div class="nav-item" id="nav-item5">
+        				<a class="nav-block" href="http://www.vip.com/?vip_frm=super_nav_vip">
+        					<img src="/images/95693.png" alt="">
+        					<span class="nav-txt">唯品会</span>
+        				</a>
+        				<a href="http://vip.baidu.com/m_102?vip_frm=super_mynav_mall" class="fanli-tag">
+        					<img src="/images/fanli_40794035.png" alt="">
+        				</a>
+        				<div class="rebate">
+        					<a href="http://vip.baidu.com/m_112?vip_frm=super_mynav_mall">最高返利7.00%</a>
+        				</div>
+        			</div>
+        			<div class="nav-item" id="nav-item6">
+        				<a class="nav-block" href="http://www.dangdang.com/?vip_frm=super_nav_vip">
+        					<img src="/images/95517.png" alt="">
+        					<span class="nav-txt">当当网</span>
+        				</a>
+        				<a href="http://vip.baidu.com/m_102?vip_frm=super_mynav_mall" class="fanli-tag">
+        					<img src="/images/fanli_40794035.png" alt="">
+        				</a>
+        				<div class="rebate">
+        					<a href="http://vip.baidu.com/m_112?vip_frm=super_mynav_mall">最高返利70.00%</a>
+        				</div>
+        			</div>
+
+        			<div class="nav-item" >
+        				<a class="nav-block" href="http://dl.pconline.com.cn/download/91155.html">
+        					<img src="/images/9556.png" alt="">
+        					<span class="nav-txt">爱拍</span>
+        				</a>
+        			</div>
+        			<div class="nav-item" >
+        				<a class="nav-block" href="http://www.iqiyi.com/a_19rrhb51bl.html">
+        					<img src="/images/95502.png" alt="">
+        					<span class="nav-txt">二胎时代-电视剧-高清在线观看-爱奇艺</span>
+        				</a>
+        			</div>
+        			<div class="nav-item" >
+        				<a class="nav-block" href="http://www.gjgwy.net/">
+        					<img src="/images/80495.png" alt="">
+        					<span class="nav-txt">国家公务员考试</span>
+        				</a>
+        			</div>
+        			<div class="nav-item" >
+        				<a class="nav-block" href="http://www.moximoxi.net/">
+        					<img src="/images/90784.png" alt="">
+        					<span class="nav-txt">摩西摩西</span>
+        				</a>
+        			</div>
+        			<div class="nav-item" >
+        				<a class="nav-block" href="http://www.jp-daigou.com/">
+        					<img src="/images/6000.png" alt="">
+        					<span class="nav-txt">日拍</span>
+        				</a>
+        			</div>
+        			<div class="nav-item">
+        				<a class="nav-block" href="http://www.letao-cn.com/">
+        					<img src="/images/6000.png" alt="">
+        					<span class="nav-txt">日本代购</span>
+        				</a>
+        			</div>
+
+        			<div class="nav-item" >
+        				<a class="nav-block" href="http://www.cnki.net/">
+        					<img src="/images/95638.png" alt="">
+        					<span class="nav-txt">中国知网</span>
+        				</a>
+        			</div>
+        			<div class="nav-item" >
+        				<a class="nav-block" href="http://www.taobao.com/">
+        					<img src="/images/95487.png" alt="">
+        					<span class="nav-txt">淘宝网</span>
+        				</a>
+        			</div>
+        			<div class="nav-item" >
+        				<a class="nav-block" href="https://wx.qq.com/">
+        					<img src="/images/95753.png" alt="">
+        					<span class="nav-txt">微信</span>
+        				</a>
+        			</div>
+        			<div class="nav-item" >
+        				<a class="nav-block" href="http://www.douyutv.com/">
+        					<img src="/images/200001.png" alt="">
+        					<span class="nav-txt">斗鱼</span>
+        				</a>
+        			</div>
+        			<div class="nav-item" >
+        				<a class="nav-block" href="http://www.qq.com/">
+        					<img src="/images/95511.png" alt="">
+        					<span class="nav-txt">腾讯</span>
+        				</a>
+        			</div>
+        			<div class="nav-item" >
+        				<a class="nav-block" href="http://www.iqiyi.com/">
+        					<img src="/images/95502.png" alt="">
+        					<span class="nav-txt">爱奇艺</span>
+        				</a>
+        			</div>
+
+        			<div class="nav-item" >
+        				<a class="nav-block" href="http://www.12306.cn/">
+        					<img src="/images/81407.png" alt="">
+        					<span class="nav-txt">铁路客户服务中心</span>
+        				</a>
+        			</div>
+        			<div class="nav-item" >
+        				<a class="nav-block" href="http://www.youku.com/">
+        					<img src="/images/95489.png" alt="">
+        					<span class="nav-txt">优酷网</span>
+        				</a>
+        			</div>
+        			<div class="nav-item" >
+        				<a class="nav-block" href="http://www.163.com/">
+        					<img src="/images/95504.png" alt="">
+        					<span class="nav-txt">网易</span>
+        				</a>
+        			</div>
+        			<div class="nav-item" >
+        				<a class="nav-block" href="http://www.58.com/">
+        					<img src="/images/95510.png" alt="">
+        					<span class="nav-txt">58同城</span>
+        				</a>
+        			</div>
+        			<div class="nav-item" >
+        				<a class="nav-block" href="http://vip.baidu.com/?vip_frm=super_nav_vip">
+        					<img src="/images/7656.png" alt="">
+        					<span class="nav-txt">百度VIP</span>
+        				</a>
+        			</div>
+        			<div class="nav-item" >
+        				<a class="nav-block" href="https://www.microsoft.com/zh-cn/store/apps/windows/">
+        					<img src="/images/9321.png" alt="">
+        					<span class="nav-txt">微软商店</span>
+        				</a>
+        			</div>
+        		</div>
+        	</div> 
+        <!-- 视频 -->
+        	<div class=" tabcontent4 tabcontentfrist ">
+        		<div class="s-nav-vedio" id="s-nav-vedio-one">
+        			<img src="/images/u=906263853,1540159781&fm=58_2297a56.jpg" alt="">
+        			<a class="" href="u=2537859719,1739918155&fm=58" hidefocus="" target="_blank" title="奔跑吧兄弟" data-click="LOG_LINK">奔跑吧兄弟</a>
+        			<i class="img-click tag-sort tag-sort1" ></i> 
+        			<i class="img-click tag-sort tag-sort2" ></i> 
+        			<span class="star-active" style="width: 60px;"></span>
+					<i>7.6</i>
+        		</div>
+        		<div class="s-nav-vedio" id="s-nav-vedio-two">
+        			<img src="/images/u=2537859719,1739918155&fm=58_7d46381.jpg" alt="">
+        			<a class="" href="http://www.iqiyi.com/a_19rrhc0alp.html?vfm=2008_aldbd" hidefocus="" target="_blank" title="花千骨" data-click="LOG_LINK">花千骨</a>
+        			<i class="img-click tag-sort tag-sort3"></i> 
+        			<i class="img-click tag-sort tag-sort4"></i>
+        			<span class="star-active" style="width: 47px;margin-left: -40px;"></span>
+					<i>5.9</i>
+        		</div>
+        		<div class="s-nav-vedio2" id="s-nav-vedio2-one">
+	        		<a href="http://www.iqiyi.com/v_19rr9zziw8.html?vfm=f_109_bdxs">
+	        			<img src="/images/u=1035385762,3000681679&fm=58_6ba992d.jpg" alt="">
+	        			<i>爱奇艺早班机：尖叫之夜大张伟狂撩鹿晗</i>
+	        		</a>
+					<i class="img-click tag-sort tag-sort5"></i>
+        		</div>
+        		<div class="s-nav-vedio2" id="s-nav-vedio2-two">
+	        		<a href="http://www.iqiyi.com/v_19rr9zziw8.html?vfm=f_109_bdxs">
+	        			<img src="/images/u=1183923282,3083016076&fm=58_c187d10.jpg" alt="">
+	        			<i>中国获得乌克兰发动机技术 摆脱对俄罗斯的依赖</i>
+	        		</a>  
+	        		<i class="img-click tag-sort tag-sort6"></i> 			
+        		</div>
+        		<div class="s-nav-vedio2"  id="s-nav-vedio2-three">
+	        		<a href="http://www.iqiyi.com/v_19rr9zziw8.html?vfm=f_109_bdxs">
+	        			<img src="/images/u=1857531329,3627500101&fm=58_93838e1.jpg" alt="">
+	        			<i>中国即将迎来几年来最大外贸武器订单 超几十亿</i>
+	        		</a> 
+	        		<i class="img-click tag-sort tag-sort7"></i>   			
+        		</div>
+        		<div class="s-nav-vedio2" id="s-nav-vedio2-four">
+	        		<a href="http://www.iqiyi.com/v_19rr9zziw8.html?vfm=f_109_bdxs">
+	        			<img src="/images/u=2035644961,3503871904&fm=58_aa21d2c.jpg" alt="">
+	        			<i>【奇葩大本营】罕见！心脏长在外面的女孩</i>
+	        		</a> 
+	        		<i class="img-click tag-sort tag-sort8"></i>  			
+        		</div>
+        	</div> 
+        <!-- 购物 -->
+        	 <div class=" tabcontent5 tabcontentfrist ">
+        		<div class="shopping-area">
+        			<div class="shopping">
+	        			<a href="http://vip.baidu.com/pcui/show/itemindex?id=52005%3Fvip_frm&vip_frm=mhd_gouwu_zt">
+	        				<img src="/images/bd315c6034a85edffc90e83b40540923dd54758d_08bee73.jpg" alt="">
+	        				<span>美的七彩小夜灯</span>
+	        				<span>大牌低价只要174元</span>
+	        			</a>
+        				
+        			</div>
+        			<div class="shopping">
+	        			<a href="http://vip.baidu.com/pcui/show/itemindex?id=50966%3Fvip_frm&vip_frm=mhd_gouwu_zt">
+	        				<img src="/images/8b13632762d0f70390c783c401fa513d2697c5b4_4fc76b0.jpg" alt="">
+	        				<span>包邮坚果炒货礼盒</span>
+	        				<span>超值爆品特促75.6元</span>
+	        			</a>
+        				
+        			</div>
+        			<div class="shopping">
+	        			<a href="http://vip.baidu.com/pcui/show/itemindex?id=37698%3Fvip_frm&vip_frm=mhd_gouwu_zt">
+	        				<img src="/images/377adab44aed2e73713fbe348e01a18b86d6fad0_2e5ead6.jpg" alt="">
+	        				<span>一级绿茶铁盒500g</span>
+	        				<span>品质低价仅需37.7元</span>
+	        			</a>
+        				
+        			</div>
+        			<div class="shopping">
+	        			<a href="http://vip.baidu.com/cps/show/goto?mallid=101&product_id=52355&disable_goto_flag=0&url=59d5hw6DJgNeCmQiA9zWbV92qZZeu4bbeqdIu7RT7aWk8DGmunVI7Y2rZQi2zFfCEDlvEzPq7ScFfIt7lGrU&sharekey=&statkey=zw_pcgouwu_p_52355&vip_frm=mhd_gouwu&statext[sid]=vs_pc_002&statext[style]=1&statext[product_type]=super">
+	        				<img src="/images/f603918fa0ec08fa94ba44b350ee3d6d55fbda68_1319d7a.jpg" width="205" height="265">
+	        				<span>百草味坚果套装组合</span>
+	        				<span>超值低价仅需89.7元</span>
+	        			</a>
+        				
+        			</div>
+        		</div>
+        	</div>
+
+        	
+        </div>
+        <!-- 标签切换   end -->
+
+        <!-- 返回顶部 -->  
+       	<img id ="gotop" src="/images/gotop_a0065ad.jpg"  style="position: fixed; top: 540px;left: 1140px;">
+          
+
+		
+
+
+
+
+           <!--  <footer>
+                <div id="ftcon">
+                    <div class="ftcon-wrap">
+                        <div id="left">
+                            第1个二维码
+                            <div class="left-1">
+                                <div class="left-1-ma1"><img src="./images/ma1.png "></div>
+                                <div class="left-1-text">
+                                    <p><b>手机百度</b></p>
+                                    <p><span>快人一步</span></p>
+                                </div>
+                            </div>
+                            第2个二维码
+                            <div class="left-2">
+                                <div class="left-2-ma2"><img src="./images/ma2.png "></div>
+                                <div class="left-2-text">
+                                    <p><b>百度糯米</b></p>
+                                    <p><span>一元大餐</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="right">
+                            <p id="1h">
+                                <a id="setf" href="https://www.baidu.com/cache/sethelp/help.html " target="_blank ">把百度设为主页</a>
+                                <a href="http://home.baidu.com/ " target="_blank ">关于百度</a>
+                                <a href="http://ir.baidu.com/ " target="_blank ">About  Baidu</a>
+                                <a href="http://e.baidu.com/?refer=888 " target="_blank ">百度推广</a>
+                            </p>
+                            <p id="cp">
+                                ©2016Baidu
+                                <a href="http://www.baidu.com/duty/ ">使用百度前必读 </a>
+                                <a href="http://jianyi.baidu.com/ ">意见反馈</a> 京ICP证030173号
+                            </p>
+                            <p>
+                                <img class="c-plslogo" src="./images/tu.png " width="15px ">
+                                <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001 " style="color:#9E9E9E; ">京公网安备11000002000001号</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer> -->
+        </div>
+    </div>
+
+
+<!--pc端样式-->
+
+
+
+
+    <!--mb端样式-->
+    <div class="mb">
+    <div id="wrapper" style="background: rgba(128, 128, 128, 0.08);width:387px;height:690px;">
+        <!--顶部-->
+        <header>
+            <div class="top">
+                <div class="tleft">
+                    <span class="icon-tianqi iconfont"></span>
+                    <span class="weather-num" style="font-size: 35px;color: #999;">0°</span>
+                    <span class="weather-numb" style="font-size: 14px;color: #999;margin-left: -38px;">辽宁&nu;</span>
+                </div>
+                <div class="tright" style="float: right;margin-top:-40px;">
+                    <span class="icon-yonghu iconfont"></span>
+                    <span class="icon-pifu-copy iconfont"></span>
+                </div>
+            </div>
+        </header>
+        <!--中间部分-->
+        <content>
+        <!--中间搜索框-->
+            <div class="middle-put">
+                <img src="/images/logo.png" style="width: 200px;margin-left: 100px;">
+                <form>
+                    <span style="">
+                    <div style="z-index: 1; width: 50px;  position: absolute;  left: 220px;  top: 134px;"><span class="icon-yuyinic iconfont"></span></div>
+            <input type="text" class="input" style="width:250px;position: absolute;top: 125px;left:15px;height: 50px;" />
+            </span>
+            <input type="submit" value="百度一下" style=" font-size:16px;height: 52px;  width: 95px;  position: absolute;left: 267px;top: 125px;">
+            </form>
+    </div>
+    <!--中间导航-->
+    <div id="middle-nav">
+        <div class="nav-wrap">
+            <a class="nav-wrap-gz">
+                <i class="navp nav-picture-gz"></i>
+                <span>
+                            <a class="navt nav-text-gz" href="https://www.baidu.com/?tn=97316620_hao_pg#iact=wiseindex%2Ftabs%2Fmine%2Factivity%2Fmidmine%3D%257B%2522linkData%2522%253A%257B%2522name%2522%253A%2522iframe%252Fmib-iframe%2522%252C%2522id%2522%253A0%252C%2522index%2522%253A0%252C%2522url%2522%253A%2522%2522%252C%2522title%2522%253A%2522%25E5%2585%25B3%25E6%25B3%25A8%2522%257D%257D">
+                            关注</a>
+                            </span>
+            </a>
+            <a class="nav-wrap-news">
+                <i class="navp nav-picture-news"></i>
+                <span>
+                            <a  class="navt nav-text-news" href="http://m.news.baidu.com/news?fr=mohome&ssid=0&from=844b&uid=&pu=sz%401320_2001%2Cta%40iphone_1_9.1_3_601&bd_page_type=1#/?_k=r2iifr">
+                            新闻</a>
+                            </span>
+            </a>
+            <a class="nav-wrap-book">
+                <i class="navp nav-picture-book"></i>
+                <span>
+                            <a class="navt nav-text-book" href="http://dushu.m.baidu.com/">
+                            小说</a>
+                            </span>
+            </a>
+            <a class="nav-wrap-video">
+                <i class="navp nav-picture-video"></i>
+                <span>
+                            <a class="navt nav-text-video" href="http://video.m.baidu.com/?from=wise_nav#/?_k=botmz7">
+                            视频</a>
+                            </span>
+            </a>
+            <a class="nav-wrap-nuo">
+                <i class="navp nav-picture-nuo"></i>
+                <span>
+                            <a  class="navt nav-text-nuo" href="https://m.nuomi.com/?cid=wise_shouye_nuomi">
+                            糯米</a>
+                            </span>
+            </a>
+            <a class="nav-wrap-tap">
+                <i class="navp nav-picture-tap"></i>
+                <span>
+                            <a  class="navt nav-text-tap" href="http://map.baidu.com/mobile/webapp/index/index/?itj=45&wtj=wi&ssid=0&from=844b&uid=&pu=sz%401320_2001%2Cta%40iphone_1_9.1_3_601&bd_page_type=1&showcvr=1">
+                            地图</a>
+                            </span>
+            </a>
+        </div>
+    </div>
+    <!--中间内容-->
+    <div class="middle-article">
+        <div class="atrp1">
+            <span>
+                    <a href="http://m.sohu.com/n/468955066/?_addHistory_=1" style="text-decoration:none;">
+                    <p class="article-text-1">“瓷娃娃”结婚了，医院成婚礼现场！</p></a>
+                    </span>
+            <div class="article-picture">
+                <img src="/images/tu1_eab6e7f.jpg" class="apt article-picture-1">
+                <img src="/images/tu2_19faa4b.jpg" class="apt article-picture-2">
+                <img src="/images/tu3_4629f3f.jpg" class="apt article-picture-3">
+            </div>
+            <div class="article-newfrom">
+                <span class="article-newfrom-1">新浪微博</span>
+                <span class="article-newfrom-1">11/13</span>
+            </div>
+        </div>
+        <div class="atrp2">
+            <span>
+                    <a href="https://m.baidu.com/?action=newsdetail&nid=16524564369991328384&n_type=0&p_from=1" style="text-decoration:none;">
+                    <p class="article-text-1">为什么让女儿加入美国国籍？姚明只说了一句话。</p></a>
+                    </span>
+            <div class="article-picture">
+                <img src="/images/tu4_edbb57c.jpg" class="apt article-picture-1">
+                <img src="/images/tu5_e1711d9.jpg" class="apt article-picture-2">
+                <img src="/images/tu6_7414d7e.jpg" class="apt article-picture-3">
+            </div>
+            <div class="article-newfrom">
+                <span class="article-newfrom-1">腾讯网</span>
+                <span class="article-newfrom-1">11/13</span>
+            </div>
+        </div>
+    </div>
+    </content>
+    <!--底部-->
+    <footer>
+        <div class="footwrap">
+            <img class="footpicture" src="/images/wrong.png" />
+            <img class="footlogo" src="/images/baiduapp_icon.png" />
+            <div class="foottext">
+                <p class="foottext-1">手机百度</p>
+                <p class="foottext-2">综艺风云火热来袭</p>
+            </div>
+            <div class="footsubmit">
+                <input type="submit" value="立即下载">
+            </div>
+        </div>
+    </footer>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="/js/baidu_f2952b8.js"></script> 
+</body>
+</html>

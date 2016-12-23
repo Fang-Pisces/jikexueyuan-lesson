@@ -1,0 +1,360 @@
+*{margin:0;padding:0;}
+body{background:#f6f6f6;}
+body ul li{list-style:none;}
+body a{text-decoration:none;}
+
+
+
+/*头部容器*/
+#header-warp{height:60px;width:100%;border-bottom:1px solid #f5f5f5;}
+#header-warp .logo{width:109px;height:60px;margin-right:60px;margin-top:10px;float:left;}
+.Lwarp{margin-left:150px;}
+
+/*导航*/
+#header-warp nav{height:60px;display:inline-block;}
+#header-warp nav ul{list-style:none;margin-top:20px;}
+#header-warp nav ul a{color:rgb(53,181,88);}
+#header-warp nav li{font-size:14px;height:60px;display:inline-block;position:relative;margin-right:50px;float:left;cursor:pointer;}
+/*公共下拉模块*/
+#header-warp nav .menu{z-index: 1; width:280px;position:absolute;top:40px;left:0;background:#fff;font-size:12px;color:#666;display:none;}
+/*导航结束*/
+
+/*职业学院模块*/
+#header-warp .school-list:hover .menu{display:block;}/*默认隐藏，悬停显示*/
+#header-warp nav .menu h3{background:#fafafa;height:28px;line-height:28px;margin:10px 0;padding:0 15px;font-weight:300;}
+/*超链接公共样式*/
+#header-warp nav .menu a{display:block;padding:0 15px;height:30px;line-height:30px;color:grey;}
+#header-warp nav .menu a:hover{color:#35b558;}
+/*图片公共样式*/
+#header-warp nav .menu i{background:url(../images/allicon3.png) no-repeat;background-size:16px 148px;width:14px;height:14px;display:inline-block;}
+#header-warp nav .menu .webcicon{background:url(../images/allicon.png) 0 0 no-repeat;background-position:-14px;background-size:64px 64px;}
+/*图片位置*/
+#header-warp nav .menu .pythonicon{background-position:-2px -2px;}
+#header-warp nav .menu .goicon{background-position:-2px -38px;}
+#header-warp nav .menu .isocicon{background-position:-2px -82px;}
+/*职业学院模块结束*/
+
+/*会员课程模块*/
+#header-warp .viplesson:hover .menu{display:block;}
+#header-warp nav .viplesson a span,#header-warp nav .jikeshequ a span{color:#bbb;float:right;}
+#header-warp nav .menu .kck{background:url(../images/allicon.png) no-repeat;background-position:0 -13px;background-size:64px 64px;}
+#header-warp nav .menu .zyljt{background:url(../images/allicon.png) no-repeat;background-position:-45px 0;background-size:64px 64px;}
+#header-warp nav .menu .zstxt{background:url(../images/allicon.png) no-repeat;background-position:-30px -13px;background-size:64px 64px;}
+#header-warp nav .menu .xlkc{background:url(../images/allicon.png) no-repeat;background-position:0 0;background-size:64px 64px;}
+#header-warp nav .menu .kcbq{background:url(../images/allicon.png) no-repeat;background-position:-15px -13px;background-size:64px 64px;}
+#header-warp nav .menu .vipbuy{background:url(../images/allicon.png) no-repeat;background-position:-16px 0;background-size:64px 64px;}
+/*会员课程模块结束*/
+
+/*极客社区模块*/
+#header-warp .jikeshequ:hover .menu{display:block;}
+#header-warp nav .menu .jswd{background:url(../images/allicon.png) no-repeat;background-position:0 -27px;background-size:64px 64px;}
+#header-warp nav .menu .Wiki{background:url(../images/allicon.png) no-repeat;background-position:-29px -27px;background-size:64px 64px;}
+#header-warp nav .menu .sq{background:url(../images/allicon.png) no-repeat;background-position:0 2px;background-size:64px 64px;}
+#header-warp nav .menu .zyxz{background:url(../images/allicon.png) no-repeat;background-position:-30px 0;background-size:64px 64px;}
+/*极客社区模块结束*/
+
+
+/*搜索模块容器*/
+#header-warp  .login-warp{display:inline;height:60px;position:relative;left: 684px;top: -65px;}
+#header-warp  .login-warp span{height:60px;width:17px;display:inline-block;margin-left:25px;cursor:pointer;line-height:60px;}
+#header-warp .menu1{z-index:1; width:120px;height:220px;position:absolute;top:58px;background:#fff;font-size:12px;color:#666;display:none;}
+
+/*二维码悬停显示*/
+#header-warp .app-icon:hover .menu1{display:block;}
+/*用户悬停显示*/
+#header-warp .loginlist-icon:hover .menu1{display:block;}
+#header-warp .login-warp .menu1 a:hover{color:#35b558;}
+
+
+/*用户图片公共样式*/
+#header-warp .menu1 .user{display:inline-block;background:url(../images/allvipicon.png);background-size:306px 16px;width:45px;height:14px;}
+/*用户图片位置*/
+#header-warp .menu1 .user1{margin-left:5px;background-position:-191px -1px;}
+#header-warp .menu1 .user2{background-position:-1px -1px;margin-left:-5px;top:20px;position:absolute;}
+
+/*下拉列表*/
+/*超链接公共样式*/
+#header-warp .menu1 a{text-decoration:none;color:#666;height:35px;outline-width:35px;display:block;margin-left:10px;}
+
+/*用户图片公共样式*/
+#header-warp .menu1 i{background:url(../images/allicon2.png) no-repeat;display:inline-block;background-size:64px 64px;width:12px;height:12px;margin-right:10px;}
+/*下拉列表图片位置*/
+#header-warp .menu1 .xxzx{background-position:-16px -15px;}
+#header-warp .menu1 .grzy{background-position:-45px -1px;}
+#header-warp .menu1 .xxtz{background-position:-16px -30px;}
+#header-warp .menu1 .zhsz{background-position:-30px -1px;}
+#header-warp .menu1 .tcdl{background-position:-16px -1px;}
+/*头部结束*/
+
+
+
+/*内容主体容器*/
+#pager{width:1000px;height:330px;position: relative;margin:20px 150px;}
+
+/*图片轮播和登陆块*/
+/*左边轮播图片的样式*/
+#pager .out{width:750px;height:330px;position:relative;background:yellow;}
+.out .img li{position:absolute;left:0;top:0;display: none;}
+.out .num{position: absolute;bottom:5px;font-size:0;width: 100%;text-align:center;}
+.out .num li{width:20px;height:20px;background:#666;color:#000;text-align: center;line-height:20px;border-radius:50px;display: inline-block;font-size:15px;margin:0 3px;cursor:pointer;}
+.out .num li.active{background:rgba(102, 102, 102, 0.47);}
+.out .btn{position:absolute;top:50%;margin-top:-30px;background:rgba(121, 85, 72, 0.58);color:#fff;width:50px;height:80px;font-size:60px;font-weight:15px; text-align:center;line-height:80px;display:none;cursor:pointer;}
+.out:hover .btn{display: block;}
+.out .left{left:0;}
+.out .right{right:0;}
+/*左边轮播图片的样式结束*/
+
+
+/*右边部分容器*/
+#pager .Rbanner{width: 240px;height: 330px;position: absolute;top:0;right:0;}
+/*右边部分公共样式*/
+#pager .Rbanner .banR{width: 240px;height:160px;background:#fff;position: absolute;top: 0;right:0;}
+
+/*右上部用户部分*/
+#pager .Rbanner .userbox{height: 57px;width: 180px;background:#fff;position: absolute;top: 20px;left:30px;}
+#pager .Rbanner .username{font-size:12px;float: right;color:#555;line-height: 16px;height: 16px;width:108px;margin-top:8px;}
+#pager .Rbanner .userbox img{width:57px;height: 57px;border-radius:50%;margin-right:15px;}
+#pager .Rbanner .userbox .ruser{display:inline-block;background:url(../images/allvipicon.png);background-size:306px 16px;width:45px;height:14px;}
+#pager .Rbanner .userbox .userone{margin-left:5px;background-position:-191px -1px;}
+#pager .Rbanner .userbox .ruser-a{display: block;margin-left: 65px;margin-top: -28px;}
+/*我的学习中心按钮*/
+#pager .Rbanner .mine{background: #fff;cursor:pointer; width:180px;height:32px;font-size:14px;border:1px solid #35b558;line-height: 32px;text-align: center;color:#35b558; margin-top: 100px;margin-left: 30px;}
+#pager .Rbanner .mine:hover{color:#fff;background:#35b558; }
+/*右上部用户部分结束*/
+
+/*右下部try位置*/
+#pager .Rbanner .try{top:170px;cursor:pointer;}
+/*图片轮播和登陆块结束*/
+
+
+/*就业班容器*/
+#pager .jiuyewarp{width: 1000px;height:130px;position:relative;margin:20px 0;}
+#pager .jike-jiuye .tag{width: 52px;height:52px;display: inline-block;position:absolute;top:0;left: 0;background:url(../images/tag.png); background-size: 52px;}
+#pager .jike-jiuye a{display: block; width:200px;height:130px;color:#555;padding-top:90px;text-align:center;font-size:12px;float:left;}
+#pager .jike-jiuye a:hover{color:#35b558;}
+/*问题一、图片默认边框如何清除，试了border：none；没有效果？*/
+
+
+
+/*极客课程*/
+/*容器*/
+#pager .classwarp{width:1000px;height:270px;position:relative;margin:20px 0;}
+#pager .classwarp ul li{float:left;width:235px;height:268px;border:1px solid #e9e9e9;cursor:pointer;margin-top:-70px;}
+#pager .classwarp ul li:hover{-webkit-transform:scale(1.1);box-shadow:1px 1px 6px #333333;}
+#pager .classwarp  ul li:nth-of-type(1){margin-right:17px;}
+#pager .classwarp ul li:nth-of-type(2){margin-right:18px;}
+#pager .classwarp ul li:nth-of-type(3){margin-right:17px;}
+#pager .classwarp ul li:last-of-type{margin-right:0;}
+/*图片*/
+#pager .classwarp a{display:block;}
+#pager .classwarp img{width:235px;height:155px;}
+#pager .classwarp .pythonTitle{font-size:12px;color:#555;height:36px;line-height:18px;margin-left:15px;}
+#pager .classwarp .pythonTime{font-size:12px;height:16px;line-height:16px;color:#999;margin-top:6px;margin-left:15px;}
+#pager .classwarp .pythonPrice{font-size:18px;float:left;color:#ff5c00;margin-top:8px;margin-left:15px;}
+#pager .classwarp .pythonOff{font-size:12px;float:left;color:#999;margin-top:14px;text-decoration:line-through;}
+#pager .classwarp .pythonNum{font-size:12px;float:right;margin-right:14px;margin-top:14px;color:#999;}
+/*极客课程结束*/
+
+
+
+/*职业学院*/
+/*容器*/
+#pager .jike-college .collegewarp{width:1000px;height:270px;position:relative;margin:20px 0px;}
+/*公共样式*/
+#pager .jike-college h2{font-size:20px;color:#555;height:20px;line-height:20px;margin-bottom:22px;}
+/*web学院*/
+#pager .jike-college h2{font-size:20px;color:#555;height:20px;line-height:20px;margin-bottom:22px;}
+#pager .collegewarp a{display:inline-block;}
+#pager .collegewarp li .webimg{width:500px;height:270px;position:absolute;top:0;left:0;}
+#pager .collegewarp li div img{position:absolute;width:55px;height:84px;top:70px;left:225px;}
+#pager .collegewarp li div span{font-size:20px;position:absolute;top:180px;left:190px;color:#fff;}
+/*web学院*结束/
+
+/*python学院*/
+#pager .collegewarp li .img{width:240px;height:130px;position:absolute;}
+#pager .collegewarp li .pythonimg1{top:0px;left:510px;}
+#pager .collegewarp li div .pythonimg2{width:36px;height:36px;top:30px;left:325px;}
+#pager .collegewarp li div .pythontext{font-size:14px;top:80px;left:300px;white-space:nowrap;}
+#pager .collegewarp li .python-icon{position:absolute;top:10px;left:290px;}
+/*python学院*结束/
+
+/*go学院*/
+#pager .collegewarp li .goimg1{top:0px;left:760px;}
+#pager .collegewarp li div .goimg2{width:36px;height:36px;top:30px;left:860px;}
+#pager .collegewarp li div .gotext{font-size:14px;top:80px;left:845px;white-space:nowrap;}
+/*go学院结束*/
+
+/*ios学院*/
+#pager .collegewarp li .iosimg1{top:140px;left:510px;}
+#pager .collegewarp li div .iosimg2{width: 36px;height:36px;top:180px;left:615px;}
+#pager .collegewarp li div .iostext{font-size: 14px;top:230px;left:600px;white-space:nowrap;}
+/*ios学院结束*/
+
+/*more部分*/
+#pager .collegewarp li .moreimg1{top:140px;left:760px;}
+#pager .collegewarp li div .moreimg2{width: 36px;height:36px;top:180px;left:860px;}
+#pager .collegewarp li div .moretext{font-size: 14px;top:230px;left:845px;white-space:nowrap;}
+/*more部分结束*/
+/*问题二、鼠标悬停的动画效果？*/
+/*职业学院结束*/
+
+
+/*极客vip*/
+/*容器*/
+#pager .vipwarp{width:1000px;height:310px;position: relative;}
+#pager .vipwarp ul div:hover{box-shadow:0px 0px 1px 1px rgba(0,0,0,.1);}
+#pager .jike-vip h2{font-size:20px;color:#555;height:20px;line-height:20px;margin-bottom:22px;}
+/*公共样式*/
+#pager .vipwarp a{display: block;}
+/*上半部*/
+/*android样式*/
+#pager .vipwarp   .and_vip{width:156px;height:148px;background:#fff;border:1px solid #e9e9e9;position:absolute;top:0;left:0;}
+#pager .vipwarp  .vip_android_icon{width:55px;height:55px;position:absolute;top:24px;left:46px;}
+#pager .vipwarp .vip_android_text p{display:block;font-size:14px;height:22px;line-height:22px;color:#555;margin-left:50px;margin-top:80px;}
+#pager .vipwarp  .vip_android_text b{font-size:14px;height:22px;line-height:22px;color:#35b558;font-weight:lighter;margin-left:46px;}
+/*ios样式*/
+#pager .vipwarp   .ios_vip{width:156px;height:148px;background:#fff;border:1px solid #e9e9e9;position:absolute;top:0;left:170px;}
+#pager .vipwarp  .vip_ios_icon{width:55px;height:55px;position:absolute;top:24px;left:50px;}
+#pager .vipwarp .vip_ios_text p{display:block;font-size:14px;height:22px;line-height:22px;color:#555;margin-left:65px;margin-top:80px;}
+#pager .vipwarp  .vip_ios_text b{font-size:14px;height:22px;line-height:22px;color:#35b558;font-weight:lighter;margin-left:50px;margin-top:102px;}
+/*Swift样式*/
+#pager .vipwarp   .Swift_vip{width:156px;height:148px;background:#fff;border:1px solid #e9e9e9;position:absolute;top:0;left:337px;}
+#pager .vipwarp  .vip_Swift_icon{width:55px;height:55px;position:absolute;top:24px;left:50px;}
+#pager .vipwarp .vip_Swift_text p{display:block;font-size:14px;height:22px;line-height:22px;color:#555;margin-left:65px;margin-top:80px;}
+#pager .vipwarp  .vip_Swift_text b{font-size:14px;height:22px;line-height:22px;color:#35b558;font-weight:lighter;margin-left:50px;margin-top:154px;}
+/*html5*/
+#pager .vipwarp   .html5_vip{width:156px;height:148px;background:#fff;border:1px solid #e9e9e9;position:absolute;top:0;left:503px;}
+#pager .vipwarp  .vip_html5_icon{width:55px;height:55px;position:absolute;top:24px;left:50px;}
+#pager .vipwarp .vip_html5_text p{display:block;font-size:14px;height:22px;line-height:22px;color:#555;margin-left:50px;margin-top:80px;}
+#pager .vipwarp  .vip_html5_text b{font-size:14px;height:22px;line-height:22px;color:#35b558;font-weight:lighter;margin-left:50px;margin-top:154px;}
+/*js*/
+#pager .vipwarp   .js_vip{width:156px;height:148px;background:#fff;border:1px solid #e9e9e9;position:absolute;top:0;left:672px;}
+#pager .vipwarp  .vip_js_icon{width:55px;height:55px;position:absolute;top:24px;left:50px;}
+#pager .vipwarp .vip_js_text p{display:block;font-size:14px;height:22px;line-height:22px;color:#555;margin-left:50px;margin-top:80px;}
+#pager .vipwarp  .vip_js_text b{font-size:14px;height:22px;line-height:22px;color:#35b558;font-weight:lighter;margin-left:50px;margin-top:154px;}
+/*node*/
+#pager .vipwarp   .node_vip{width:156px;height:148px;background:#fff;border:1px solid #e9e9e9;position:absolute;top:0;left:844px;}
+#pager .vipwarp  .vip_node_icon{width:55px;height:55px;position:absolute;top:24px;left:50px;}
+#pager .vipwarp .vip_node_text p{display:block;font-size:14px;height:22px;line-height:22px;color:#555;margin-left:50px;margin-top:80px;}
+#pager .vipwarp  .vip_node_text b{font-size:14px;height:22px;line-height:22px;color:#35b558;font-weight:lighter;margin-left:50px;margin-top:154px;}
+/*下半部*/
+/*c语言*/
+#pager .vipwarp   .C_vip{width:156px;height:148px;background:#fff;border:1px solid #e9e9e9;position:absolute;top:158px;left:0px;}
+#pager .vipwarp  .vip_C_icon{width:55px;height:55px;position:absolute;top:24px;left:50px;}
+#pager .vipwarp .vip_C_text p{display:block;font-size:14px;height:22px;line-height:22px;color:#555;margin-left:50px;margin-top:80px;}
+#pager .vipwarp  .vip_C_text b{font-size:14px;height:22px;line-height:22px;color:#35b558;font-weight:lighter;margin-left:50px;margin-top:154px;}
+/*java*/
+#pager .vipwarp   .java_vip{width:156px;height:148px;background:#fff;border:1px solid #e9e9e9;position:absolute;top:158px;left:170px;}
+#pager .vipwarp  .vip_java_icon{width:55px;height:55px;position:absolute;top:24px;left:50px;}
+#pager .vipwarp .vip_java_text p{display:block;font-size:14px;height:22px;line-height:22px;color:#555;margin-left:50px;margin-top:80px;}
+#pager .vipwarp  .vip_java_text b{font-size:14px;height:22px;line-height:22px;color:#35b558;font-weight:lighter;margin-left:50px;margin-top:154px;}
+/*php*/
+#pager .vipwarp   .php_vip{width:156px;height:148px;background:#fff;border:1px solid #e9e9e9;position:absolute;top:158px;left:337px;}
+#pager .vipwarp  .vip_php_icon{width:55px;height:55px;position:absolute;top:24px;left:50px;}
+#pager .vipwarp .vip_php_text p{display:block;font-size:14px;height:22px;line-height:22px;color:#555;margin-left:50px;margin-top:80px;}
+#pager .vipwarp  .vip_php_text b{font-size:14px;height:22px;line-height:22px;color:#35b558;font-weight:lighter;margin-left:50px;margin-top:154px;}
+/*javaweb*/
+#pager .vipwarp   .javaweb_vip{width:156px;height:148px;background:#fff;border:1px solid #e9e9e9;position:absolute;top:158px;left:503px;}
+#pager .vipwarp  .vip_javaweb_icon{width:55px;height:55px;position:absolute;top:24px;left:50px;}
+#pager .vipwarp .vip_javaweb_text p{display:block;font-size:14px;height:22px;line-height:22px;color:#555;margin-left:50px;margin-top:80px;}
+#pager .vipwarp  .vip_javaweb_text b{font-size:14px;height:22px;line-height:22px;color:#35b558;font-weight:lighter;margin-left:50px;margin-top:154px;}
+/*python*/
+#pager .vipwarp   .python_vip{width:156px;height:148px;background:#fff;border:1px solid #e9e9e9;position:absolute;top:158px;left:672px;}
+#pager .vipwarp  .vip_python_icon{width:55px;height:55px;position:absolute;top:24px;left:50px;}
+#pager .vipwarp .vip_python_text p{display:block;font-size:14px;height:22px;line-height:22px;color:#555;margin-left:50px;margin-top:80px;}
+#pager .vipwarp  .vip_python_text b{font-size:14px;height:22px;line-height:22px;color:#35b558;font-weight:lighter;margin-left:50px;margin-top:154px;}
+/*cocos*/
+#pager .vipwarp   .cocos_vip{width:156px;height:148px;background:#fff;border:1px solid #e9e9e9;position:absolute;top:158px;left:844px;}
+#pager .vipwarp  .vip_cocos_icon{width:55px;height:55px;position:absolute;top:24px;left:50px;}
+#pager .vipwarp .vip_cocos_text p{display:block;font-size:14px;height:22px;line-height:22px;color:#555;margin-left:50px;margin-top:80px;}
+#pager .vipwarp  .vip_cocos_text b{font-size:14px;height:22px;line-height:22px;color:#35b558;font-weight:lighter;margin-left:50px;margin-top:154px;}
+/*按钮*/
+#pager .jike-vip .vipsub{font-size:14px;color:#35b558;margin-top:38px;width:120px;height:32px;line-height:32px;border:1px solid #35b558;border-radius:2px;text-align:center;margin-left:440px;background:#fff;}
+#pager .jike-vip .vipsub:hover{color:#fff;background:#35b558;}
+/*极客vip结束*/
+
+
+
+/*学员故事*/
+#pager .storywarp{width: 1000px;height:260px;position:relative;overflow: hidden;}
+#pager .jike-story h2{font-size:20px;color:#555;height:20px;line-height:20px;margin-bottom:22px;}
+/*第一个学员*/
+#pager .storywarp   .story_one{width:310px;height:300px;}
+#pager .storywarp .story_one p{display:inline-block;height:70px;background:#fff;font-size:12px;color:#555;line-height:20px;text-align:left;padding:20px 15px;border:1px solid #e9e9e9;}
+#pager .storywarp #storyname{font-size:12px;color:#555;height:15px;line-height:15px;text-align:left;float:left;margin-left:80px;width:40px;background:transparent;border:none;}
+#pager .storywarp .story_one span{display:block;height:15px;line-height:15px;color:#999;font-size:12px;text-align:left;float:left;margin-left:90px;width:90px;}
+/*第一个学员*/
+/*第二个学员*/
+#pager .storywarp .story_two p{display:inline-block;height:70px;background:#fff;font-size:12px;color:#555;line-height:20px;text-align:left;padding:20px 15px;border:1px solid #e9e9e9;}
+#pager .storywarp .story_two span{display:block;height:15px;line-height:15px;color:#999;font-size:12px;text-align:left;float:left;margin-left:90px;width:90px;}
+/*第二个学员*/
+/*第三个学员*/
+#pager .storywarp .story_three p{display:inline-block;height:70px;background:#fff;font-size:12px;color:#555;line-height:20px;text-align:left;padding:20px 15px;border:1px solid #e9e9e9;}
+#pager .storywarp .story_three span{display:block;height:15px;line-height:15px;color:#999;font-size:12px;text-align:left;float:left;margin-left:90px;width:90px;}
+/*学院故事结束*/
+
+
+/*合作企业*/
+#pager .partnerwarp{width: 1000px;height:120px;position:relative;}
+#pager .jike-partner h2{font-size:20px;color:#555;height:20px;line-height: 20px;margin-bottom: 22px;}
+#pager .partnerwarp ul li:hover{box-shadow:0px 0px 1px 1px rgba(0,0,0,.1);}
+#pager .partnerwarp ul li{float:left;width:150px;height:50px;border:1px solid #e9e9e9;background:#fff;margin-right:14px;margin-bottom:15px;}
+#pager .partnerwarp ul li:nth-child(1) a{width:152px;height:52px;position:absolute;display:block;background:url(../images/p1_microsoft.png) no-repeat center;}
+#pager .partnerwarp ul li:nth-child(2) a{left:166px;width:152px;height:52px;position:absolute;display:block;background:url(../images/p2_tencent.png) no-repeat center;}
+#pager .partnerwarp ul li:nth-child(3) a{left:332px;width:152px;height:52px;position:absolute;display:block;background:url(../images/p3_qcloud.png) no-repeat center;}
+#pager .partnerwarp ul li:nth-child(4) a{left:488px;width:152px;height:52px;position:absolute;display:block;background:url(../images/p4_qualcomm.png) no-repeat center;}
+#pager .partnerwarp ul li:nth-child(5) a{left:664px;width:152px;height:52px;position:absolute;display:block;background:url(../images/p5_cocos.png) no-repeat center;}
+#pager .partnerwarp ul li:nth-child(6) a{left:830px;width:152px;height:52px;position:absolute;display:block;background:url(../images/p6_amd.png) no-repeat center;}
+#pager .partnerwarp ul li:nth-child(7) a{left:0px;width:152px;height:52px;position:absolute;display:block;background:url(../images/p7_xunfei.png) no-repeat center;}
+#pager .partnerwarp ul li:nth-child(8) a{left:166px;width:152px;height:52px;position:absolute;display:block;background:url(../images/p8_tuling.png) no-repeat center;}
+#pager .partnerwarp ul li:nth-child(9) a{left:332px;width:152px;height:52px;position:absolute;display:block;background:url(../images/p9_tingyun.png) no-repeat center;}
+#pager .partnerwarp ul li:nth-child(10) a{left:498px;width:152px;height:52px;position:absolute;display:block;background:url(../images/p10_juhe.png) no-repeat center;}
+#pager .partnerwarp ul li:nth-child(11) a{left:664px;width:152px;height:52px;position:absolute;display:block;background:url(../images/p11_bootstrap.png) no-repeat center;}
+#pager .partnerwarp ul li:nth-child(12) a{left:830px;width:152px;height:52px;position:absolute;display:block;background:url(../images/p12_cloudstack.png) no-repeat center;}
+/*按钮*/
+#pager .jike-partner .partnersub{margin-top:30px;font-size:14px;color:#35b558;width:120px;height:32px;line-height:32px;border:1px solid #35b558;border-radius:2px;text-align:center;margin-left:440px;margin-bottom:38px;background:#fff;}
+#pager .jike-partner .partnersub:hover{color:#fff;background:#35b558;}
+/*合作企业结束*/
+
+
+/*底部容器*/
+footer .footerwarp{width:1350px;height:215px;position:relative;background:#fff;margin-top:1830px;}
+/*底部左边logo*/
+footer .footerwarp .footL img{width:109px;height:40px;display:inline;margin-left:150px;margin-top:20px;}
+footer .footerwarp .footL p{font-size:12px;color:#999;margin-top:20px;margin-left:150px;}
+/*底部中间菜单*/
+footer .footerwarp .footM dl dd a:hover{color:#35b558;}
+footer .footerwarp .footM dl dd a{color:#999;}
+footer .footerwarp .footM dl{margin-left:210px;margin-top:-85px;}
+footer .footerwarp .footM dl dt{font-size:14px;line-height:30px;margin-left:150px;color:#999;font-weight:bold;}
+footer .footerwarp .footM dl dd{font-size:12px;line-height:30px;margin-left:150px;}
+footer .footerwarp .footM dl:nth-child(2){margin-left:340px;margin-top:-150px;}
+footer .footerwarp .footM dl:nth-child(3){margin-left:495px;margin-top:-180px;}
+footer .footerwarp .footM dl:nth-child(4){margin-left:620px;margin-top:-150px;}
+/*底部右边联系方式*/
+footer .footerwarp .footR p{color:#808080;font-size:14px;display:inline;float:left;margin-left:970px;margin-top:-170px;}
+footer .footerwarp .footR div{position:absolute;width:140px;border:1px solid #eeeeee;margin-top:-90px;cursor:pointer;margin-left:970px;display:inline-block;height:30px;}
+footer .footerwarp .footR div:nth-child(2){margin-top:-130px;}
+footer .footerwarp .footR img{width:30px;height:30px;}
+footer .footerwarp  .dowCon p{font-size:15px;height:30px;line-height:30px;margin-top:-35px;margin-left:30px;width:110px;text-align:center;color:#999999;}
+footer .footerwarp  .dowCon p:nth-child(2){margin-top:-36px;}
+footer .footerwarp .dowCon .hidden-img{width:115px;height:153px;position:absolute;display:none;z-index:1;}
+footer .footerwarp .dowCon:hover .hidden-img{display:block;}
+/*底部结束*/
+
+
+/*版权容器*/
+footer .banquan{width:1000px;color:#999;margin:0 auto;text-align:center;padding:15px 0;font-size:13px;}
+footer .banquan .weixin{float:right;height:15px;width:20px;margin-right:10px;background:url(../images/icon-down-wechat.png) no-repeat 0 0;background-size:20px 15px;}
+footer .banquan .wechat{float:right;height:15px;width:20px;background:url(../images/icon-down-sina.png) no-repeat 0 0;background-size:18px 15px;margin-right:10px;}
+footer .chick img,footer .chick img:nth-child(2){width:34px;height:103px;float:right;margin-right:140px;margin-top:-127px;}
+footer .chick img:nth-child(2){display:none;}
+footer .chick a:hover img:nth-child(2){display:block;}
+/*版权容结束/
+
+
+
+
+
+
+

@@ -1,0 +1,107 @@
+*{margin:0;padding:0;}
+html,body,.container,.wrap{height:100%;width:100%;}
+/*pc端样式*/
+.wrap{position:relative;min-width:810px;min-height:600px;}
+nav{padding-top:19px;*padding-right:80px;/*for ie7*/}
+nav a{color:#333;font-weight:bold;line-height:24px;margin-left:20px;font-size:13px;text-decoration:underline;}
+body{behavior:url("csshover3.htc");/*for ie7 无效*/}
+nav a:hover{color:#00c;}
+li{list-style:none;}
+.more{padding:0 5px;}
+.more p{position:relative;z-index:2;*margin-top:25px;/*for ie7*/}
+.more ul{position:absolute;right:0;top:0;z-index:1;width:66px;text-align:center;display:none;background:#f9f9f9;border-left:1px solid #ccc;}
+.more ul li:nth-chlid(1){padding-top:60px;}
+.more:hover ul{display:block;}
+.more i{display:block;width:36px;height:36px;margin:auto;background:url(../images/more.png) no-repeat;}
+.more i.i1{background-position:-74px 0;}
+.more i.i2{background-position:-114px 0;}
+.more i.i3{background-position:-219px 0;}
+.more i.i4{background-position:-147px 0;}
+.more i.i5{background-position:-184px 0;}
+.more ul a{display:block;width:64px;margin:auto;border-bottom:1px solid #f0f0f0;margin-bottom:5px;padding-bottom:10px;padding-top:60px;}
+form input[type="text"]{float:left;width:538px;height:38px;border:1px solid #ccc;outline:0;text-indent:7px;}
+form input[type="text"]:hover{border-color:#999;}
+form input[type="text"]:focus{border-color:#38f;}
+form input[type="submit"]{width:120px;height:40px;background:#3385ff;outline:0;border:0;cursor:pointer;color:#fff;font-size:15px;}
+#ftcon{height:100px;position:absolute;bottom:23px;text-align:left;width:100%;margin:0 auto;z-index:0;overflow:hidden;}
+.ftcon-wrap{overflow:hidden;margin:0 auto;text-align:center;}
+#left{display:inline-block;*display:inline;/*for ie7*/*zoom:1;/*for ie7  行内块的兼容 */}
+#left .left-1{float:left;}
+#left .left-1-ma1{float:left;width:60px;height:60px;}
+#left .left-1-text{float:left;color:#999;line-height:23px;margin:8px 0 0 10px;}
+#left .left-1-text p{text-align:left;font-size:12px;}
+*>#left .left-1-text p{font-size:13px;}/*for firefox*/
+
+
+#left .left-1-text b{color:#666;font-weight:bold;}
+#left .left-1-text span{letter-spacing:1px;}
+#left .left-2{margin-left:33px;float:left;}
+#left .left-2-ma2{float:left;width:60px;height:60px;}
+#left .left-2-text{float:left;color:#999;line-height:23px;margin:8px 0 0 10px;}
+#left .left-2-text p{text-align:left;font-size:12px;}
+*>#left .left-2-text p{font-size:13px;}/*for firefox*/
+
+
+#left .left-2-text b{color:#666;font-weight:bold;}
+#left .left-1-text span{letter-spacing:1px;}
+#right{display:inline-block;*display:inline;/*for ie7*/*zoom:1;/*for ie7  行内块的兼容 */text-align:left;margin-left:33px;line-height:22px;position:relative;top:-2px;font-size:10px;color:#999;}
+*>#right{font-size:12px;}/*for firefox*/
+
+
+#right a{color:#999;}
+#right p{margin:0;padding:0;list-style:none;}
+
+
+/*mb样式*/
+.mb{display: none;}
+*{margin:0;padding:0;}
+.wrapper{height:100%;width:100%;}
+
+/*定义顶部实体*/
+@font-face{font-family:'iconfont';src:url('iconfont.eot');}
+.iconfont{font-family:"iconfont";}
+.icon-tianqi:before{content:"\e714";}
+
+/*中间导航部分*/
+#middle-nav{width:100%;overflow:hidden;}
+.nav-wrap{width:3000px;margin-top:130px;}
+.navp{width:22px;height:22px;top:196px;position:absolute;background:url(../images/tt.png) no-repeat;background-size:22px auto;}
+.nav-picture-gz{left:34px;background-position:0 -264px;}
+.nav-text-gz{left:30px;}
+.nav-picture-news{left:90px;background-position:0 -396px;}
+.navt{font-size:15px;color:#999;position:absolute;top:223px;text-decoration:none;}
+.nav-text-news{left:85px;}
+.nav-picture-book{left:145px;background-position:0 -330px;}
+.nav-text-book{left:140px;}
+.nav-picture-video{left:200px;background-position:0 -462px;}
+.nav-text-video{left:195px;}
+.nav-picture-nuo{left:255px;background-position:0 -418px;}
+.nav-text-nuo{left:250px;}
+.nav-picture-tap{left:310px;background-position:0 -308px;}
+.nav-text-tap{left:305px;}
+
+/*中间内容部分*/
+.middle-article{width:387px;height:360px;background-color:#fff;margin-top:20px;}
+.atrp1,.atrp2{width:387px;height:180px;}
+.article-text-1{font-size:17px;text-align:left;padding-top:10px;color:#000;}
+.apt{width:120px;position:absolute;margin:10px 1px;}
+.article-picture-1{left:10px;}
+.article-picture-2{left:132px;}
+.article-picture-3{left:254px;}
+.article-newfrom{margin-top:100px;width:387px;height:40px;text-align:left;}
+.article-newfrom-1{margin-left:10px;font-size:13px;color:#999;}
+
+/*底部*/
+.footwrap{width:387px;height:80px;background-color: rgba(128, 128, 128, 0.08);}
+.footpicture{width:30px;margin:15px;}
+.footlogo{width:36px;height:36px;position:relative;bottom:7px;left:-15px;}
+.foottext{text-align:left;margin-left:100px;margin-top:-45px;}
+.foottext-1{font-size:16px;line-height:16px;font-weight:800;}
+.foottext-2{color:#999;font-size:12px;line-height:20px;}
+.footsubmit{font-size:12px;display:inline-block;position:relative;left:310px;bottom:33px;border:1px solid #e0e0e0;}
+
+/*设置屏幕小于400px时显示移动端*/
+@media only screen and (max-width:400px){
+    .pc{display: none;}
+    .mb{display: block;}
+}

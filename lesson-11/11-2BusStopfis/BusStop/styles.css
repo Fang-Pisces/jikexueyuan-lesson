@@ -1,0 +1,135 @@
+.margin {
+  margin: 20px;
+}
+.container {
+  width: 1240px;
+  height: 550px;
+  background-color: #e6e6e6;
+  border-radius: 3px;
+  margin: auto;
+}
+.Left-wrap {
+  background: #bd0f0f;
+  border-radius: 5px;
+  height: 190px;
+  width: 415px;
+  position: absolute;
+  margin: 20px;
+}
+.Left-wrap p {
+  color: #fff;
+  font-size: 5em;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+.Right-wrap {
+  width: 550px;
+  height: 190px;
+  float: right;
+  margin-right: 100px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.Right-wrap .row {
+  margin: 20px;
+}
+.Right-wrap .row b:nth-child(1) {
+  font-size: 2em;
+  color: green;
+  float: left;
+}
+.Right-wrap .row b:nth-child(2) {
+  font-size: 2em;
+  color: green;
+  float: right;
+}
+.Right-wrap .row .line {
+  background-color: green;
+  position: absolute;
+  margin-left: 167px;
+  margin-top: 18px;
+  width: 135px;
+  height: 3px;
+}
+.Right-wrap .rowEn {
+  margin: 0px;
+}
+.Right-wrap .rowEn b:nth-child(1) {
+  font-size: 24px;
+  color: green;
+  float: left;
+}
+.Right-wrap .rowEn b:nth-child(2) {
+  font-size: 24px;
+  color: green;
+  float: right;
+}
+.Right-wrap .rowEn .line {
+  background-color: green;
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  margin-left: 219px;
+  margin-top: 57px;
+}
+.Right-wrap p {
+  font-size: 2em;
+  color: #bd0f0f;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: center;
+  margin: 130px;
+}
+.b1 {
+  font-size: 2em;
+  color: green;
+}
+.b2 {
+  font-size: 24px;
+  color: green;
+}
+.line {
+  background-color: green;
+  position: absolute;
+}
+.Bottom-wrap {
+  width: 1200px;
+  height: 205px;
+  background-color: green;
+  position: absolute;
+  margin-top: 260px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+.Bottom-wrap ul li {
+  list-style: none;
+  float: right;
+  font-size: 20px;
+  width: 29px;
+  margin-left: 29px;
+}
+.Bottom-wrap i {
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
+  width: 1161px;
+
+}
+.Bottom-wrap .direction {
+  width: 900px;
+  height: 5px;
+  background-color: #bd0f0f;
+  margin: auto;
+}
+.Bottom-wrap .direction2 {
+  width: 50px;
+  height: 5px;
+  background-color: #bd0f0f;
+  float: right;
+  margin-right: 150px;
+  transform: rotate(19deg);
+  -moz-transform: rotate(19deg);
+  -webkit-transform: rotate(19deg);
+  margin-top: -13px;
+}

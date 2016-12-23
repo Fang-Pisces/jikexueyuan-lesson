@@ -1,0 +1,129 @@
+/*定义图片和字体样式*/
+*{
+	margin:0;
+}
+#main{
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+#box{
+	width:300px;
+	height:300px;
+	margin:100px auto 0 auto;
+}
+img{
+	width: 94px;
+	height: 94px;
+}
+.cude div{
+	position:absolute;
+	margin:0;
+	display: block;
+	width: 300px;
+	height: 300px;
+	border-radius:20px;
+	font-size: 100px;
+	text-align: center;
+	opacity:0.8;
+}
+.cude .view{
+	width: 94px;
+	height: 94px;
+	border-radius: 10px;
+	border:3px solid #FFf;
+	float:left;
+}
+.img2{
+	left:100px;
+}
+.img3{
+	left: 200px;
+}
+.img4{
+	top:100px;
+}
+.img5{
+	top:100px;
+	left:100px;
+}
+.img6{
+	top: 100px;
+	left:200px;
+}
+.img7{
+	top:200px;
+}
+.img8{
+	top:200px;
+	left:100px;
+}
+.img9{
+	top:200px;
+	left:200px;
+}
+/*设置动画效果*/
+.cude{
+	-webkit-transform-style:preserve-3d;/*开启3D视觉效果*/
+	-webkit-transform:rotateX(-30deg) rotateY(-60deg);
+	/*-webkit-perspective:300px;透视*/
+	-webkit-transform-origin:200px 0px 100px 0;/*原点坐标*/
+	-webkit-animation:animation 12s ease infinite;/*设置动画名称，执行时间，动画效果，循环次数*/
+}
+@-webkit-keyframes animation{
+	0%{
+		-webkit-transform: rotateX(0deg);
+	} 
+    15% {  
+        -webkit-transform: rotateY(-135deg);  
+    }  
+    30% {  
+        -webkit-transform: rotateY(-90deg)rotateZ(135deg);   
+    }  
+    45% {  
+        -webkit-transform: rotateY(225deg)rotateZ(135deg);  
+    }  
+    60% {  
+        -webkit-transform: rotateY(135deg)rotateX(135deg);  
+    }  
+    75% {  
+        -webkit-transform: rotateX(135deg)rotateY(225deg);  
+    } 
+    90% {  
+        -webkit-transform: rotateX(-135deg);  
+    }  
+}
+/*设置6个面的位置*/
+.cude .one{
+	background-color: red;
+	-webkit-transform:rotateX(0deg) translateZ(150px);
+	/*-webkit-transform: rotateX(0deg) translateX(-50PX)translateZ(100px);*/
+}
+.cude .two{
+	background-color: green;
+	-webkit-transform:rotateX(-90deg) translateZ(150px);
+	/*webkit-transform: rotateX(180deg) rotateZ(180deg) translateX(54PX)translateZ(102px);*/
+}
+.cude .three{
+	background-color: blue;
+	-webkit-transform:rotateX(90deg) translateZ(150px);
+	/*webkit-transform: rotateX(90deg) translateY(29PX) translateZ(133px);*/
+}
+.cude .four{
+	background-color: yellow;
+	-webkit-transform:rotateZ(180deg) rotateY(180deg) translateZ(150px);
+	/*webkit-transform: rotateX(90deg) translateY(84PX) translateX(100px);*/
+}
+.cude .five{
+	background-color:grey;
+	-webkit-transform:rotateY(-90deg) translateZ(150px);
+	/*webkit-transform: rotateY(-90deg) translateZ(150px);*/
+}
+.cude .six{
+	background-color: #00fff0;
+	-webkit-transform:rotateY(90deg) translateZ(150px);
+	/*webkit-transform: rotateY(90deg) translateZ(50px);*/
+}
+/*问题，按照注释中设置六个面的位置，第三、四两个面旋转时会飞出去，为什么？是因为设置面的位置时有什么特别的要求需要以特定的轴旋转或平移才行吗？*/
+/*设置每个面里9个小方块的位置*/
+

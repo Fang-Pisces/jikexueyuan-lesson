@@ -1,0 +1,117 @@
+*{margin:0;}
+.wrapper{margin:50px 0 0 300px;}
+.main{position:relative;}
+
+/*头部整体样式*/
+.main .head{position:relative;width:320px;height:300px;background:#07bbee;border-radius:150px;border:2px solid grey;box-shadow:-5px 5px 15px rgba(0,0,0,0.45);background:-webkit-radial-gradient(right top,#fff 10%,#07bbee 20%,#10a6ce 75%,#000);}
+
+/*眼睛*/
+.main .eyes{position:relative;z-index:3;}
+.main .eyes .eye{width:72px;height:82px;background-color:#fff;position:absolute;border-radius:35px;top:40px;border:2px solid #000;}
+.main .left{left:82px;}
+.main .right{left:157px;}
+
+/*眼珠*/
+.main .eyes .eye .black{width:14px;height:14px;background:#000;border-radius:7px;position:absolute;top:40px;-webkit-animation:eyemove linear 3s infinite;-moz-animation:eyemove linear 3s infinite;animation:eyemove linear 3s infinite;}
+
+/*眼珠动画效果*/
+@-webkit-keyframes eyemove{
+	0%{margin:0 0 0 0;}
+	25%{margin:-22px 0 0 0;}
+	50%{margin:-22px 0 0 5px;}
+	75%{margin:-22px 10px 0 0;}
+	100%{margin:0 0 0 0;}
+}
+@-moz-keyframes eyemove{
+	0%{margin:0 0 0 0;}
+	25%{margin:-22px 0 0 0;}
+	50%{margin:-22px 0 0 5px;}
+	75%{margin:-22px 10px 0 0;}
+	100%{margin:0 0 0 0;}
+}
+@keyframes eyemove{
+	0%{margin:0 0 0 0;}
+	25%{margin:-22px 0 0 0;}
+	50%{margin:-22px 0 0 5px;}
+	75%{margin:-22px 10px 0 0;}
+	100%{margin:0 0 0 0;}
+}
+.main .eyes .eye .bleft{left:50px;}
+.main .eyes .eye .bright{left:7px;}
+
+/*脸部*/
+.main .face{position:absolute;z-index:2;}
+
+/*白色脸色*/
+.main .face .white{width:265px;height:195px;border-radius:200px;position:absolute;top:75px;left:25px;background-color:#fff;}
+
+/*鼻子*/
+.main .nose{width:30px;height:30px;border-radius:35px;background-color:red;border:2px solid #000;position:absolute;top:110px;left:140px;z-index:4;}
+
+/*鼻子上的高光*/
+.main .nose .gaoguang{width:10px;height:10px;border-radius:10px;box-shadow:18px 3px 6px #fff;}
+
+/*鼻子下边的线*/
+.main .nose-line{width:3px;height:95px;background:#333;position:absolute;top:143px;left:154px;z-index:4;}
+
+/*嘴巴*/
+.main .face .mouth{height:234px;width:216px;top:3px;left:50px;border-bottom:3px solid #795548;position:absolute;z-index:3;border-radius:100px;}
+
+/*胡须*/
+.main .face .huxus{width:220px;height:78px;background:#fff;z-index:3;position:absolute;top:110px;left:48px;}
+
+/*所有胡须样式*/
+.main .huxus .huxu{width:64px;height:2px;background:#333;position:absolute;z-index:2;}
+
+/*每个胡须位置*/
+.main .huxus .ltop{top:38px;left:10px;-webkit-transform:rotateZ(194deg);-moz-transform:rotateZ(194deg);transform:rotateZ(194deg);}
+.main .huxus .lmiddle{top:59px;left:10px;}
+.main .huxus .lbottom{top:80px;left:10px;-webkit-transform:rotateZ(168deg);-moz-transform:rotateZ(168deg);transform:rotateZ(168deg);}
+.main .huxus .rtop{top:37px;left:134px;-webkit-transform:rotateZ(163deg);-moz-transform:rotateZ(163deg);transform:rotateZ(163deg);}
+.main .huxus .rmiddle{top:59px;left:135px;}
+.main .huxus .rbottom{-webkit-transform:rotateZ(194deg);top:80px;left:135px;-moz-transform:rotateZ(194deg);top:80px;left:135px;transform:rotateZ(194deg);top:80px;left:135px;}
+
+/*围脖*/
+.main .weibo{width:230px;height:20px;background:red;position:relative;left:45px;top:-25px;border-radius:20px;border:2px solid #000;box-shadow:4px 3px 8px grey;z-index:4;}
+
+/*铃铛*/
+.main .bell{background:#f9f12a;width:30px;height:30px;position:absolute;top:10px;left:95px;border-radius:15px;border:2px solid;}
+
+/*身体*/
+.main .body{position:relative;top:-310px;}
+.main .duzi{width:220px;height:165px;background:#07beea;border:2px solid #333;position:absolute;top:265px;left:50px;}
+
+/*肚兜*/
+.main .dudou{width:150px;height:150px;background:#fff;border:2px solid #000;position:absolute;left:83px;top:261px;border-radius:50%;}
+
+/*半圆口袋*/
+.main .koudai{width:100px;height:100px;background:#fff;border:2px solid;border-radius:50%;position:absolute;top:295px;left:108px;}
+.main .koudai-half{width:98px;height:64px;background:#fff;position:absolute;top:262px;left:111px;border-bottom:2px solid;}
+
+/*手臂共同样式*/
+.main .hand-left,.main .hand-right{height:100px;width:100px;position:absolute;top:272px;}
+.main .arm{width:80px;height:50px;background:#07beea;border:1px solid #000000;box-shadow:-10px 7px 10px rgba(0,0,0,0.35);z-index:-1;position:absolute;}
+
+/*左手*/
+.main .larm{-webkit-transform:rotateZ(141deg);top:44px;position:relative;}
+
+/*右手*/
+.main .rarm{-webkit-transform:rotateZ(216deg);top:44px;position:relative;left:246px;}
+
+/*手臂与身体结合部分*/
+.main .arm_write{height:45px;width:5px;background:#07beea;position:relative;}
+.main .hand-left .arm_write{top:-21px;left:49px;}
+.main .hand-right .arm_write{top:-24px;left:269px;}
+
+/*白色小圆手*/
+.main .circle{position:absolute;width:60px;height:60px;border-radius:30px;border:2px solid #000;background:#fff;}
+.main .lcircle{top:72px;left:-36px;}
+.main .rcircle{left:299px;top:70px;}
+
+/*脚部共同样式*/
+.main .foots{width:280px;height:40px;position:relative;top:55px;left:20px;}
+.main .foots .foot-lfoot,.main .foots .foot-rfoot{width:125px;height:30px;background:#fff;border:2px solid #333;border-radius:80px 60px 60px 40px;box-shadow:-6px 0 10px rgba(0,0,0,0.35);position:absolute;}
+
+/*左右脚位置*/
+.main .foots .foot-lfoot{top:62px;left:13px;}
+.main .foots .foot-rfoot{top:62px;left:143px;-webkit-transform:rotateY(180deg);-moz-transform:rotateY(180deg);transform:rotateY(180deg);}

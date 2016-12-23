@@ -1,0 +1,34 @@
+.container{
+	width:100%;
+	height:100%;
+	background:yellow;
+	border-radius:5px;
+}
+.title{
+	width:1000px;
+	height:120px;
+	background:#e6e6e6;
+	border-radius:125px;
+	margin:auto;
+}
+.title h1{
+	text-align: center;
+	line-height: 100px;
+}
+.artical{
+	width:1200px;
+	height:100%;
+	background:plum;
+	border-radius:10px;
+	margin:10px auto;
+	color:#2732c5;
+}
+.artical p{
+	line-height: 25px;
+}
+.artical i{
+	display:block;
+}
+.artical img{
+	margin-left:10px;
+}

@@ -1,0 +1,1813 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" type="text/css" href="stylesheet/normalize.css">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="css/jikeclass.css" />
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+<!--容器-->
+<div id="contarin">
+<!-- 返回顶部 -->
+        <a href="javascript:;" id="gotop" style="display:none;">
+          <img src="./images/gotop_2.jpg" width="45" style="position: fixed;top: 170px;right: 125px;">
+        </a>  
+  <!--头部-->
+  <header> 
+    <!--头部容器-->
+    <div id="header-warp">
+      <div class="Lwarp"> <a class="logo" href="http://www.jikexueyuan.com/"><img src="images/logo.png" height="40" width="109"></a> 
+        <!--导航-->
+        <nav >
+          <ul class="header-nav">
+            <li> <a href="http://www.jikexueyuan.com/">首页</a> </li>
+            <!--职业学院模块-->
+            <li class="school-list" id="school-list"> 职业学院
+            <i class="arrow-icon"></i>
+              <div class="menu" id="menu-one">
+                <h3>前端学院</h3>
+                <a href="http://www.jikexueyuan.com/zhiye/web"> <i class="webcicon"></i> Web前端工程师</a>
+                <h3>后端学院</h3>
+                <a href="http://www.jikexueyuan.com/zhiye/python"> <i class="pythonicon"></i> Python Web工程师</a> <a href="http://www.jikexueyuan.com/zhiye/go"> <i class="goicon"></i> Go语言工程师</a>
+                <h3>移动学院</h3>
+                <a href="http://www.jikexueyuan.com/zhiye/iso"> <i class="isocicon"></i> Iso工程师</a> </div>
+            </li>
+            <!--职业学院模块结束--> 
+            <!--会员课程模块-->
+            <li class="viplesson" id="viplesson"> 会员课程
+            <i class="arrow-icon"></i>
+              <div class="menu" id="menu-two"> <a href="http://www.jikexueyuan.com/course/"> <i class="kck"></i> 课程库 <span>2500+</span> </a> <a href="http://www.jikexueyuan.com/zhiye/"> <i class="zyljt"></i> 职业路径图 <span>9</span> </a> <a href="http://www.jikexueyuan.com/path/"> <i class="zstxt"></i> 知识体系图 <span>24</span> </a> <a href="http://www.jikexueyuan.com/xilie/"> <i class="xlkc"></i> 系列课程 <span>101</span> </a> <a href="http://www.jikexueyuan.com/tag/"> <i class="kcbq"></i> 课程标签 <span>4000+</span> </a> <a href="http://www.jikexueyuan.com/vip/"> <i class="vipbuy"></i> vip会员购买 <span>30/月260/年</span> </a> </div>
+            </li>
+            <!--会员课程模块结束--> 
+            <!--极客社区模块-->
+            <li class="jikeshequ" id="jikeshequ"> 极客社区
+            <i class="arrow-icon"></i>
+              <div class="menu" id="menu-three"> <a href="http://wenda.jikexueyuan.com/"> <i class="jswd"></i> 技术问答 <span>20000+</span> </a> <a href="http://wiki.jikexueyuan.com/"> <i class="Wiki"></i> Wiki <span>351</span> </a> <a href="http://qun.jikexueyuan.com/"> <i class="sq"></i> 社群 <span>7000+</span> </a> <a href="http://download.jikexueyuan.com/"> <i class="zyxz"></i> 资源下载 <span>3000+</span> </a> </div>
+            </li>
+            <!--极客社区模块结束-->
+          </ul>
+        </nav>
+        <!--导航结束--> 
+      </div>
+      <!--搜索登陆模块-->
+	<div class="login-warp" >
+          <!--搜索--> 
+        	<span class="search-icon" > 
+	          	<img src="images/search-icon.png" width="18"> 
+	        </span>   
+          <!--二维码app--> 
+          <span class="app-icon">
+            <i class="arrow-icon2"></i> 
+            <img id="app-icon" src="images/app-icon.png" width="18">
+            <div class="menu1"> 
+              <img src="images/heade-rwm.png" width="120" >
+            </div>
+          </span> 
+          <!--登陆--> 
+        <span class="loginlist-icon"> 
+        <img id="loginlist-icon" src="images/login-icon.png" width="18">
+        <i class="arrow-icon2"></i>
+          <div class="menu1" style="left:60px;">
+            <dl>
+              <dd> 
+              
+              <a href="http://my.jikexueyuan.com/setting/vip/"> <i class="user user1"></i> <i class="user user2"></i> </a> </dd>
+              <dd> <a href="http://xue.jikexueyuan.com/ke/doing"> <i class="xxzx"></i> 学习中心 </a> </dd>
+              <dd> <a href="http://my.jikexueyuan.com/0ygqgqVWV/"> <i class="grzy"></i> 个人主页 </a> </dd>
+              <dd> <a href="http://www.jikexueyuan.com/member/notifications/"> <i class="xxtz"></i> 消息通知 </a> </dd>
+              <dd> <a href="http://my.jikexueyuan.com/setting/user/"> <i class="zhsz"></i> 账号设置 </a> </dd>
+              <dd> <a href="http://passport.jikexueyuan.com/sso/login?referer=http://my.jikexueyuan.com/setting/user/"> <i class="tcdl"></i> 退出登陆 </a> </dd>
+            </dl>
+          </div>
+        </span>        
+    </div> 
+    <!-- 搜索动画 -->
+        <div class="searchbox scale" id="search" >
+        	<i class="close-icon" id="close-btn"></i>
+        	<i class="search-icon2" id="search-btn"></i>
+        	<input id="web_search_header" placeholder="搜索课程、问答或Wiki" value="">
+        	<div class="tagbox">
+        		<a href="http://search.jikexueyuan.com/course/?q=Android">Android</a>
+        		<a href="http://search.jikexueyuan.com/course/?q=iOS">iOS</a>
+        		<a href="http://search.jikexueyuan.com/course/?q=HTML5">HTML5</a>
+        	</div>
+        </div> 
+      <!--搜索结束--> 
+    </div>
+  </header>
+  <!--头部结束--> 
+
+
+
+
+
+  <!--内容主体-->
+  <content> 
+    <!-- 容器 begin-->
+    <div class="mainwarp"> 
+      <!-- 左侧下拉列表 begin-->
+      <div class="leftlist">
+        <div class="leftone">
+          <div class="kck1">
+            <h3><a href=""><i class="icon-kck1"></i>课程库</a></h3>
+          </div>
+          <ul class="classlist">
+            <li>
+              <div id="list-mobile"> <a href="#">移动开发</a> 
+                <!-- 隐藏菜单 -->
+                <div id="list-show-1" class="list-show" style="top: 0;width: 402px;display: none;">
+                  <dl>
+                    <dt> <a href="#">应用开发</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">Android</a> <a href="http://www.jikexueyuan.com/course/ios/">iOS</a> </dd>
+                  </dl>
+                  <dl>
+                    <dt> <a href="#" style="margin-left: -90px;">游戏开发</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">Cocos</a> <a href="http://www.jikexueyuan.com/course/ios/">Unity3D</a> <a href="http://www.jikexueyuan.com/course/android/">SpriteKit</a> <a href="http://www.jikexueyuan.com/course/ios/">2DUnreal</a> </dd>
+                  </dl>
+                  <dl>
+                    <dt> <a href="#" style="margin-left: -236px;">常用框架</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">CordovaReact</a> <a href="http://www.jikexueyuan.com/course/ios/"> Native</a> </dd>
+                  </dl>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="list-Web"> <a href="#">前端开发</a> 
+                <!-- 隐藏菜单 -->
+                <div id="list-show-2" class="list-show" style="top: 0;width: 402px;display: none;">
+                  <dl>
+                    <dt> <a href="#">前端基础</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">HTML</a> <a href="http://www.jikexueyuan.com/course/ios/">CSS</a> <a href="http://www.jikexueyuan.com/course/android/">JavaScript</a> <a href="http://www.jikexueyuan.com/course/ios/">HTML5</a> <a href="http://www.jikexueyuan.com/course/ios/">CSS3</a> <a href="http://www.jikexueyuan.com/course/ios/">技术前瞻</a> </dd>
+                  </dl>
+                  <dl>
+                    <dt> <a href="#" style="margin-left: -311px;">前端进阶</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">Typescript</a> <a href="http://www.jikexueyuan.com/course/ios/">前端安全</a> <a href="http://www.jikexueyuan.com/course/android/">项目实战</a> </dd>
+                  </dl>
+                  <dl>
+                    <dt> <a href="#" style="margin-left: -188px;">前端框架</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">jQuery</a> <a href="http://www.jikexueyuan.com/course/ios/"> jQuery UI</a> <a href="http://www.jikexueyuan.com/course/android/">jQuery Mobile</a> <a href="http://www.jikexueyuan.com/course/ios/"> Ext JS</a> <a href="http://www.jikexueyuan.com/course/android/">AngularJS</a> <a href="http://www.jikexueyuan.com/course/ios/">ReactJS </a> <a href="http://www.jikexueyuan.com/course/android/">BootstrapReact</a> <a href="http://www.jikexueyuan.com/course/ios/">NativeBackbone </a> <a href="http://www.jikexueyuan.com/course/android/">Three.js</a> <a href="http://www.jikexueyuan.com/course/ios/">MooTools</a> <a href="http://www.jikexueyuan.com/course/android/">Compass</a> </dd>
+                  </dl>
+                  <dl>
+                    <dt> <a href="#" style="margin-left: -328px;margin-top: 61px;display: inline-block;">HTML5游戏</a> </dt>
+                    <dd class="cf" style="margin-top: 60px;"> <a href="http://www.jikexueyuan.com/course/android/">Canvas</a> <a href="http://www.jikexueyuan.com/course/ios/">SVGWebGL</a> <a href="http://www.jikexueyuan.com/course/android/">Cocos2d-js</a> <a href="http://www.jikexueyuan.com/course/ios/">CreateJS</a> <a href="http://www.jikexueyuan.com/course/android/">Flash</a> <a href="http://www.jikexueyuan.com/course/ios/">Unreal</a> <a href="http://www.jikexueyuan.com/course/android/">Egret</a> <a href="http://www.jikexueyuan.com/course/ios/">Phaser</a> </dd>
+                  </dl>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="list-qian"> <a href="">后端开发</a> 
+                <!-- 隐藏菜单 -->
+                <div class="list-show" id="list-show-3" style="top: 0;width: 402px;height:510px;display: none;">
+                  <dl>
+                    <dt> <a href="#">PythonPython</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">基础web2py</a> <a href="http://www.jikexueyuan.com/course/ios/">Django</a> <a href="http://www.jikexueyuan.com/course/android/">FlaskGUI</a> <a href="http://www.jikexueyuan.com/course/ios/">数据挖掘与分析</a> </dd>
+                  </dl>
+                  <dl>
+                    <dt> <a href="#" style="margin-left: -296px;">PHP</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">PHP 基础</a> <a href="http://www.jikexueyuan.com/course/ios/">YIIThinkPHP</a> <a href="http://www.jikexueyuan.com/course/android/">Laravel</a> <a href="http://www.jikexueyuan.com/course/android/">WordPress</a> <a href="http://www.jikexueyuan.com/course/ios/">Phalcon</a> <a href="http://www.jikexueyuan.com/course/android/">Apache</a> <a href="http://www.jikexueyuan.com/course/ios/">Facebook Hack</a> </dd>
+                  </dl>
+                  <dl>
+                    <dt> <a href="#" style="margin-left: -337px;display: inline-block;margin-top: 35px;">Node.js</a> </dt>
+                    <dd class="cf" style="margin-top: 35px;"> <a href="http://www.jikexueyuan.com/course/android/">Node.js</a> <a href="http://www.jikexueyuan.com/course/ios/">Node.js 基础</a> <a href="http://www.jikexueyuan.com/course/android/">Meteor</a> <a href="http://www.jikexueyuan.com/course/ios/">Hexo</a> </dd>
+                  </dl>
+                  <dl>
+                    <dt> <a href="#" style="margin-left: -238px;">ASP.NET</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">C#</a> <a href="http://www.jikexueyuan.com/course/ios/">ASP.NET</a> <a href="http://www.jikexueyuan.com/course/android/">MVC</a> <a href="http://www.jikexueyuan.com/course/ios/">Entity</a> <a href="http://www.jikexueyuan.com/course/android/">Framework</a> <a href="http://www.jikexueyuan.com/course/ios/">WPF</a> </dd>
+                  </dl>
+                  <dl>
+                    <dt> <a href="#" style="margin-left: -295px;">J2EE</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">JSP</a> <a href="http://www.jikexueyuan.com/course/ios/">MavenSpring</a> <a href="http://www.jikexueyuan.com/course/android/">SpringMVC</a> <a href="http://www.jikexueyuan.com/course/ios/">Struts2</a> <a href="http://www.jikexueyuan.com/course/android/">MyBatis</a> <a href="http://www.jikexueyuan.com/course/ios/">Hibernate</a> <a href="http://www.jikexueyuan.com/course/android/">Lucene常用框架</a> <a href="http://www.jikexueyuan.com/course/ios/">项目实战</a> </dd>
+                  </dl>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="list-jichu"> <a href="">基础知识</a> 
+                <!-- 隐藏菜单 -->
+                <div id="list-show-4" class="list-show" style="top: 0;width: 402px;display: none;">
+                  <dl>
+                    <dt> <a href="#">基础语言</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">C</a> <a href="http://www.jikexueyuan.com/course/ios/">C++</a> <a href="http://www.jikexueyuan.com/course/android/">Objective-C</a> <a href="http://www.jikexueyuan.com/course/ios/">Swift</a> <a href="http://www.jikexueyuan.com/course/android/">C#</a> <a href="http://www.jikexueyuan.com/course/ios/">JavaPerl</a> <a href="http://www.jikexueyuan.com/course/android/">ShellQt</a> </dd>
+                  </dl>
+                  <dl>
+                    <dt> <a href="#" style="margin-left: -330px;">计算机基础</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">计算机组成原理</a> <a href="http://www.jikexueyuan.com/course/ios/">网络工程</a> <a href="http://www.jikexueyuan.com/course/android/">WordExcel</a> <a href="http://www.jikexueyuan.com/course/android/">PowerPoint</a> </dd>
+                  </dl>
+                  <dl>
+                    <dt> <a href="#" style="margin-left: -310px;">Node.js</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">Node.js</a> <a href="http://www.jikexueyuan.com/course/ios/">Node.js 基础</a> <a href="http://www.jikexueyuan.com/course/android/">Meteor</a> <a href="http://www.jikexueyuan.com/course/ios/">Hexo</a> </dd>
+                  </dl>
+                  <dl>
+                    <dt> <a href="#" style="margin-left: -238px;">ASP.NET</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">C#</a> <a href="http://www.jikexueyuan.com/course/ios/">ASP.NET</a> <a href="http://www.jikexueyuan.com/course/android/">MVC</a> <a href="http://www.jikexueyuan.com/course/ios/">Entity</a> <a href="http://www.jikexueyuan.com/course/android/">Framework</a> <a href="http://www.jikexueyuan.com/course/ios/">WPF</a> </dd>
+                  </dl>
+                  <dl>
+                    <dt> <a href="#" style="margin-left: -295px;">J2EE</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">JSP</a> <a href="http://www.jikexueyuan.com/course/ios/">MavenSpring</a> <a href="http://www.jikexueyuan.com/course/android/">SpringMVC</a> <a href="http://www.jikexueyuan.com/course/ios/">Struts2</a> <a href="http://www.jikexueyuan.com/course/android/">MyBatis</a> <a href="http://www.jikexueyuan.com/course/ios/">Hibernate</a> <a href="http://www.jikexueyuan.com/course/android/">Lucene常用框架</a> <a href="http://www.jikexueyuan.com/course/ios/">项目实战</a> </dd>
+                  </dl>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="list-yuncal"> <a href="">云计算&大数据</a> 
+                <!-- 隐藏菜单 -->
+                <div id="list-show-5" class="list-show" style="top: 0;width: 402px;display: none;">
+                  <dl>
+                    <dt> <a href="#">应用开发</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">Android</a> <a href="http://www.jikexueyuan.com/course/ios/">iOS</a> </dd>
+                  </dl>
+                  <dl>
+                    <dt> <a href="#" style="margin-left: -90px;">游戏开发</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">Cocos</a> <a href="http://www.jikexueyuan.com/course/ios/">Unity3D</a> <a href="http://www.jikexueyuan.com/course/android/">SpriteKit</a> <a href="http://www.jikexueyuan.com/course/ios/">2DUnreal</a> </dd>
+                  </dl>
+                  <dl>
+                    <dt> <a href="#" style="margin-left: -236px;">常用框架</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">CordovaReact</a> <a href="http://www.jikexueyuan.com/course/ios/"> Native</a> </dd>
+                  </dl>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="list-zhineng"> <a href="">智能硬件&物联网</a> 
+                <!-- 隐藏菜单 -->
+                <div id="list-show-6" class="list-show" style="top: 0;width: 402px;display: none;">
+                  <dl>
+                    <dt> <a href="#">PythonPython</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">基础web2py</a> <a href="http://www.jikexueyuan.com/course/ios/">Django</a> <a href="http://www.jikexueyuan.com/course/android/">FlaskGUI</a> <a href="http://www.jikexueyuan.com/course/ios/">数据挖掘与分析</a> </dd>
+                  </dl>
+                  <dl>
+                    <dt> <a href="#" style="margin-left: -296px;">PHP</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">PHP 基础</a> <a href="http://www.jikexueyuan.com/course/ios/">YIIThinkPHP</a> <a href="http://www.jikexueyuan.com/course/android/">Laravel</a> <a href="http://www.jikexueyuan.com/course/android/">WordPress</a> <a href="http://www.jikexueyuan.com/course/ios/">Phalcon</a> <a href="http://www.jikexueyuan.com/course/android/">Apache</a> <a href="http://www.jikexueyuan.com/course/ios/">Facebook Hack</a> </dd>
+                  </dl>
+                  <dl>
+                    <dt> <a href="#" style="margin-left: -337px;display: inline-block;margin-top: 35px;">Node.js</a> </dt>
+                    <dd class="cf" style="margin-top: 35px;"> <a href="http://www.jikexueyuan.com/course/android/">Node.js</a> <a href="http://www.jikexueyuan.com/course/ios/">Node.js 基础</a> <a href="http://www.jikexueyuan.com/course/android/">Meteor</a> <a href="http://www.jikexueyuan.com/course/ios/">Hexo</a> </dd>
+                  </dl>
+                  <dl>
+                    <dt> <a href="#" style="margin-left: -238px;">ASP.NET</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">C#</a> <a href="http://www.jikexueyuan.com/course/ios/">ASP.NET</a> <a href="http://www.jikexueyuan.com/course/android/">MVC</a> <a href="http://www.jikexueyuan.com/course/ios/">Entity</a> <a href="http://www.jikexueyuan.com/course/android/">Framework</a> <a href="http://www.jikexueyuan.com/course/ios/">WPF</a> </dd>
+                  </dl>
+                  <dl>
+                    <dt> <a href="#" style="margin-left: -295px;">J2EE</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">JSP</a> <a href="http://www.jikexueyuan.com/course/ios/">MavenSpring</a> <a href="http://www.jikexueyuan.com/course/android/">SpringMVC</a> <a href="http://www.jikexueyuan.com/course/ios/">Struts2</a> <a href="http://www.jikexueyuan.com/course/android/">MyBatis</a> <a href="http://www.jikexueyuan.com/course/ios/">Hibernate</a> <a href="http://www.jikexueyuan.com/course/android/">Lucene常用框架</a> <a href="http://www.jikexueyuan.com/course/ios/">项目实战</a> </dd>
+                  </dl>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="list-mysql"> <a href="">数据库</a> 
+                <!-- 隐藏菜单 -->
+                <div id="list-show-7" class="list-show" style="top: 0;width: 402px;display: none;">
+                  <dl>
+                    <dt> <a href="#">应用开发</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">Android</a> <a href="http://www.jikexueyuan.com/course/ios/">iOS</a> </dd>
+                  </dl>
+                  <dl>
+                    <dt> <a href="#" style="margin-left: -90px;">游戏开发</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">Cocos</a> <a href="http://www.jikexueyuan.com/course/ios/">Unity3D</a> <a href="http://www.jikexueyuan.com/course/android/">SpriteKit</a> <a href="http://www.jikexueyuan.com/course/ios/">2DUnreal</a> </dd>
+                  </dl>
+                  <dl>
+                    <dt> <a href="#" style="margin-left: -236px;">常用框架</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">CordovaReact</a> <a href="http://www.jikexueyuan.com/course/ios/"> Native</a> </dd>
+                  </dl>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="list-text"> <a href="">认证考试</a> 
+                <!-- 隐藏菜单 -->
+                <div id="list-show-8" class="list-show" style="top: 0;width: 402px;display: none;">
+                  <dl>
+                    <dt> <a href="#">应用开发</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">Android</a> <a href="http://www.jikexueyuan.com/course/ios/">iOS</a> </dd>
+                  </dl>
+                  <dl>
+                    <dt> <a href="#" style="margin-left: -90px;">游戏开发</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">Cocos</a> <a href="http://www.jikexueyuan.com/course/ios/">Unity3D</a> <a href="http://www.jikexueyuan.com/course/android/">SpriteKit</a> <a href="http://www.jikexueyuan.com/course/ios/">2DUnreal</a> </dd>
+                  </dl>
+                  <dl>
+                    <dt> <a href="#" style="margin-left: -236px;">常用框架</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">CordovaReact</a> <a href="http://www.jikexueyuan.com/course/ios/"> Native</a> </dd>
+                  </dl>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="list-It"> <a href="">企业 IT</a> 
+                <!-- 隐藏菜单 -->
+                <div id="list-show-9" class="list-show" style="top: 0;width: 402px;display: none;">
+                  <dl>
+                    <dt> <a href="#">应用开发</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">Android</a> <a href="http://www.jikexueyuan.com/course/ios/">iOS</a> </dd>
+                  </dl>
+                  <dl>
+                    <dt> <a href="#" style="margin-left: -90px;">游戏开发</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">Cocos</a> <a href="http://www.jikexueyuan.com/course/ios/">Unity3D</a> <a href="http://www.jikexueyuan.com/course/android/">SpriteKit</a> <a href="http://www.jikexueyuan.com/course/ios/">2DUnreal</a> </dd>
+                  </dl>
+                  <dl>
+                    <dt> <a href="#" style="margin-left: -236px;">常用框架</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">CordovaReact</a> <a href="http://www.jikexueyuan.com/course/ios/"> Native</a> </dd>
+                  </dl>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="list-desgin"> <a href="">设计&产品&测试</a> 
+                <!-- 隐藏菜单 -->
+                <div id="list-show-10" class="list-show" style="top: 0;width: 402px;display: none;">
+                  <dl>
+                    <dt> <a href="#">PythonPython</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">基础web2py</a> <a href="http://www.jikexueyuan.com/course/ios/">Django</a> <a href="http://www.jikexueyuan.com/course/android/">FlaskGUI</a> <a href="http://www.jikexueyuan.com/course/ios/">数据挖掘与分析</a> </dd>
+                  </dl>
+                  <dl>
+                    <dt> <a href="#" style="margin-left: -296px;">PHP</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">PHP 基础</a> <a href="http://www.jikexueyuan.com/course/ios/">YIIThinkPHP</a> <a href="http://www.jikexueyuan.com/course/android/">Laravel</a> <a href="http://www.jikexueyuan.com/course/android/">WordPress</a> <a href="http://www.jikexueyuan.com/course/ios/">Phalcon</a> <a href="http://www.jikexueyuan.com/course/android/">Apache</a> <a href="http://www.jikexueyuan.com/course/ios/">Facebook Hack</a> </dd>
+                  </dl>
+                  <dl>
+                    <dt> <a href="#" style="margin-left: -337px;display: inline-block;margin-top: 35px;">Node.js</a> </dt>
+                    <dd class="cf" style="margin-top: 35px;"> <a href="http://www.jikexueyuan.com/course/android/">Node.js</a> <a href="http://www.jikexueyuan.com/course/ios/">Node.js 基础</a> <a href="http://www.jikexueyuan.com/course/android/">Meteor</a> <a href="http://www.jikexueyuan.com/course/ios/">Hexo</a> </dd>
+                  </dl>
+                  <dl>
+                    <dt> <a href="#" style="margin-left: -238px;">ASP.NET</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">C#</a> <a href="http://www.jikexueyuan.com/course/ios/">ASP.NET</a> <a href="http://www.jikexueyuan.com/course/android/">MVC</a> <a href="http://www.jikexueyuan.com/course/ios/">Entity</a> <a href="http://www.jikexueyuan.com/course/android/">Framework</a> <a href="http://www.jikexueyuan.com/course/ios/">WPF</a> </dd>
+                  </dl>
+                  <dl>
+                    <dt> <a href="#" style="margin-left: -295px;">J2EE</a> </dt>
+                    <dd class="cf"> <a href="http://www.jikexueyuan.com/course/android/">JSP</a> <a href="http://www.jikexueyuan.com/course/ios/">MavenSpring</a> <a href="http://www.jikexueyuan.com/course/android/">SpringMVC</a> <a href="http://www.jikexueyuan.com/course/ios/">Struts2</a> <a href="http://www.jikexueyuan.com/course/android/">MyBatis</a> <a href="http://www.jikexueyuan.com/course/ios/">Hibernate</a> <a href="http://www.jikexueyuan.com/course/android/">Lucene常用框架</a> <a href="http://www.jikexueyuan.com/course/ios/">项目实战</a> </dd>
+                  </dl>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="hdlist">
+            <li id="hdlist-zy"> 
+	            <a href="#"> 
+	            	<i class="icon-zyljt"></i>职业路径图 
+	            </a>
+	            <span id="all-zyljt" >查看全部</span> 
+            </li>
+            <li id="hdlist-zs"> <a href="#"> <i class="icon-zstxt"></i>知识体系图 </a> <span id="all-zstxt" >查看全部</span> </li>
+            <li id="hdlist-xl"> <a href="#"> <i class="icon-xlkc"></i>系列课程 </a> <span id="all-xlkc" >查看全部</span> </li id="hdlist-bq">
+            <li> <a href="#"> <i class="icon-kcbq"></i>课程标签 </a> <span id="all-kcbq" >查看全部</span> </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 左侧下拉列表 end--> 
+      <!-- 右侧容器 begin-->
+      <div class="boxlist"> 
+        <!-- 右侧导航列表  begin -->
+        <div class="rightlist">
+          <div class="sortnav">
+            <h3>全部课程</h3>
+            <dl id="title-one">
+              <dt> <span class="title-one">最新</span> 
+              <i class="arrow-icon"></i> </dt>
+              <div id="new" class="RlistTitle" style="display: none;">
+                <p> <a href="#">最新</a> </p>
+                <p> <a href="#">最热</a> </p>
+              </div>
+            </dl>
+            <dl id="title-twe">
+              <dt> <span class="title-twe">课程类型</span> 
+              <i class="arrow-icon"></i>
+               </dt>
+              <div id="leixing" class="RlistTitle" style="display:none;margin-left: 15px;">
+                <p> <a href="#">vip</a> </p>
+                <p> <a href="#">免费</a> </p>
+                <p> <a href="#">认证专享</a> </p>
+                <p> <a href="#">全部</a> </p>
+              </div>
+            </dl>
+            <dl id="title-three">
+              <dt> 
+              <span class="title-three">内容类型</span> 
+              <i class="arrow-icon"></i>
+                <div id="neirong" class="RlistTitle" style="display: none;">
+                  <p> <a href="#">知识精讲</a> </p>
+                  <p> <a href="#">项目实战</a> </p>
+                  <p> <a href="#">全部</a> </p>
+                </div>
+              </dt>
+            </dl>
+            <dl id="title-four">
+              <dt> <span class="title-four">难度等级</span> <i class="arrow-icon"></i>
+                <div id="nandu" class="RlistTitle" style="display: none;">
+                  <p> <a href="#">初级</a> </p>
+                  <p> <a href="#">中级</a> </p>
+                  <p> <a href="#">高级</a> </p>
+                  <p> <a href="#">全部</a> </p>
+                </div>
+              </dt>
+            </dl>
+          </div>
+          <!-- 导航右侧图标 -->
+          <div class="viewNav">
+            <ul>
+              <li class="kuai-icon"> <i class="icon"></i> </li>
+              <li class="list-icon"> <i class="icon"></i> </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 右侧导航列表  end --> 
+        <!-- 主要课程  begin --> 
+        <!-- 第一版课程样式  begin -->
+        <div class="lesson-list">
+          <ul class="cf">
+            <li id="3173"> 
+              <!-- 图片 -->
+              <div class="lessonimg-box" id="3173-lsimgbox"> <i class="user-action lesson-shoucang " style="display: none;"></i> <i class="vip-icon "></i> <a href="http://www.jikexueyuan.com/course/3173.html"> <img src="http://a1.jikexueyuan.com/home/201611/17/9d28/582d6e30c2d46.png" class="lessonimg" title="前端开发环境搭建(三种工具任选其一)" alt="前端开发环境搭建(三种工具任选其一)">
+                <div class="rsp"></div>
+                <!-- 隐藏的图片 -->
+                <div class="lessonplay" style="display: none;"> <i class="playericon"></i> </div>
+                </a> </div>
+              <!-- 字 -->
+              <div class="lesson-infor" style="height: 88px;">
+                <p class="lesson-infor-h2"> <a href="http://www.jikexueyuan.com/course/3173.html">前端开发环境搭建——(三种工具任选其一)</a> </p>
+                <div class="cp" id="cpHide1"> <i class="time-icon"></i>
+                  <p>6课时&nbsp;&nbsp;41分钟</p>
+                </div>
+                <!-- 隐藏的字 -->
+                <div class="timeandicon" style="display: none;">
+                  <p>本课程介绍常用前端开发工具 Sublime Text / Dreamweaver / WebStorm 的安装与使用技巧。</p>
+                  <div class="cf">
+                    <dl>
+                      <dd> <i class="time-icon"></i
+												>
+                        <p>6课时&nbsp;&nbsp;41分钟</p>
+                      </dd>
+                      <div class="cf" style="display: none;">
+                        <div class="lessonicon-box" style="top: 60px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://wirrorcdn.jikexueyuan.com/category/advance.png" alt="" title="项目实战"> </a> </div>
+                      </div>
+                      <dd class="chuji" > <i class="xinhao-icon"></i
+												>
+                        <p style="display: inline-block;margin-top: 10px;">初级</p>
+                        <span style="margin-left: 123px;">475人学习</span> </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="cf" id="cfHide1">
+                  <div class="lessonicon-box"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://wirrorcdn.jikexueyuan.com/category/advance.png" alt="" title="项目实战"> </a> </div>
+                </div>
+              </div>
+            </li>
+            <li id="3142"> 
+              <!-- 图片 -->
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang " style="display: none;" ></i> <a href="http://www.jikexueyuan.com/course/3173.html"> <img src="http://a1.jikexueyuan.com/home/201611/03/f97d/581ae2cb75899.jpg" class="lessonimg" title="腾讯大咖分享 - 腾讯大咖分享之技术交流">
+                <div class="rsp"></div>
+                <!-- 隐藏的图片 -->
+                <div class="lessonplay" style="display: none;"> <i class="playericon"></i> </div>
+                </a> </div>
+              <!-- 字 -->
+              <div class="lesson-infor" style="height: 88px;">
+                <p class="lesson-infor-h2"> <a href="http://www.jikexueyuan.com/course/3173.html">腾讯大咖分享 - 腾讯大咖分享之技术交流</a> </p>
+                <div class="cp" id="cpHide1"> <i class="time-icon"></i>
+                  <p>7课时&nbsp;&nbsp;93分钟</p>
+                </div>
+                <!-- 隐藏的字 -->
+                <div class="timeandicon" style="display: none;">
+                  <p>本课程主要是腾讯大咖与大家分享一些技术经验与心得。</p>
+                  <div class="cf">
+                    <dl>
+                      <dd> <i class="time-icon"></i
+												>
+                        <p>7课时&nbsp;&nbsp;93分钟</p>
+                      </dd>
+                      <div class="cf" style="display: none;">
+                        <div class="lessonicon-box" style="top: 45px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                      </div>
+                      <dd class="chuji" > <i class="xinhao-icon"></i
+												>
+                        <p style="display: inline-block;margin-top: 10px;">高级</p>
+                        <span style="margin-left: 123px;">2497人学习</span> </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="cf" id="cfHide1">
+                  <div class="lessonicon-box"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                </div>
+              </div>
+            </li>
+            <li id="3141"> 
+              <!-- 图片 -->
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang " style="display: none;"></i> <a href="http://www.jikexueyuan.com/course/3173.html"> <img src="http://a1.jikexueyuan.com/home/201611/03/fae6/581ae23c05942.jpg" class="lessonimg" title="腾讯云产品 - 腾讯云通信">
+                <div class="rsp"></div>
+                <!-- 隐藏的图片 -->
+                <div class="lessonplay" style="display: none;"> <i class="playericon"></i> </div>
+                </a> </div>
+              <!-- 字 -->
+              <div class="lesson-infor" style="height: 88px;">
+                <p class="lesson-infor-h2"> <a href="http://www.jikexueyuan.com/course/3173.html">腾讯大咖分享 - 腾讯大咖分享之创业心经</a> </p>
+                <div class="cp" id="cpHide1"> <i class="time-icon"></i>
+                  <p>7课时&nbsp;&nbsp;93分钟</p>
+                </div>
+                <!-- 隐藏的字 -->
+                <div class="timeandicon" style="display: none;">
+                  <p>本课程主要是由腾讯大咖为大家分享创业心经。</p>
+                  <div class="cf">
+                    <dl>
+                      <dd> <i class="time-icon"></i
+												>
+                        <p>7课时&nbsp;&nbsp;93分钟</p>
+                      </dd>
+                      <div class="cf" >
+                        <div class="lessonicon-box" style="top: 45px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                      </div>
+                      <dd class="chuji" > <i class="xinhao-icon"></i
+												>
+                        <p style="display: inline-block;margin-top: 10px;">高级</p>
+                        <span style="margin-left: 123px;">2497人学习</span> </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="cf" id="cfHide1">
+                  <div class="lessonicon-box"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                </div>
+              </div>
+            </li>
+            <li id="3140" style="position: absolute;top: 250px;"> 
+              <!-- 图片 -->
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang " style="display: none;"></i> <a href="http://www.jikexueyuan.com/course/3173.html"> <img src="http://a1.jikexueyuan.com/home/201611/03/f237/581ae08717ebb.jpg" class="lessonimg" title="腾讯云产品 - 腾讯云通信">
+                <div class="rsp"></div>
+                <!-- 隐藏的图片 -->
+                <div class="lessonplay" style="display: none;"> <i class="playericon"></i> </div>
+                </a> </div>
+              <!-- 字 -->
+              <div class="lesson-infor" style="height: 88px;">
+                <p class="lesson-infor-h2"> <a href="http://www.jikexueyuan.com/course/3173.html">腾讯云产品 - 腾讯云通信</a> </p>
+                <div class="cp" id="cpHide1"> <i class="time-icon"></i>
+                  <p>11课时&nbsp;&nbsp;81分钟</p>
+                </div>
+                <!-- 隐藏的字 -->
+                <div class="timeandicon" style="display: none;">
+                  <p>本课程通过实操演示，教大家快速完成SDK集成。</p>
+                  <div class="cf">
+                    <dl>
+                      <dd> <i class="time-icon"></i
+												>
+                        <p>11课时&nbsp;&nbsp;81分钟</p>
+                      </dd>
+                      <div class="cf" >
+                        <div class="lessonicon-box" style="top: 45px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                      </div>
+                      <dd class="chuji" > <i class="xinhao-icon"></i
+												>
+                        <p style="display: inline-block;margin-top: 10px;">中级</p>
+                        <span style="margin-left: 123px;">2320人学习</span> </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="cf" id="cfHide1">
+                  <div class="lessonicon-box" style="top: 34px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                </div>
+              </div>
+            </li>
+            <li id="3139" style="position: absolute;top:250px;left: 260px;"> 
+              <!-- 图片 -->
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang " style="display: none;" ></i> <a href="http://www.jikexueyuan.com/course/3173.html"> <img src="http://a1.jikexueyuan.com/home/201611/03/ff2c/581ae02862bbb.jpg" class="lessonimg" title="腾讯云产品 - 腾讯视频云之互动直播">
+                <div class="rsp"></div>
+                <!-- 隐藏的图片 -->
+                <div class="lessonplay" style="display: none;"> <i class="playericon"></i> </div>
+                </a> </div>
+              <!-- 字 -->
+              <div class="lesson-infor" style="height: 88px;">
+                <p class="lesson-infor-h2"> <a href="http://www.jikexueyuan.com/course/3173.html">腾讯云产品 - 腾讯视频云之互动直播</a> </p>
+                <div class="cp" id="cpHide1"> <i class="time-icon"></i>
+                  <p>10课时&nbsp;&nbsp;106分钟</p>
+                </div>
+                <!-- 隐藏的字 -->
+                <div class="timeandicon" style="display: none;">
+                  <p>本课程主要为大家讲解SDK集成，iOS集成。</p>
+                  <div class="cf">
+                    <dl>
+                      <dd> <i class="time-icon"></i
+												>
+                        <p>10课时&nbsp;&nbsp;106分钟</p>
+                      </dd>
+                      <div class="cf" >
+                        <div class="lessonicon-box" style="top: 30px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                      </div>
+                      <dd class="chuji"> <i class="xinhao-icon"></i
+												>
+                        <p style="display: inline-block;margin-top: 10px;">中级</p>
+                        <span style="margin-left: 123px;style="display: none;"">2317人学习</span> </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="cf" id="cfHide1">
+                  <div class="lessonicon-box" style="top: 40px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                </div>
+              </div>
+            </li>
+            <li id="3138" style="position: absolute;top:250px;left: 520px;"> 
+              <!-- 图片 -->
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang " style="display: none;" ></i> <a href="http://www.jikexueyuan.com/course/3173.html"> <img src="http://a1.jikexueyuan.com/home/201611/03/7d1c/581adfcc3f8cd.jpg" class="lessonimg" title="腾讯云产品 - 腾讯视频云之直播LVB">
+                <div class="rsp"></div>
+                <!-- 隐藏的图片 -->
+                <div class="lessonplay" style="display: none;"> <i class="playericon"></i> </div>
+                </a> </div>
+              <!-- 字 -->
+              <div class="lesson-infor" style="height: 88px;">
+                <p class="lesson-infor-h2"> <a href="http://www.jikexueyuan.com/course/3173.html">腾讯云产品 - 腾讯视频云之直播LVB</a> </p>
+                <div class="cp" id="cpHide1"> <i class="time-icon"></i>
+                  <p>4课时&nbsp;&nbsp;85分钟</p>
+                </div>
+                <!-- 隐藏的字 -->
+                <div class="timeandicon" style="display: none;">
+                  <p>本课程手把手教大家快速调用相关SDK。</p>
+                  <div class="cf">
+                    <dl>
+                      <dd> <i class="time-icon"></i
+												>
+                        <p>4课时&nbsp;&nbsp;85分钟</p>
+                      </dd>
+                      <div class="cf" >
+                        <div class="lessonicon-box" style="top: 30px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                      </div>
+                      <dd class="chuji" > <i class="xinhao-icon"></i
+												>
+                        <p style="display: inline-block;margin-top: 10px;">中级</p>
+                        <span style="margin-left: 123px;">2209人学习</span> </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="cf" id="cfHide1">
+                  <div class="lessonicon-box" style="top: 40px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                </div>
+              </div>
+            </li>
+            <li id="3137" style="position: absolute;top: 490px;"> 
+              <!-- 图片 -->
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang " style="display: none;" ></i> <a href="http://www.jikexueyuan.com/course/3173.html"> <img src="http://a1.jikexueyuan.com/home/201611/03/30c3/581adf547d978.jpg" class="lessonimg" title="腾讯云产品 - 腾讯云数据库CDB">
+                <div class="rsp"></div>
+                <!-- 隐藏的图片 -->
+                <div class="lessonplay" style="display: none;"> <i class="playericon"></i> </div>
+                </a> </div>
+              <!-- 字 -->
+              <div class="lesson-infor" style="height: 88px;">
+                <p class="lesson-infor-h2"> <a href="http://www.jikexueyuan.com/course/3173.html">腾讯云产品 - 腾讯云数据库CDB</a> </p>
+                <div class="cp" id="cpHide1"> <i class="time-icon"></i>
+                  <p>1课时&nbsp;&nbsp;9分钟</p>
+                </div>
+                <!-- 隐藏的字 -->
+                <div class="timeandicon" style="display: none;">
+                  <p>本课程主要为大家介绍云数据库的使用入门。</p>
+                  <div class="cf">
+                    <dl>
+                      <dd> <i class="time-icon"></i
+												>
+                        <p>1课时&nbsp;&nbsp;9分钟</p>
+                      </dd>
+                      <div class="cf" >
+                        <div class="lessonicon-box" style="top: 30px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                      </div>
+                      <dd class="chuji" > <i class="xinhao-icon"></i
+												>
+                        <p style="display: inline-block;margin-top: 10px;">中级</p>
+                        <span style="margin-left: 123px;">2243人学习</span> </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="cf" id="cfHide1">
+                  <div class="lessonicon-box" style="top: 30px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                </div>
+              </div>
+            </li>
+            <li id="3136" style="position: absolute;top: 490px;left: 260px;"> 
+              <!-- 图片 -->
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang " style="display: none;" ></i> <a href="http://www.jikexueyuan.com/course/3173.html"> <img src="http://a1.jikexueyuan.com/home/201611/03/30c3/581adf547d978.jpg" class="lessonimg" title="腾讯云产品 - 腾讯云数据库CDB">
+                <div class="rsp"></div>
+                <!-- 隐藏的图片 -->
+                <div class="lessonplay" style="display: none;"> <i class="playericon"></i> </div>
+                </a> </div>
+              <!-- 字 -->
+              <div class="lesson-infor" style="height: 88px;">
+                <p class="lesson-infor-h2"> <a href="http://www.jikexueyuan.com/course/3173.html">腾讯云产品 - 在云上搭建Discuz论坛</a> </p>
+                <div class="cp" id="cpHide1"> <i class="time-icon"></i>
+                  <p>4课时&nbsp;&nbsp;19分钟</p>
+                </div>
+                <!-- 隐藏的字 -->
+                <div class="timeandicon" style="display: none;">
+                  <p>本课程通过实操演示，教大家快速掌握云服务器的使用方法。</p>
+                  <div class="cf">
+                    <dl>
+                      <dd> <i class="time-icon"></i
+												>
+                        <p>4课时&nbsp;&nbsp;19分钟</p>
+                      </dd>
+                      <div class="cf" >
+                        <div class="lessonicon-box" style="top: 45px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                      </div>
+                      <dd class="chuji" > <i class="xinhao-icon"></i
+												>
+                        <p style="display: inline-block;margin-top: 10px;">中级</p>
+                        <span style="margin-left: 123px;">2355人学习</span> </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="cf" id="cfHide1">
+                  <div class="lessonicon-box" style="top: 35px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                </div>
+              </div>
+            </li>
+            <li id="3135" style="position: absolute;top: 490px;left: 520px;"> 
+              <!-- 图片 -->
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang " style="display: none;" ></i> <a href="http://www.jikexueyuan.com/course/3173.html"> <img src="http://a1.jikexueyuan.com/home/201611/03/30c3/581adf547d978.jpg" class="lessonimg" title="腾讯云产品 - 腾讯云数据库CDB">
+                <div class="rsp"></div>
+                <!-- 隐藏的图片 -->
+                <div class="lessonplay" style="display: none;"> <i class="playericon"></i> </div>
+                </a> </div>
+              <!-- 字 -->
+              <div class="lesson-infor" style="height: 88px;">
+                <p class="lesson-infor-h2"> <a href="http://www.jikexueyuan.com/course/3173.html">腾讯云产品 - 腾讯云云服务器</a> </p>
+                <div class="cp" id="cpHide1"> <i class="time-icon"></i>
+                  <p>3课时&nbsp;&nbsp;13分钟</p>
+                </div>
+                <!-- 隐藏的字 -->
+                <div class="timeandicon" style="display: none;">
+                  <p>本课程主要为大家介绍如何使用Windows系统及Linux系统云服务器。</p>
+                  <div class="cf">
+                    <dl>
+                      <dd> <i class="time-icon"></i
+												>
+                        <p>3课时&nbsp;&nbsp;13分钟</p>
+                      </dd>
+                      <div class="cf" >
+                        <div class="lessonicon-box" style="top: 45px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                      </div>
+                      <dd class="chuji" > <i class="xinhao-icon"></i
+												>
+                        <p style="display: inline-block;margin-top: 10px;">中级</p>
+                        <span style="margin-left: 123px;">2209人学习</span> </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="cf" id="cfHide1">
+                  <div class="lessonicon-box" style="top: 30px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                </div>
+              </div>
+            </li>
+            <li id="3097" style="position: absolute;top: 730px;"> 
+              <!-- 图片 -->
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang " style="display: none;" ></i> <a href="http://www.jikexueyuan.com/course/3173.html"> <img src="http://a1.jikexueyuan.com/home/201611/03/30c3/581adf547d978.jpg" class="lessonimg" title="腾讯云产品 - 腾讯云数据库CDB">
+                <div class="rsp"></div>
+                <!-- 隐藏的图片 -->
+                <div class="lessonplay" style="display: none;"> <i class="playericon"></i> </div>
+                </a> </div>
+              <!-- 字 -->
+              <div class="lesson-infor" style="height: 88px;">
+                <p class="lesson-infor-h2"> <a href="http://www.jikexueyuan.com/course/3173.html">腾讯云产品 - 腾讯云内容分发网络CDN</a> </p>
+                <div class="cp" id="cpHide1"> <i class="time-icon"></i>
+                  <p>4课时&nbsp;&nbsp;14分钟</p>
+                </div>
+                <!-- 隐藏的字 -->
+                <div class="timeandicon" style="display: none;">
+                  <p>本课程通过产品介绍、应用场景介绍等，手把手教你快速入门。</p>
+                  <div class="cf">
+                    <dl>
+                      <dd> <i class="time-icon"></i
+												>
+                        <p>4课时&nbsp;&nbsp;14分钟</p>
+                      </dd>
+                      <div class="lessonicon-box" style="top: 45px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                      <dd class="chuji" > <i class="xinhao-icon"></i
+												>
+                        <p style="display: inline-block;margin-top: 10px;">中级</p>
+                        <span style="margin-left: 123px;">2287人学习</span> </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="cf" id="cfHide1">
+                  <div class="lessonicon-box" style="top:30px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                </div>
+              </div>
+            </li>
+            <li id="3096" style="position: absolute;top: 730px;left: 260px;"> 
+              <!-- 图片 -->
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang " style="display: none;" ></i> <a href="http://www.jikexueyuan.com/course/3173.html"> <img src="http://a1.jikexueyuan.com/home/201611/03/30c3/581adf547d978.jpg" class="lessonimg" title="腾讯云产品 - 腾讯云数据库CDB">
+                <div class="rsp"></div>
+                <!-- 隐藏的图片 -->
+                <div class="lessonplay" style="display: none;"> <i class="playericon"></i> </div>
+                </a> </div>
+              <!-- 字 -->
+              <div class="lesson-infor" style="height: 88px;">
+                <p class="lesson-infor-h2"> <a href="http://www.jikexueyuan.com/course/3173.html">腾讯云产品 - 腾讯云对象存储COS</a> </p>
+                <div class="cp" id="cpHide1"> <i class="time-icon"></i>
+                  <p>5课时&nbsp;&nbsp;30分钟</p>
+                </div>
+                <!-- 隐藏的字 -->
+                <div class="timeandicon" style="display: none;">
+                  <p> 本课程深入浅出为你讲解COS的使用方法。 </p>
+                  <div class="cf">
+                    <dl>
+                      <dd> <i class="time-icon"></i
+												>
+                        <p>5课时&nbsp;&nbsp;30分钟</p>
+                      </dd>
+                      <div class="lessonicon-box" style="top: 45px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                      <dd class="chuji" > <i class="xinhao-icon"></i>
+                        <p style="display: inline-block;margin-top: 10px;">中级</p>
+                        <span style="margin-left: 123px;">2149人学习</span> </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="cf" id="cfHide1">
+                  <div class="lessonicon-box" style="top:35px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                </div>
+              </div>
+            </li>
+            <li id="3095" style="position: absolute;top: 730px;left: 520px;"> 
+              <!-- 图片 -->
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang " style="display: none;"></i> <a href="http://www.jikexueyuan.com/course/3173.html"> <img src="http://a1.jikexueyuan.com/home/201611/03/30c3/581adf547d978.jpg" class="lessonimg" title="腾讯云产品 - 腾讯云数据库CDB">
+                <div class="rsp"></div>
+                <!-- 隐藏的图片 -->
+                <div class="lessonplay" style="display: none;"> <i class="playericon"></i> </div>
+                </a> </div>
+              <!-- 字 -->
+              <div class="lesson-infor" style="height: 88px;">
+                <p class="lesson-infor-h2"> <a href="http://www.jikexueyuan.com/course/3173.html">云计算基础 - 云计算的组成</a> </p>
+                <div class="cp" id="cpHide1"> <i class="time-icon"></i>
+                  <p>4课时&nbsp;&nbsp;22分钟</p>
+                </div>
+                <!-- 隐藏的字 -->
+                <div class="timeandicon" style="display: none;">
+                  <p> 本课程主要为大家讲解云计算的组成，COS对象存储及CDN内容分发网络。 </p>
+                  <div class="cf">
+                    <dl>
+                      <dd> <i class="time-icon"></i
+												>
+                        <p>4课时&nbsp;&nbsp;22分钟</p>
+                      </dd>
+                      <div class="lessonicon-box" style="top: 45px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                      <dd class="chuji" > <i class="xinhao-icon"></i
+												>
+                        <p style="display: inline-block;margin-top: 10px;">初级</p>
+                        <span style="margin-left: 123px;">2197人学习</span> </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="cf" id="cfHide1">
+                  <div class="lessonicon-box" style="top:35px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                </div>
+              </div>
+            </li>
+            <li id="3094" style="position: absolute;top: 970px;"> 
+              <!-- 图片 -->
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang " style="display: none;" ></i> <a href="http://www.jikexueyuan.com/course/3173.html"> <img src="http://a1.jikexueyuan.com/home/201611/03/30c3/581adf547d978.jpg" class="lessonimg" title="腾讯云产品 - 腾讯云数据库CDB">
+                <div class="rsp"></div>
+                <!-- 隐藏的图片 -->
+                <div class="lessonplay" style="display: none;"> <i class="playericon"></i> </div>
+                </a> </div>
+              <!-- 字 -->
+              <div class="lesson-infor" style="height: 88px;">
+                <p class="lesson-infor-h2"> <a href="http://www.jikexueyuan.com/course/3173.html">云计算基础 - 一分钟了解云计算</a> </p>
+                <div class="cp" id="cpHide1"> <i class="time-icon"></i>
+                  <p>5课时&nbsp;&nbsp;59分钟</p>
+                </div>
+                <!-- 隐藏的字 -->
+                <div class="timeandicon" style="display: none;">
+                  <p> 本课程主要带大家了解什么是云以及云计算的应用场景。 </p>
+                  <div class="cf">
+                    <dl>
+                      <dd> <i class="time-icon"></i
+												>
+                        <p>5课时&nbsp;&nbsp;59分钟</p>
+                      </dd>
+                      <div class="lessonicon-box" style="top: 45px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                      <dd class="chuji" > <i class="xinhao-icon"></i
+												>
+                        <p style="display: inline-block;margin-top: 10px;">初级</p>
+                        <span style="margin-left: 123px;">2326人学习</span> </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="cf" id="cfHide1">
+                  <div class="lessonicon-box" style="top:35px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                </div>
+              </div>
+            </li>
+            <li id="3063" style="position: absolute;top: 970px;left: 260px;"> 
+              <!-- 图片 -->
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang " style="display: none;" ></i> <a href="http://www.jikexueyuan.com/course/3173.html"> <img src="http://a1.jikexueyuan.com/home/201611/03/30c3/581adf547d978.jpg" class="lessonimg" title="腾讯云产品 - 腾讯云数据库CDB">
+                <div class="rsp"></div>
+                <!-- 隐藏的图片 -->
+                <div class="lessonplay" style="display: none;"> <i class="playericon"></i> </div>
+                </a> </div>
+              <!-- 字 -->
+              <div class="lesson-infor" style="height: 88px;">
+                <p class="lesson-infor-h2"> <a href="http://www.jikexueyuan.com/course/3173.html">打造你自己的Dragonboard 410c</a> </p>
+                <div class="cp" id="cpHide1"> <i class="time-icon"></i>
+                  <p>3课时&nbsp;&nbsp;16分钟</p>
+                </div>
+                <!-- 隐藏的字 -->
+                <div class="timeandicon" style="display:none;height: 145px;">
+                  <p> 本课主要阐述Dragonboard 410c支持的软硬件环境，外设接口，以及功能用途的同时，教大家如何去购买及使用Dragonboard 410c开发板。 </p>
+                  <div class="cf">
+                    <dl>
+                      <dd> <i class="time-icon"></i
+												>
+                        <p>3课时&nbsp;&nbsp;16分钟</p>
+                      </dd>
+                      <div class="lessonicon-box" style="top: 80px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                      <dd class="chuji" > <i class="xinhao-icon"></i
+												>
+                        <p style="display: inline-block;margin-top: 10px;">初级</p>
+                        <span style="margin-left: 123px;">2399人学习</span> </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="cf" id="cfHide1">
+                  <div class="lessonicon-box" style="top:35px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                </div>
+              </div>
+            </li>
+            <li id="3076" style="position: absolute;top: 970px;left: 520px;"> 
+              <!-- 图片 -->
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang " style="display: none;" ></i> <a href="http://www.jikexueyuan.com/course/3173.html"> <img src="http://a1.jikexueyuan.com/home/201611/03/30c3/581adf547d978.jpg" class="lessonimg" title="腾讯云产品 - 腾讯云数据库CDB">
+                <div class="rsp"></div>
+                <!-- 隐藏的图片 -->
+                <div class="lessonplay" style="display: none;"> <i class="playericon"></i> </div>
+                </a> </div>
+              <!-- 字 -->
+              <div class="lesson-infor" style="height: 88px;">
+                <p class="lesson-infor-h2"> <a href="http://www.jikexueyuan.com/course/3173.html">NDK编程开发</a> </p>
+                <div class="cp" id="cpHide1"> <i class="time-icon"></i>
+                  <p>3课时&nbsp;&nbsp;22分钟</p>
+                </div>
+                <!-- 隐藏的字 -->
+                <div class="timeandicon" style="display:none;height: 145px;">
+                  <p> 本课主要教大家如何在Android应用开发中加入NDK的编程开发，旨在借此让大家学会在Java代码中嵌入C/C++的高效代码，实现java/C混合编程。 </p>
+                  <div class="cf">
+                    <dl>
+                      <dd> <i class="time-icon"></i
+												>
+                        <p>3课时&nbsp;&nbsp;22分钟</p>
+                      </dd>
+                      <div class="lessonicon-box" style="top: 80px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                      <dd class="chuji" > <i class="xinhao-icon"></i
+												>
+                        <p style="display: inline-block;margin-top: 10px;">初级</p>
+                        <span style="margin-left: 123px;">2351人学习</span> </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="cf" id="cfHide1">
+                  <div class="lessonicon-box" style="top:35px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                </div>
+              </div>
+            </li>
+            <li id="3129" style="position: absolute;top: 1210px;"> 
+              <!-- 图片 -->
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang " style="display: none;" ></i> <a href="http://www.jikexueyuan.com/course/3173.html"> <img src="http://a1.jikexueyuan.com/home/201611/03/30c3/581adf547d978.jpg" class="lessonimg" title="腾讯云产品 - 腾讯云数据库CDB">
+                <div class="rsp"></div>
+                <!-- 隐藏的图片 -->
+                <div class="lessonplay" style="display: none;"> <i class="playericon"></i> </div>
+                </a> </div>
+              <!-- 字 -->
+              <div class="lesson-infor" style="height: 88px;">
+                <p class="lesson-infor-h2"> <a href="http://www.jikexueyuan.com/course/3173.html">应用开发和部署实例</a> </p>
+                <div class="cp" id="cpHide1"> <i class="time-icon"></i>
+                  <p>2课时&nbsp;&nbsp;27分钟</p>
+                </div>
+                <!-- 隐藏的字 -->
+                <div class="timeandicon" style="display:none;height: 160px;">
+                  <p> 本课主要是教大家一款应用程序的开发、调试和部署。通过Android提供的蓝牙、网络通讯等模块的接口，讲解应用中对接口的调用和调试，并详细讲解应用在Studio虚拟设备上的部署和设备上的部署运行。 </p>
+                  <div class="cf">
+                    <dl>
+                      <dd> <i class="time-icon"></i
+												>
+                        <p>2课时&nbsp;&nbsp;27分钟</p>
+                      </dd>
+                      <div class="lessonicon-box" style="top: 100px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                      <dd class="chuji"> <i class="xinhao-icon"></i
+												>
+                        <p style="display: inline-block;margin-top: 10px;">初级</p>
+                        <span style="margin-left: 123px;">2206人学习</span> </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="cf" id="cfHide1">
+                  <div class="lessonicon-box" style="top:35px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                </div>
+              </div>
+            </li>
+            <li id="3122" style="position: absolute;top: 1210px;left: 260px;"> 
+              <!-- 图片 -->
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang " style="display: none;" ></i> <a href="http://www.jikexueyuan.com/course/3173.html"> <img src="http://a1.jikexueyuan.com/home/201611/03/30c3/581adf547d978.jpg" class="lessonimg" title="腾讯云产品 - 腾讯云数据库CDB">
+                <div class="rsp"></div>
+                <!-- 隐藏的图片 -->
+                <div class="lessonplay" style="display: none;"> <i class="playericon"></i> </div>
+                </a> </div>
+              <!-- 字 -->
+              <div class="lesson-infor" style="height: 88px;">
+                <p class="lesson-infor-h2"> <a href="http://www.jikexueyuan.com/course/3173.html">简介Dragonboard 410c网络服务</a> </p>
+                <div class="cp" id="cpHide1"> <i class="time-icon"></i>
+                  <p>2课时&nbsp;&nbsp;27分钟</p>
+                </div>
+                <!-- 隐藏的字 -->
+                <div class="timeandicon" style="display:none;height: 160px;">
+                  <p>1.介绍DragonBoard 410c网络服务2.配置Dragonboard 410c网络服务</p>
+                  <div class="cf">
+                    <dl>
+                      <dd> <i class="time-icon"></i
+												>
+                        <p>2课时&nbsp;&nbsp;12分钟</p>
+                      </dd>
+                      <div class="lessonicon-box" style="top: 45px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                      <dd class="chuji" > <i class="xinhao-icon"></i
+												>
+                        <p style="display: inline-block;margin-top: 10px;">初级</p>
+                        <span style="margin-left: 123px;">2130人学习</span> </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="cf" id="cfHide1">
+                  <div class="lessonicon-box" style="top:35px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                </div>
+              </div>
+            </li>
+            <li id="3107" style="position: absolute;top: 1210px;left: 520px;"> 
+              <!-- 图片 -->
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang " style="display: none;" ></i> <a href="http://www.jikexueyuan.com/course/3173.html"> <img src="http://a1.jikexueyuan.com/home/201611/03/30c3/581adf547d978.jpg" class="lessonimg" title="腾讯云产品 - 腾讯云数据库CDB">
+                <div class="rsp"></div>
+                <!-- 隐藏的图片 -->
+                <div class="lessonplay" style="display: none;"> <i class="playericon"></i> </div>
+                </a> </div>
+              <!-- 字 -->
+              <div class="lesson-infor" style="height: 88px;">
+                <p class="lesson-infor-h2"> <a href="http://www.jikexueyuan.com/course/3173.html">Android应用开发</a> </p>
+                <div class="cp" id="cpHide1"> <i class="time-icon"></i>
+                  <p>2课时&nbsp;&nbsp;17分钟</p>
+                </div>
+                <!-- 隐藏的字 -->
+                <div class="timeandicon" style="display:none;height: 160px;">
+                  <p> 本课将教大家如何进行Android的游戏应用开发，包括介绍所开发游戏的架构及软件的应用接口等等，目的是让大家学会在Dragonboard410c 上开发属于自己游戏应用。 </p>
+                  <div class="cf">
+                    <dl>
+                      <dd> <i class="time-icon"></i
+												>
+                        <p>2课时&nbsp;&nbsp;17分钟</p>
+                      </dd>
+                      <div class="lessonicon-box" style="top: 100px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                      <dd class="chuji" > <i class="xinhao-icon"></i
+												>
+                        <p style="display: inline-block;margin-top: 10px;">初级</p>
+                        <span style="margin-left: 123px;">2906人学习</span> </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="cf" id="cfHide1">
+                  <div class="lessonicon-box" style="top:35px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                </div>
+              </div>
+            </li>
+            <li id="3101" style="position: absolute;top: 1450px;"> 
+              <!-- 图片 -->
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang " style="display: none;" ></i> <a href="http://www.jikexueyuan.com/course/3173.html"> <img src="http://a1.jikexueyuan.com/home/201611/03/30c3/581adf547d978.jpg" class="lessonimg" title="腾讯云产品 - 腾讯云数据库CDB">
+                <div class="rsp"></div>
+                <!-- 隐藏的图片 -->
+                <div class="lessonplay" style="display: none;"> <i class="playericon"></i> </div>
+                </a> </div>
+              <!-- 字 -->
+              <div class="lesson-infor" style="height: 88px;">
+                <p class="lesson-infor-h2"> <a href="http://www.jikexueyuan.com/course/3173.html">如何更换Dragonboard 410c操作系统</a> </p>
+                <div class="cp" id="cpHide1"> <i class="time-icon"></i>
+                  <p>9课时&nbsp;&nbsp;100分钟</p>
+                </div>
+                <!-- 隐藏的字 -->
+                <div class="timeandicon" style="display:none;height: 180px;">
+                  <p> 本课教大家如何选择适合自己的操作系统和更换Dragonboard 410c开发板上的操作系统，包括在linux、windows环境下使用SD卡和fastboot工具来烧写android和linux操作系统，熟练掌握各种系统烧录工具和方法的使用。 </p>
+                  <div class="cf">
+                    <dl>
+                      <dd> <i class="time-icon"></i
+												>
+                        <p>9课时&nbsp;&nbsp;100分钟</p>
+                      </dd>
+                      <div class="lessonicon-box" style="top: 100px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                      <dd class="chuji" > <i class="xinhao-icon"></i
+												>
+                        <p style="display: inline-block;margin-top: 10px;">初级</p>
+                        <span style="margin-left: 123px;">2274人学习</span> </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="cf" id="cfHide1">
+                  <div class="lessonicon-box" style="top:60px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                </div>
+              </div>
+            </li>
+            <li id="3180" style="position: absolute;top: 1450px;left: 260px;"> 
+              <!-- 图片 -->
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang " style="display: none;" ></i> <a href="http://www.jikexueyuan.com/course/3173.html"> <img src="http://a1.jikexueyuan.com/home/201611/03/30c3/581adf547d978.jpg" class="lessonimg" title="腾讯云产品 - 腾讯云数据库CDB">
+                <div class="rsp"></div>
+                <!-- 隐藏的图片 -->
+                <div class="lessonplay" style="display: none;"> <i class="playericon"></i> </div>
+                </a> </div>
+              <!-- 字 -->
+              <div class="lesson-infor" style="height: 88px;">
+                <p class="lesson-infor-h2"> <a href="http://www.jikexueyuan.com/course/3173.html">如何一小时快速搭建一个应用号</a> </p>
+                <div class="cp" id="cpHide1"> <i class="time-icon"></i>
+                  <p>3课时&nbsp;&nbsp;30分钟</p>
+                </div>
+                <!-- 隐藏的字 -->
+                <div class="timeandicon" style="display:none;height: 180px;">
+                  <p> 该课程详细讲解了如何1小时快速搭建一个应用号，包括搭建过程的演示与框架，搭建流程以及组件与API，手把手教你搭建你自己的第一个微信小程序 </p>
+                  <div class="cf">
+                    <dl>
+                      <dd> <i class="time-icon"></i
+												>
+                        <p>3课时&nbsp;&nbsp;30分钟</p>
+                      </dd>
+                      <div class="lessonicon-box" style="top: 80px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                      <dd class="chuji" > <i class="xinhao-icon"></i
+												>
+                        <p style="display: inline-block;margin-top: 10px;">初级</p>
+                        <span style="margin-left: 123px;">6301人学习</span> </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="cf" id="cfHide1">
+                  <div class="lessonicon-box" style="top:30px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                </div>
+              </div>
+            </li>
+            <li id="3075" style="position: absolute;top: 1450px;left: 520px;"> 
+              <!-- 图片 -->
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang " style="display: none;" ></i> <a href="http://www.jikexueyuan.com/course/3173.html"> <img src="http://a1.jikexueyuan.com/home/201611/03/30c3/581adf547d978.jpg" class="lessonimg" title="腾讯云产品 - 腾讯云数据库CDB">
+                <div class="rsp"></div>
+                <!-- 隐藏的图片 -->
+                <div class="lessonplay" style="display: none;"> <i class="playericon"></i> </div>
+                </a> </div>
+              <!-- 字 -->
+              <div class="lesson-infor" style="height: 88px;">
+                <p class="lesson-infor-h2"> <a href="http://www.jikexueyuan.com/course/3173.html">如何挽救变砖的开发板</a> </p>
+                <div class="cp" id="cpHide1"> <i class="time-icon"></i>
+                  <p>3课时&nbsp;&nbsp;7分钟</p>
+                </div>
+                <!-- 隐藏的字 -->
+                <div class="timeandicon" style="display:none;height: 180px;">
+                  <p> 本课程主要是教大家怎么解决开发板变砖的问题，通过给讲述开发板变砖的类型，解决变砖开发板的方法，最后教大家以正确的操作方式去预防开发板变砖。 </p>
+                  <div class="cf">
+                    <dl>
+                      <dd> <i class="time-icon"></i
+											>
+                        <p>3课时&nbsp;&nbsp;7分钟</p>
+                      </dd>
+                      <div class="lessonicon-box" style="top: 80px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                      <dd class="chuji" > <i class="xinhao-icon"></i
+											>
+                        <p style="display: inline-block;margin-top: 10px;">初级</p>
+                        <span style="margin-left: 123px;">2447人学习</span> </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="cf" id="cfHide1">
+                  <div class="lessonicon-box" style="top:30px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                </div>
+              </div>
+            </li>
+            <li id="3070" style="position: absolute;top: 1690px;"> 
+              <!-- 图片 -->
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang " style="display: none;" ></i> <a href="http://www.jikexueyuan.com/course/3173.html"> <img src="http://a1.jikexueyuan.com/home/201611/03/30c3/581adf547d978.jpg" class="lessonimg" title="腾讯云产品 - 腾讯云数据库CDB">
+                <div class="rsp"></div>
+                <!-- 隐藏的图片 -->
+                <div class="lessonplay" style="display: none;"> <i class="playericon"></i> </div>
+                </a> </div>
+              <!-- 字 -->
+              <div class="lesson-infor" style="height: 88px;">
+                <p class="lesson-infor-h2"> <a href="http://www.jikexueyuan.com/course/3173.html">简介DragonBoard 410c的开发环境</a> </p>
+                <div class="cp" id="cpHide1"> <i class="time-icon"></i>
+                  <p>6课时&nbsp;&nbsp;26分钟</p>
+                </div>
+                <!-- 隐藏的字 -->
+                <div class="timeandicon" style="display:none;height: 160px;">
+                  <p> 本课程主要介绍DragonBoard 410c的开发环境，APP开发推荐使用的软件。Android Studio的介绍和安装，git、adb和fastboot工具的介绍。 </p>
+                  <div class="cf">
+                    <dl>
+                      <dd> <i class="time-icon"></i
+											>
+                        <p>6课时&nbsp;&nbsp;26分钟</p>
+                      </dd>
+                      <div class="lessonicon-box" style="top: 80px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                      <dd class="chuji" > <i class="xinhao-icon"></i
+											>
+                        <p style="display: inline-block;margin-top: 10px;">初级</p>
+                        <span style="margin-left: 123px;">2298人学习</span> </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="cf" id="cfHide1">
+                  <div class="lessonicon-box" style="top:30px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                </div>
+              </div>
+            </li>
+            <li id="3073" style="position: absolute;top: 1690px;left: 260px;"> 
+              <!-- 图片 -->
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang " style="display: none;" ></i> <a href="http://www.jikexueyuan.com/course/3173.html"> <img src="http://a1.jikexueyuan.com/home/201611/03/30c3/581adf547d978.jpg" class="lessonimg" title="腾讯云产品 - 腾讯云数据库CDB">
+                <div class="rsp"></div>
+                <!-- 隐藏的图片 -->
+                <div class="lessonplay" style="display: none;"> <i class="playericon"></i> </div>
+                </a> </div>
+              <!-- 字 -->
+              <div class="lesson-infor" style="height: 88px;">
+                <p class="lesson-infor-h2"> <a href="http://www.jikexueyuan.com/course/3173.html">专业术语/技术概念</a> </p>
+                <div class="cp" id="cpHide1"> <i class="time-icon"></i>
+                  <p>3课时&nbsp;&nbsp;15分钟</p>
+                </div>
+                <!-- 隐藏的字 -->
+                <div class="timeandicon" style="display:none;height: 160px;">
+                  <p> 对DragonBoard 410c开发公开课整套课程中所涉及到的一些专业术语和技术概念进行介绍，并对相关技术的使用进行了补充，让大家在后续课程中更快的理解和接受相关的技术知识点。 </p>
+                  <div class="cf">
+                    <dl>
+                      <dd> <i class="time-icon"></i
+												>
+                        <p>3课时&nbsp;&nbsp;15分钟</p>
+                      </dd>
+                      <div class="lessonicon-box" style="top: 100px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                      <dd class="chuji" > <i class="xinhao-icon"></i
+												>
+                        <p style="display: inline-block;margin-top: 10px;">初级</p>
+                        <span style="margin-left: 123px;">2462人学习</span> </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="cf" id="cfHide1">
+                  <div class="lessonicon-box" style="top:30px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                </div>
+              </div>
+            </li>
+            <li id="3072" style="position: absolute;top: 1690px;left: 520px;"> 
+              <!-- 图片 -->
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang " style="display: none;" ></i> <a href="http://www.jikexueyuan.com/course/3173.html"> <img src="http://a1.jikexueyuan.com/home/201611/03/30c3/581adf547d978.jpg" class="lessonimg" title="腾讯云产品 - 腾讯云数据库CDB">
+                <div class="rsp"></div>
+                <!-- 隐藏的图片 -->
+                <div class="lessonplay" style="display: none;"> <i class="playericon"></i> </div>
+                </a> </div>
+              <!-- 字 -->
+              <div class="lesson-infor" style="height: 88px;">
+                <p class="lesson-infor-h2"> <a href="http://www.jikexueyuan.com/course/3173.html">课程介绍</a> </p>
+                <div class="cp" id="cpHide1"> <i class="time-icon"></i>
+                  <p>1课时&nbsp;&nbsp;3分钟</p>
+                </div>
+                <!-- 隐藏的字 -->
+                <div class="timeandicon" style="display:none;height: 160px;">
+                  <p> 对整个Dragonboard 410c开发公开课课程体系进行介绍，带大家熟悉整个课程体系中的九大课程模块内容。 </p>
+                  <div class="cf">
+                    <dl>
+                      <dd> <i class="time-icon"></i
+												>
+                        <p>1课时&nbsp;&nbsp;3分钟</p>
+                      </dd>
+                      <div class="lessonicon-box" style="top: 60px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                      <dd class="chuji"> <i class="xinhao-icon"></i
+												>
+                        <p style="display: inline-block;margin-top: 10px;">初级</p>
+                        <span style="margin-left: 123px;">2747人学习</span> </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="cf" id="cfHide1">
+                  <div class="lessonicon-box" style="top:30px;"> <a href="http://www.jikexueyuan.com/course/practice/"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt="" title="腾讯云"> </a> </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- 第一版课程样式  end --> 
+        
+        <!-- 第二版课程样式  begin -->
+        <div class="lesson-list2" style="display: none;">
+          <ul class="cf">
+            <li id="#3173" class="cf-3173">
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang"></i> <i class="vip-icon"></i> <a href="#"></a> <img class="lessonimg" src="http://a1.jikexueyuan.com/home/201611/17/9d28/582d6e30c2d46.png" alt="">
+                <div class="lessonplay lessonplay-3173"> <i class="playericon"></i> </div>
+              </div>
+              <div class="lesson-infor">
+                <h2 class="lesson-info-h2"> <a href="#">前端开发环境搭建(三种工具任选其一)</a> </h2>
+                <p style="height: 36px;"> 本课程介绍常用前端开发工具 Sublime Text / Dreamweaver / WebStorm 的安装与使用技巧 </p>
+                <div class="timeandicon">
+                  <div class="cf">
+                    <dl>
+                      <dd class="mar"> <i class="time-icon"></i>
+                        <p>6课时&nbsp;41分钟</p>
+                      </dd>
+                      <dd class="zhongji"> <i class="xinhao-icon"></i>
+                        <p>初级</p>
+                      </dd>
+                    </dl>
+                    <p class="learn-number" style="display: block;">588人学习</p>
+                  </div>
+                  <div class="cf">
+                    <div class="lessonicon-box"> <a href="#"> <img width="16" src="http://wirrorcdn.jikexueyuan.com/category/advance.png" alt=""> </a> </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="#3142" class="cf-3142">
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang"></i> <a href="#"></a> <img class="lessonimg" src="http://a1.jikexueyuan.com/home/201611/17/9d28/582d6e30c2d46.png" alt="">
+                <div class="lessonplay lessonplay-3142"> <i class="playericon"></i> </div>
+              </div>
+              <div class="lesson-infor">
+                <h2 class="lesson-info-h2"> <a href="#"> 腾讯大咖分享 - 腾讯大咖分享之技术交流</a> </h2>
+                <p style="height: 36px;"> 本课程主要是腾讯大咖与大家分享一些技术经验与心得。 </p>
+                <div class="timeandicon">
+                  <div class="cf">
+                    <dl>
+                      <dd class="mar"> <i class="time-icon"></i>
+                        <p>10课时&nbsp;122分钟</p>
+                      </dd>
+                      <dd class="zhongji"> <i class="xinhao-icon"></i>
+                        <p> 高级</p>
+                      </dd>
+                    </dl>
+                    <p class="learn-number" style="display: block;"> 3217人学习</p>
+                  </div>
+                  <div class="cf">
+                    <div class="lessonicon-box"> <a href="#"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt=""> </a> </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="#3141" class="cf-3141">
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang"></i> <a href="#"></a> <img class="lessonimg" src="http://a1.jikexueyuan.com/home/201611/17/9d28/582d6e30c2d46.png" alt="">
+                <div class="lessonplay lessonplay-3141"> <i class="playericon"></i> </div>
+              </div>
+              <div class="lesson-infor">
+                <h2 class="lesson-info-h2"> <a href="#">腾讯大咖分享 - 腾讯大咖分享之创业心经</a> </h2>
+                <p style="height: 36px;"> 本课程主要是由腾讯大咖为大家分享创业心经。 </p>
+                <div class="timeandicon">
+                  <div class="cf">
+                    <dl>
+                      <dd class="mar"> <i class="time-icon"></i>
+                        <p>7课时&nbsp;93分钟</p>
+                      </dd>
+                      <dd class="zhongji"> <i class="xinhao-icon"></i>
+                        <p> 高级</p>
+                      </dd>
+                    </dl>
+                    <p class="learn-number" style="display: block;"> 2514人学习</p>
+                  </div>
+                  <div class="cf">
+                    <div class="lessonicon-box"> <a href="#"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt=""> </a> </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="#3140" class="cf-3140">
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang"></i> <a href="#"></a> <img class="lessonimg" src="http://a1.jikexueyuan.com/home/201611/17/9d28/582d6e30c2d46.png" alt="">
+                <div class="lessonplay lessonplay-3140"> <i class="playericon"></i> </div>
+              </div>
+              <div class="lesson-infor">
+                <h2 class="lesson-info-h2"> <a href="#">腾讯云产品 - 腾讯云通信</a> </h2>
+                <p style="height: 36px;"> 本课程通过实操演示，教大家快速完成SDK集成。 </p>
+                <div class="timeandicon">
+                  <div class="cf">
+                    <dl>
+                      <dd class="mar"> <i class="time-icon"></i>
+                        <p>12课时&nbsp;81分钟</p>
+                      </dd>
+                      <dd class="zhongji"> <i class="xinhao-icon"></i>
+                        <p> 中级</p>
+                      </dd>
+                    </dl>
+                    <p class="learn-number" style="display: block;"> 2331人学习</p>
+                  </div>
+                  <div class="cf">
+                    <div class="lessonicon-box"> <a href="#"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt=""> </a> </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="#3139" class="cf-3139">
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang"></i> <a href="#"></a> <img class="lessonimg" src="http://a1.jikexueyuan.com/home/201611/17/9d28/582d6e30c2d46.png" alt="">
+                <div class="lessonplay lessonplay-3139"> <i class="playericon"></i> </div>
+              </div>
+              <div class="lesson-infor">
+                <h2 class="lesson-info-h2"> <a href="#">腾讯云产品 - 腾讯视频云之互动直播</a> </h2>
+                <p style="height: 36px;"> 本课程主要为大家讲解SDK集成，iOS集成。 </p>
+                <div class="timeandicon">
+                  <div class="cf">
+                    <dl>
+                      <dd class="mar"> <i class="time-icon"></i>
+                        <p>12课时&nbsp;48分钟</p>
+                      </dd>
+                      <dd class="zhongji"> <i class="xinhao-icon"></i>
+                        <p> 中级</p>
+                      </dd>
+                    </dl>
+                    <p class="learn-number" style="display: block;"> 2327人学习</p>
+                  </div>
+                  <div class="cf">
+                    <div class="lessonicon-box"> <a href="#"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt=""> </a> </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="#3138" class="cf-3138">
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang"></i> <a href="#"></a> <img class="lessonimg" src="http://a1.jikexueyuan.com/home/201611/17/9d28/582d6e30c2d46.png" alt="">
+                <div class="lessonplay lessonplay-3138"> <i class="playericon"></i> </div>
+              </div>
+              <div class="lesson-infor">
+                <h2 class="lesson-info-h2"> <a href="#">腾讯云产品 - 腾讯视频云之直播LVB</a> </h2>
+                <p style="height: 36px;"> 本课程手把手教大家快速调用相关SDK。 </p>
+                <div class="timeandicon">
+                  <div class="cf">
+                    <dl>
+                      <dd class="mar"> <i class="time-icon"></i>
+                        <p>4课时&nbsp;85分钟</p>
+                      </dd>
+                      <dd class="zhongji"> <i class="xinhao-icon"></i>
+                        <p> 中级</p>
+                      </dd>
+                    </dl>
+                    <p class="learn-number" style="display: block;"> 2220人学习</p>
+                  </div>
+                  <div class="cf">
+                    <div class="lessonicon-box"> <a href="#"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt=""> </a> </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="#3137" class="cf-3137">
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang"></i> <a href="#"></a> <img class="lessonimg" src="http://a1.jikexueyuan.com/home/201611/17/9d28/582d6e30c2d46.png" alt="">
+                <div class="lessonplay lessonplay-3137"> <i class="playericon"></i> </div>
+              </div>
+              <div class="lesson-infor">
+                <h2 class="lesson-info-h2"> <a href="#">腾讯云产品 - 腾讯云数据库CDB</a> </h2>
+                <p style="height: 36px;"> 本课程主要为大家介绍云数据库的使用入门。 </p>
+                <div class="timeandicon">
+                  <div class="cf">
+                    <dl>
+                      <dd class="mar"> <i class="time-icon"></i>
+                        <p>1课时&nbsp;9分钟</p>
+                      </dd>
+                      <dd class="zhongji"> <i class="xinhao-icon"></i>
+                        <p> 中级</p>
+                      </dd>
+                    </dl>
+                    <p class="learn-number" style="display: block;"> 2240人学习</p>
+                  </div>
+                  <div class="cf">
+                    <div class="lessonicon-box"> <a href="#"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt=""> </a> </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="#3136" class="cf-3136">
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang"></i> <a href="#"></a> <img class="lessonimg" src="http://a1.jikexueyuan.com/home/201611/17/9d28/582d6e30c2d46.png" alt="">
+                <div class="lessonplay lessonplay-3136"> <i class="playericon"></i> </div>
+              </div>
+              <div class="lesson-infor">
+                <h2 class="lesson-info-h2"> <a href="#">腾讯云产品 - 在云上搭建自己的Discuz论坛</a> </h2>
+                <p style="height: 36px;"> 本课程通过实操演示，教大家快速掌握云服务器的使用方法。 </p>
+                <div class="timeandicon">
+                  <div class="cf">
+                    <dl>
+                      <dd class="mar"> <i class="time-icon"></i>
+                        <p>4课时&nbsp;19分钟</p>
+                      </dd>
+                      <dd class="zhongji"> <i class="xinhao-icon"></i>
+                        <p> 中级</p>
+                      </dd>
+                    </dl>
+                    <p class="learn-number" style="display: block;"> 2366人学习</p>
+                  </div>
+                  <div class="cf">
+                    <div class="lessonicon-box"> <a href="#"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt=""> </a> </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="#3135" class="cf-3135">
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang"></i> <a href="#"></a> <img class="lessonimg" src="http://a1.jikexueyuan.com/home/201611/17/9d28/582d6e30c2d46.png" alt="">
+                <div class="lessonplay lessonplay-3135"> <i class="playericon"></i> </div>
+              </div>
+              <div class="lesson-infor">
+                <h2 class="lesson-info-h2"> <a href="#">腾讯云产品 - 腾讯云云服务器</a> </h2>
+                <p style="height: 36px;"> 本课程主要为大家介绍如何使用Windows系统及Linux系统云服务器。 </p>
+                <div class="timeandicon">
+                  <div class="cf">
+                    <dl>
+                      <dd class="mar"> <i class="time-icon"></i>
+                        <p>3课时&nbsp;13分钟</p>
+                      </dd>
+                      <dd class="zhongji"> <i class="xinhao-icon"></i>
+                        <p> 中级</p>
+                      </dd>
+                    </dl>
+                    <p class="learn-number" style="display: block;"> 2303人学习</p>
+                  </div>
+                  <div class="cf">
+                    <div class="lessonicon-box"> <a href="#"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt=""> </a> </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="#3097" class="cf-3097">
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang"></i> <a href="#"></a> <img class="lessonimg" src="http://a1.jikexueyuan.com/home/201611/17/9d28/582d6e30c2d46.png" alt="">
+                <div class="lessonplay lessonplay-3097"> <i class="playericon"></i> </div>
+              </div>
+              <div class="lesson-infor">
+                <h2 class="lesson-info-h2"> <a href="#">腾讯云产品 - 腾讯云内容分发网络CDN</a> </h2>
+                <p style="height: 36px;"> 本课程通过产品介绍、应用场景介绍等，手把手教你快速入门。 </p>
+                <div class="timeandicon">
+                  <div class="cf">
+                    <dl>
+                      <dd class="mar"> <i class="time-icon"></i>
+                        <p>4课时&nbsp;14分钟</p>
+                      </dd>
+                      <dd class="zhongji"> <i class="xinhao-icon"></i>
+                        <p> 中级</p>
+                      </dd>
+                    </dl>
+                    <p class="learn-number" style="display: block;"> 2209人学习</p>
+                  </div>
+                  <div class="cf">
+                    <div class="lessonicon-box"> <a href="#"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt=""> </a> </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="#3096" class="cf-3096">
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang"></i> <a href="#"></a> <img class="lessonimg" src="http://a1.jikexueyuan.com/home/201611/17/9d28/582d6e30c2d46.png" alt="">
+                <div class="lessonplay lessonplay-3096"> <i class="playericon"></i> </div>
+              </div>
+              <div class="lesson-infor">
+                <h2 class="lesson-info-h2"> <a href="#">腾讯云产品 - 腾讯云对象存储COS</a> </h2>
+                <p style="height: 36px;"> 本课程深入浅出为你讲解COS的使用方法。 </p>
+                <div class="timeandicon">
+                  <div class="cf">
+                    <dl>
+                      <dd class="mar"> <i class="time-icon"></i>
+                        <p>5课时&nbsp;30分钟</p>
+                      </dd>
+                      <dd class="zhongji"> <i class="xinhao-icon"></i>
+                        <p> 中级</p>
+                      </dd>
+                    </dl>
+                    <p class="learn-number" style="display: block;"> 2156人学习</p>
+                  </div>
+                  <div class="cf">
+                    <div class="lessonicon-box"> <a href="#"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt=""> </a> </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="#3095" class="cf-3095">
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang"></i> <a href="#"></a> <img class="lessonimg" src="http://a1.jikexueyuan.com/home/201611/17/9d28/582d6e30c2d46.png" alt="">
+                <div class="lessonplay lessonplay-3095"> <i class="playericon"></i> </div>
+              </div>
+              <div class="lesson-infor">
+                <h2 class="lesson-info-h2"> <a href="#">云计算基础 - 云计算的组成</a> </h2>
+                <p style="height: 36px;"> 本课程主要为大家讲解云计算的组成，COS对象存储及CDN内容分发网络。 </p>
+                <div class="timeandicon">
+                  <div class="cf">
+                    <dl>
+                      <dd class="mar"> <i class="time-icon"></i>
+                        <p>4课时&nbsp;22分钟</p>
+                      </dd>
+                      <dd class="zhongji"> <i class="xinhao-icon"></i>
+                        <p> 中级</p>
+                      </dd>
+                    </dl>
+                    <p class="learn-number" style="display: block;">2201人学习</p>
+                  </div>
+                  <div class="cf">
+                    <div class="lessonicon-box"> <a href="#"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt=""> </a> </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="#3094" class="cf-3094">
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang"></i> <a href="#"></a> <img class="lessonimg" src="http://a1.jikexueyuan.com/home/201611/17/9d28/582d6e30c2d46.png" alt="">
+                <div class="lessonplay lessonplay-3094"> <i class="playericon"></i> </div>
+              </div>
+              <div class="lesson-infor">
+                <h2 class="lesson-info-h2"> <a href="#">云计算基础 - 一分钟了解云计算</a> </h2>
+                <p style="height: 36px;"> 本课程主要带大家了解什么是云以及云计算的应用场景。 </p>
+                <div class="timeandicon">
+                  <div class="cf">
+                    <dl>
+                      <dd class="mar"> <i class="time-icon"></i>
+                        <p>5课时&nbsp;19分钟</p>
+                      </dd>
+                      <dd class="zhongji"> <i class="xinhao-icon"></i>
+                        <p> 中级</p>
+                      </dd>
+                    </dl>
+                    <p class="learn-number" style="display: block;">2399人学习</p>
+                  </div>
+                  <div class="cf">
+                    <div class="lessonicon-box"> <a href="#"> <img width="16" src="http://a1.jikexueyuan.com/home/201604/29/930b/572318c5ac303.png" alt=""> </a> </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="#3063" class="cf-3063">
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang"></i> <a href="#"></a> <img class="lessonimg" src="http://a1.jikexueyuan.com/home/201611/17/9d28/582d6e30c2d46.png" alt="">
+                <div class="lessonplay lessonplay-3063"> <i class="playericon"></i> </div>
+              </div>
+              <div class="lesson-infor">
+                <h2 class="lesson-info-h2"> <a href="#">打造你自己的Dragonboard 410c</a> </h2>
+                <p style="height: 36px;"> 本课主要阐述Dragonboard 410c支持的软硬件环境，外设接口，以及功能用途的同时，教大家如何去购买及使用Dragonboard 410c开发板。 </p>
+                <div class="timeandicon">
+                  <div class="cf">
+                    <dl>
+                      <dd class="mar"> <i class="time-icon"></i>
+                        <p>3课时&nbsp;16分钟</p>
+                      </dd>
+                      <dd class="zhongji"> <i class="xinhao-icon"></i>
+                        <p> 中级</p>
+                      </dd>
+                    </dl>
+                    <p class="learn-number" style="display: block;">2415人学习</p>
+                  </div>
+                  <div class="cf">
+                    <div class="lessonicon-box"> <a href="#"> <img width="16" src="http://a1.jikexueyuan.com/home/201411/03/00a1/54578d8e652c3.png" alt=""> </a> </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="#3076" class="cf-3076">
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang"></i> <a href="#"></a> <img class="lessonimg" src="http://a1.jikexueyuan.com/home/201611/17/9d28/582d6e30c2d46.png" alt="">
+                <div class="lessonplay lessonplay-3076"> <i class="playericon"></i> </div>
+              </div>
+              <div class="lesson-infor">
+                <h2 class="lesson-info-h2"> <a href="#">NDK编程开发</a> </h2>
+                <p style="height: 36px;"> 本课主要教大家如何在Android应用开发中加入NDK的编程开发，旨在借此让大家学会在Java代码中嵌入C/C++的高效代码，实现java/C混合编程。 </p>
+                <div class="timeandicon">
+                  <div class="cf">
+                    <dl>
+                      <dd class="mar"> <i class="time-icon"></i>
+                        <p>3课时&nbsp;22分钟</p>
+                      </dd>
+                      <dd class="zhongji"> <i class="xinhao-icon"></i>
+                        <p> 中级</p>
+                      </dd>
+                    </dl>
+                    <p class="learn-number" style="display: block;">2468人学习</p>
+                  </div>
+                  <div class="cf">
+                    <div class="lessonicon-box"> <a href="#"> <img width="16" src="http://a1.jikexueyuan.com/home/201411/03/00a1/54578d8e652c3.png" alt=""> </a> </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="#3129" class="cf-3129">
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang"></i> <a href="#"></a> <img class="lessonimg" src="http://a1.jikexueyuan.com/home/201611/17/9d28/582d6e30c2d46.png" alt="">
+                <div class="lessonplay lessonplay-3129"> <i class="playericon"></i> </div>
+              </div>
+              <div class="lesson-infor">
+                <h2 class="lesson-info-h2"> <a href="#">应用开发和部署实例</a> </h2>
+                <p style="height: 36px;"> 本课主要是教大家一款应用程序的开发、调试和部署。通过Android提供的蓝牙、网络通讯等模块的接口，讲解应用中对接口的调用和调试，并详细讲解应用在Studio虚拟设备上的部署和设备上的部署运行。 </p>
+                <div class="timeandicon">
+                  <div class="cf">
+                    <dl>
+                      <dd class="mar"> <i class="time-icon"></i>
+                        <p>2课时&nbsp;26分钟</p>
+                      </dd>
+                      <dd class="zhongji"> <i class="xinhao-icon"></i>
+                        <p> 中级</p>
+                      </dd>
+                    </dl>
+                    <p class="learn-number" style="display: block;">2568人学习</p>
+                  </div>
+                  <div class="cf">
+                    <div class="lessonicon-box"> <a href="#"> <img width="16" src="http://a1.jikexueyuan.com/home/201411/03/00a1/54578d8e652c3.png" alt=""> </a> </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="#3122" class="cf-3122">
+              <div class="lessonimg-box"> <i class="user-action lesson-shoucang"></i> <a href="#"></a> <img class="lessonimg" src="http://a1.jikexueyuan.com/home/201611/17/9d28/582d6e30c2d46.png" alt="">
+                <div class="lessonplay lessonplay-3122"> <i class="playericon"></i> </div>
+              </div>
+              <div class="lesson-infor">
+                <h2 class="lesson-info-h2"> <a href="#">简介Dragonboard 410c网络服务</a> </h2>
+                <p style="height: 36px;"> 1.介绍DragonBoard 410c网络服务 2.配置Dragonboard 410c网络服务 </p>
+                <div class="timeandicon">
+                  <div class="cf">
+                    <dl>
+                      <dd class="mar"> <i class="time-icon"></i>
+                        <p>2课时&nbsp;12分钟</p>
+                      </dd>
+                      <dd class="zhongji"> <i class="xinhao-icon"></i>
+                        <p> 中级</p>
+                      </dd>
+                    </dl>
+                    <p class="learn-number" style="display: block;">2311人学习</p>
+                  </div>
+                  <div class="cf">
+                    <div class="lessonicon-box"> <a href="#"> <img width="16" src="http://a1.jikexueyuan.com/home/201411/03/00a1/54578d8e652c3.png" alt=""> </a> </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- 第二版课程样式  end --> 
+        <!-- 主要课程  end --> 
+      </div>
+      <!-- 分页符  begin -->
+      <div id="page-nav">
+        <ul class="pages">
+          <li class="pgNext pgEmpty">首页</li>
+          <li class="pgNext pgEmpty">上一页</li>
+          <li class="page-number pgCurrent">1</li>
+          <li class="page-number">2</li>
+          <li class="page-number">3</li>
+          <li class="page-number">4</li>
+          <li class="page-number">5</li>
+          <li class="page-number">6</li>
+          <li class="page-number">7</li>
+          <li class="page-number">...</li>
+          <li class="pgNext">下一页</li>
+          <li class="pgNext">末页</li>
+          <li class="thpoint pagetotal" style="margin-top:3px;">共 95 页</li>
+          <li class="thpoint pagenow" style="position: absolute;margin-top: 3px;margin-left: -15px;"> 当前
+            <input type="text" value="1" maxlength="6" style="width: 20px;height: 16px;margin-top: -3px;padding-top: 2px;padding-left: 10px;">
+            页 </li>
+          <li class="pgNext go" style="margin-left: 80px;position: absolute;">确定</li>
+        </ul>
+      </div>
+      <!-- 分页符  end --> 
+      <!-- 右侧容器 end--> 
+    </div>
+    <!-- 容器 end--> 
+  </content>
+  <!--内容主体结束--> 
+  <!--底部-->
+  <footer> 
+    <!--底部容器-->
+    <div class="footerwarp"> 
+      <!--底部左边logo-->
+      <div class="footL"> <img src="./images/jk-logo-footer.png" />
+        <p>极客学院，编程是一种信仰！</p>
+      </div>
+      <!--底部左边logo结束--> 
+      <!--底部中间菜单-->
+      <div class="footM">
+        <dl>
+          <dt>职业学院</dt>
+          <dd> <a href="http://www.jikexueyuan.com/zhiye/web"> Web前端工程师 </a> </dd>
+          <dd> <a href="http://www.jikexueyuan.com/zhiye/python"> Pyton Web工程师 </a> </dd>
+          <dd> <a href="http://www.jikexueyuan.com/zhiye/go"> Go语言工程师 </a> </dd>
+          <dd> <a href="http://www.jikexueyuan.com/zhiye/ios"> ios工程师 </a> </dd>
+        </dl>
+        <dl>
+          <dt>会员课程</dt>
+          <dd> <a href="http://www.jikexueyuan.com/course/"> 课程库 </a> </dd>
+          <dd> <a href="http://www.jikexueyuan.com/path/"> 知识体系图 </a> </dd>
+          <dd> <a href="http://ke.jikexueyuan.com/zhiye/"> 职业路径图 </a> </dd>
+          <dd> <a href="http://ke.jikexueyuan.com/xilie/"> 系列课程 </a> </dd>
+          <dd> <a href="http://www.jikexueyuan.com/tag/"> 课程标签 </a> </dd>
+        </dl>
+        <dl>
+          <dt>极客社区</dt>
+          <dd> <a href="http://wenda.jikexueyuan.com/"> 技术问答 </a> </dd>
+          <dd> <a href="http://wiki.jikexueyuan.com/"> Wiki </a> </dd>
+          <dd> <a href="http://download.jikexueyuan.com/"> 资源下载 </a> </dd>
+          <dd> <a href="http://qun.jikexueyuan.com/"> 社群 </a> </dd>
+        </dl>
+        <dl>
+          <dt>其他</dt>
+          <dd> <a href="http://help.jikexueyuan.com/"> 关于我们 </a> </dd>
+          <dd> <a href="http://help.jikexueyuan.com/join.html"> 加入我们 </a> </dd>
+          <dd> <a href="http://j.jikexueyuan.com/evangelist/apply"> 讲师合作 </a> </dd>
+          <dd> <a href="http://help.jikexueyuan.com/contact.html"> 联系我们 </a> </dd>
+          <dd> <a href="http://www.jikexueyuan.com/friendlink.html"> 友情链接 </a> </dd>
+        </dl>
+      </div>
+      <!--底部中间菜单结束--> 
+      <!--底部右边联系方式-->
+      <div class="footR">
+        <p>服务热线：400-678-8266</p>
+        <div class="dowCon dow-ios"> <img src="./images/icon-down-ios.png"> <img class="hidden-img" src="./images/heade-rwm.png">
+          <p>iphone</p>
+        </div>
+        <div class="dowCon dow-and"> <img src="./images/icon-down-and.png"> <img class="hidden-img" src="./images/heade-rwm.png">
+          <p>Android</p>
+        </div>
+      </div>
+      <!--底部右边联系方式结束--> 
+      <!--底部版权-->
+      <div class="banquan"> Copyright © 2013-2016 <strong> <a href="http://www.jikexueyuan.com/" style="color:#999;font-weight:400;"/>jikexueyuan.com</a> </strong> All Rights Reserved. 京ICP备11018032号-8 京公网安备11010802020210 <a class="weixin" href="http://qun.jikexueyuan.com/jikexueyuan/topic/430"></a> <a class="wechat" href="https://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=http%3A%2F%2Fweibo.com%2Fjikexueyuan&domain=.weibo.com&sudaref=http%3A%2F%2Fwww.jikexueyuan.com%2F&ua=php-sso_sdk_client-0.6.23&_rand=1479350570.4778"> </a> </div>
+      <div class="chick"> 
+	      <a href="javascript:window.scrollTo( 0, 0 );">
+	      <!-- 返回顶部   此方法直接返回很迅速 -->
+		      <img src="./images/gotop.jpg" > 
+		      <img src="./images/gotop2.jpg"> 
+	      </a> 
+      </div>
+    </div>
+    <!--底部容器--> 
+  </footer>
+  <!--底部结束--> 
+</div>
+<!--容器--> 
+<script type="text/javascript" src="js/mine.js"></script>
+</body>
+</html>

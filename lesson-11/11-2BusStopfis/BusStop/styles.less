@@ -1,0 +1,145 @@
+.border-radius(@radius) {
+	border-radius: @radius;
+}
+.margin {
+	margin: 20px;
+}
+@color: green;
+
+.container {
+	width: 1240px;
+	height: 550px;
+	background-color: #e6e6e6;
+	.border-radius(3px);
+	margin: auto;
+}
+.Left-wrap {
+	background: #bd0f0f;
+	.border-radius(5px);
+	height: 190px;
+	width: 415px;
+	position: absolute;
+	.margin;
+
+	p {
+		color: #fff;
+		font-size: 5em;
+		text-align: center;
+		height: 50px;
+		line-height: 50px;
+	}
+	i {
+	}
+}
+.Right-wrap {
+	width: 550px;
+	height: 190px;
+	float: right;
+	margin-right: 100px;
+	.border-radius(5px);
+	margin-top: 20px;
+
+	.row {
+		.margin;
+
+		b:nth-child(1) {
+			.b1;
+			float: left;
+		}
+		b:nth-child(2) {
+			.b1;
+			float: right;
+		}
+		.line {
+			.line;
+			margin-left: 167px;
+			margin-top: 18px;
+			width: 135px;
+			height: 3px;
+		}
+	}
+	.rowEn {
+		margin:0px;
+
+		b:nth-child(1) {
+			.b2;
+			float: left;
+		}
+		b:nth-child(2) {
+			.b2;
+			float: right;
+		}
+		.line {
+			.line;
+			width: 40px;
+			height: 2px;
+			margin-left: 219px;
+			margin-top: 57px;
+		}
+	}
+	p {
+		font-size: 2em;
+		color: #bd0f0f;
+		font-weight: bold;
+		line-height: 26px;
+		text-align: center;
+		margin: 130px;
+	}
+}
+.b1 {
+	font-size: 2em;
+	color: @color;
+}
+.b2 {
+	font-size: 24px;
+	color: @color;
+}
+.line {
+	background-color: @color;
+	position: absolute;
+}
+.Bottom-wrap {
+	width: 1200px;
+	height: 205px;
+	background-color: @color;
+	position: absolute;
+	margin-top: 260px;
+	margin-left: 20px;
+	.border-radius(5px);
+
+	ul {
+		li {
+			list-style: none;
+			float: right;
+			font-size: 20px;
+			width: 29px;
+			margin-left: 29px;
+		}
+	}
+	i {
+		display: inline-block;
+		text-align: center;
+		.margin;
+		width: 1161px;
+	}
+	.direction {
+		width: 900px;
+		height: 5px;
+		background-color: #bd0f0f;
+		margin: auto;
+	}
+	.direction2 {
+		width: 50px;
+		height: 5px;
+		background-color: #bd0f0f;
+		float: right;
+		margin-right: 150px;
+		.transfrom(19deg);
+		margin-top: -13px;
+	}
+}
+.transfrom(@rotate) {
+	transform: rotate(@rotate);
+	-moz-transform: rotate(@rotate);
+	-webkit-transform: rotate(@rotate);
+}

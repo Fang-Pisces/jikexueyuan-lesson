@@ -1,0 +1,50 @@
+/*十字架居中*/
+div{
+		height:100px;
+		width: 100px;
+		position: absolute;
+		top:50%;
+		left: 50%;
+		margin-left: -50px;
+		margin-top:-50px;
+			
+		}
+		/*修改——图片伸缩盒居中*/
+.center{
+		display: -webkit-box;
+		-webkit-box-pack:center;
+		-webkit-box-align:center;	
+			
+		}
+.top{
+			
+		background: blue;
+		margin:-150px 0 0 -50px;
+		box-shadow:
+			0 0 20px 1px rgba(255, 0, 0, .6), 
+			0 0 2px 2px rgba(255, 255, 0, .6);
+		}
+.bottom{
+			
+		background: yellow;
+		margin:50px 0 0 -50px;
+		box-shadow:
+			0 0 20px 1px rgba(255, 0, 0, .6), 
+			0 0 2px 2px rgba(255, 255, 0, .6);
+		}
+.left{
+			
+		background:green;
+		margin:-50px 0 0 -150px;
+		box-shadow:
+			0 0 20px 1px rgba(255, 0, 0, .6), 
+			0 0 2px 2px rgba(255, 255, 0, .6);
+		}
+.right{
+			
+		background: plum;
+		margin:-50px 0 0 50px;
+		box-shadow:
+			0 0 20px 1px rgba(255, 0, 0, .6), 
+			0 0 2px 2px rgba(255, 255, 0, .6);
+		}

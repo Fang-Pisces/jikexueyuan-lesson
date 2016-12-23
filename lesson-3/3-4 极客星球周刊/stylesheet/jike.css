@@ -1,0 +1,84 @@
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	min-width: 800px;
+}
+/*头部标题*/
+.head{
+	background: rgba(159, 159, 159, 0.38);
+	height: 100px;
+	box-shadow: rgba(0, 0, 0, .1)0 1px 5px;
+	margin: 0 0 10px;
+}
+.head img{
+	padding:10px;
+	width:120px;
+}
+.head p{
+	text-align:center;
+	font-size:31px;
+	font-weight: bold;
+}
+/*中间部分*/
+.artical{
+	overflow: hidden;
+}
+/*左边*/
+.artical .left{
+	float: left;
+    width: 184px;
+    margin-left: -100%;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+    background: rgba(159, 159, 159, 0.38);
+}
+.left ul li a{
+	font-size: 20px;
+	text-decoration:none;
+	color:#000;
+}
+/*中间*/
+.artical .center{
+	width: 100%;
+    float: left;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+.artical .center .innter{
+	margin: 0 170px 0 192px;
+    background: rgba(159, 159, 159, 0.38);
+}
+/*右边*/
+.artical .right{
+	float: right;
+    width: 163px;
+    margin-left: -170px;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+    background: rgba(159, 159, 159, 0.38);
+}
+.right ul{
+	list-style:none;
+	margin: 0 0 0 10px;
+}
+.right ul li a{
+	font-size: 14px;
+	text-decoration:none;
+	color:#000;
+}
+/*底部版权*/
+.foot{
+	background:rgba(159, 159, 159, 0.38);
+	height: 100px;
+	margin:10px 0 0 0;
+	font-size:13px;
+	color: #9f9f9f;
+}
+
+.foot a{
+	text-decoration:none;
+	color:blue;
+
+}
